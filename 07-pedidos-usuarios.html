@@ -1,0 +1,445 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <script src="js/vendor/modernizr.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/toastr.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation-datepicker.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/01-style.css">
+    <link rel="stylesheet" type="text/css" href="css/02-style.css">
+    <link rel="stylesheet" type="text/css" href="css/07-style.css">
+    <link rel="stylesheet" href="css/style-global.css">
+
+</head>
+
+<body>
+
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#">Uniresto</a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span><img class="perfilImg" src="img/fotoPerfil.png"
+                                                                   alt="Foto de Perfil"><p class="perfil-name-nav">
+            Andrés Maldonado</p></span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+            <li><img class="perfilImg show-for-medium-up" src="img/fotoPerfil.png" alt="Foto de Perfil"></li>
+            <li><p class="perfil-name-nav show-for-medium-up">Andrés Maldonado</p></li>
+            <li><img class="img-post show-for-medium-up" src="img/post.svg" alt=""></li>
+            <li><img class="icon-nav-bar" src="img/buscar.svg" alt=""><img class="icon-nav-bar" src="img/buscar.svg"
+                                                                           alt=""><img class="icon-nav-bar"
+                                                                                       src="img/buscar.svg" alt=""></li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+            <li>
+                <form action="">
+                    <div class="container-buscador">
+                        <input type="text" class="buscador">
+                        <input class="img-buscar" type="button">
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </section>
+</nav>
+
+<div class="acciones">
+    <ul>
+        <li class="texto-acciones">ACCIONES</li>
+        <li><a href="#"><img src="img/HOME.png" alt=""></a></li>
+        <li><a href="#"><img src="img/LOCAL.png" alt=""></a></li>
+        <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+        <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+        <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+    </ul>
+</div>
+<!-- Header -->
+<header class="row header">
+    <div class="info-perfil columns small-12 medium-7 large-7">
+        <div class="row header-perfil">
+            <div class="columns small-4  medium-offset-2 medium-4 large-4">
+                <img class="foto-perfil" src="img/cara-perfil.jpg" alt="">
+            </div>
+            <div class="text-info-header columns small-8 medium-6">
+                <p class="nombre-header-perfil">ANDRES MALDONADO</p>
+                <p class="info-header-perfil">Barrio de Villa Pueyrredon</p>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Fin Header -->
+
+<!-- Tab -->
+
+<ul class="tabs tabs-home" data-tab role="tablist">
+    <li class="tab-title tabs-home-title active" role="presentation">
+        <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1">Muro</a>
+    </li>
+    <li class="tab-title tabs-home-title" role="presentation">
+        <a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2">Mis Datos</a>
+    </li>
+    <li class="tab-title tabs-home-title" role="presentation">
+        <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3">Amigos</a>
+    </li>
+    <li class="tab-title tabs-home-title" role="presentation">
+        <a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2">AAAAAAA</a>
+    </li>
+    <li class="tab-title tabs-home-title" role="presentation">
+        <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3">AAAAAAA</a>
+    </li>
+</ul>
+
+<!-- Fin Tab -->
+
+
+<div class="tabs-content resumen">
+    <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+        <div class="row">
+            <div class="medium-12 columns no-padding-left store-tab " style="  padding-right: 0;">
+                <ul class="mnu-resumen-pedido accordion tabs vertical" data-accordion="">
+                    <!--<li class="tab-title active">-->
+                    <li class="accordion-navigation tab-title nav-ped-usu">
+                        <a href="#panel1a" aria-expanded="false">PRODUCTOS PARA LLEVAR ▼</a>
+                        <div id="panel1a" class="content">
+                            <div class="item-submenu">
+                                <a id="solic-abiertas1" class="link-subitem" href=""><span> Solicitudes abiertas </span>
+                                </a>
+                            </div>
+                            <div class="item-submenu">
+                                <a id="solic-abiertas2" class="link-subitem"
+                                   href=""><span> Solicitudes finalizadas </span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-navigation tab-title nav-ped-usu">
+                        <a href="#panel2a" aria-expanded="false">PEDIDOS POR DELIVERY ▼</a>
+                        <div id="panel2a" class="content">
+                            <div class="item-submenu">
+                                <a id="solic-abiertas3" class="link-subitem" href=""><span> Solicitudes abiertas </span></a>
+                            </div>
+                            <div class="item-submenu">
+                                <a id="solic-abiertas4" class="link-subitem"
+                                   href=""><span> Solicitudes finalizadas </span></a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="tab-title nav-ped-usu"><a href="/store/info/" aria-expanded="false"></i> COMER EN EL LOCAL</a></li>
+                </ul>
+                <div class="tabs-content-full">
+                    <div class="content active">
+                        <div class="medium-9 large-9 columns">
+                            <h3 class="dotted-bottom"><img src="img/menu2.png" style="width:50px;" /> Resumen de pedidos</h3>
+
+
+                            <br/>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div id="attributes-list" class="panel callout radius">
+
+                                        <ul class="accordion" data-accordion="">
+                                            <li class="accordion-navigation">
+                                                <a href="#panelContact1a" class="link columns small-12"
+                                                   aria-expanded="false">
+                                                    <div class="row">
+                                                        <div class="acc-titulo-cabecera columns large-5 small-12">
+                                <span> Pedido de delivery en
+                                  <span>SPICE ART</span>
+                                </span>
+                                                        </div>
+                                                        <div class="mostrar-detalles link columns small-12 large-3 novedades">
+                                                            <span>Novedades </span>
+                                                            <div class="img-orden-naranja">
+                                                                <img src="img/comentar.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mostrar-detalles link columns small-12 large-3 novedades">
+                                                            <span>Ver detalles </span>
+                                                            <div class="img-orden-naranja">
+                                                                <img src="img/BANDEJA.png">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="columns large-1 small-12">
+                                                            <img class="img-flecha" src="img/arrowBotton.jpg">
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <div id="panelContact1a" class="contenedor-articulo content">
+                                                    <div class="status-buttons">
+                                                        <div class="wizard-steps">
+                                                            <div class="completed-step"><a
+                                                                    href="#step-two"><span>1</span>Generada</a></div>
+                                                            <div class="completed-step"><a href="#"><span>2</span>Aceptada</a>
+                                                            </div>
+                                                            <div class="active-step"><a href="#"><span>3</span>Entregada</a>
+                                                            </div>
+                                                            <div class=""><a href="#"><span>3</span>En Camino</a></div>
+                                                            <div class=""><a href="#"><span>3</span>Cancelada</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="columns small-12">
+                                                        <div class="row">
+
+                                                            <div class="columns small-12 medium-4 large-4 margin-top-15 margin-bottom-15">
+                                                                <div class="row">
+                                                                    <div class="columns large-12">
+                                                                        <p class="titulo-pedido-07">spice art</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns small-6 medium-4 large-6">
+                                                                        <img class="img-plato-07" src="img/carne.jpg">
+                                                                    </div>
+                                                                    <div class="columns small-6 medium-8 large-6">
+                                                                        <div class="row">
+                                                                            <div class="sin-padding columns large-12">
+                                                                                <div class="row">
+                                                                                    <div class="columns large-12">
+                                                                                        <p class="text-pedido-07">
+                                                                                            CABA</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="columns large-12">
+                                                                                        <p class="text-pedido-07">
+                                                                                            Uriarte 1230</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="columns large-12">
+                                                                                        <img class="img-planeta-07"
+                                                                                             src="img/UBICACION.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="columns small-12 medium-4 large-4 margin-top-15 margin-bottom-15">
+                                                                <div class="row">
+                                                                    <div class="columns large-12">
+                                                                        <p class="titulo-pedido-07">entrega</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns large-12">
+                                                                        <p class="text-pedido-07">Fecha 25/10/2015</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns large-12">
+                                                                        <p class="text-pedido-07">Horario de entrega
+                                                                            21:00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="margin-top-15 margin-bottom-15 columns small-12 medium-4 large-4 ">
+                                                                <div class="row">
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="titulo-pedido-07">total</p>
+                                                                    </div>
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="precio-total-pedido-07">$320</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="text-pedido-07">Paga con</p>
+                                                                    </div>
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="precio-pedido-07">$400</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="text-pedido-07">Vuelto</p>
+                                                                    </div>
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="precio-pedido-07">$80</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-navigation">
+                                                <a href="#panelContact2a" class="link columns small-12"
+                                                   aria-expanded="false">
+                                                    <div class="row">
+                                                        <div class="acc-titulo-cabecera columns large-5 small-12">
+                                <span> Pedido de delivery en
+                                  <span>SPICE ART</span>
+                                </span>
+                                                        </div>
+                                                        <div class="mostrar-detalles link columns small-12 large-3 novedades">
+                                                            <span>Novedades </span>
+                                                            <div class="img-orden-naranja">
+                                                                <img src="img/comentar.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mostrar-detalles link columns small-12 large-3 novedades">
+                                                            <span>Ver detalles </span>
+                                                            <div class="img-orden-naranja">
+                                                                <img src="img/BANDEJA.png">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="columns large-1 small-12">
+                                                            <img class="img-flecha" src="img/arrowBotton.jpg">
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <div id="panelContact2a" class="contenedor-articulo content">
+                                                    <div class="status-buttons">
+                                                        <div class="wizard-steps">
+                                                            <div class="completed-step"><a
+                                                                    href="#step-two"><span>1</span>Generada</a></div>
+                                                            <div class="completed-step"><a href="#"><span>2</span>Aceptada</a>
+                                                            </div>
+                                                            <div class="active-step"><a href="#"><span>3</span>Entregada</a>
+                                                            </div>
+                                                            <div class=""><a href="#"><span>3</span>En Camino</a></div>
+                                                            <div class=""><a href="#"><span>3</span>Cancelada</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="columns small-12">
+                                                        <div class="row">
+
+                                                            <div class="columns small-12 medium-4 large-4 ">
+                                                                <div class="row">
+                                                                    <div class="columns large-12">
+                                                                        <p class="titulo-pedido-07">spice art</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns small-6 medium-4 large-6">
+                                                                        <img class="img-plato-07" src="img/carne.jpg">
+                                                                    </div>
+                                                                    <div class="columns small-6 medium-8 large-6">
+                                                                        <div class="row">
+                                                                            <div class="sin-padding columns large-12">
+                                                                                <div class="row">
+                                                                                    <div class="columns large-12">
+                                                                                        <p class="text-pedido-07">
+                                                                                            CABA</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="columns large-12">
+                                                                                        <p class="text-pedido-07">
+                                                                                            Uriarte 1230</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="columns large-12">
+                                                                                        <img class="img-planeta-07"
+                                                                                             src="img/UBICACION.png">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="columns small-12 medium-4 large-4 ">
+                                                                <div class="row">
+                                                                    <div class="columns large-12">
+                                                                        <p class="titulo-pedido-07">entrega</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns large-12">
+                                                                        <p class="text-pedido-07">Fecha 25/10/2015</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns large-12">
+                                                                        <p class="text-pedido-07">Horario de entrega
+                                                                            21:00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="margin-top-15 margin-bottom-15 columns small-12 medium-4 large-4 ">
+                                                                <div class="row">
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="titulo-pedido-07">total</p>
+                                                                    </div>
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="precio-total-pedido-07">$320</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="text-pedido-07">Paga con</p>
+                                                                    </div>
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="precio-pedido-07">$400</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="text-pedido-07">Vuelto</p>
+                                                                    </div>
+                                                                    <div class="columns small-6 medium-6 large-6">
+                                                                        <p class="precio-pedido-07">$80</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+        <h2>Second panel content goes here...</h2>
+    </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
+        <h2>Third panel content goes here...</h2>
+    </section>
+</div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

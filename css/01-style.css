@@ -1,0 +1,630 @@
+/*General*/
+
+body{
+    font-size: 16px;
+    background: #EBF0FD;
+}
+
+/*Fin General*/
+
+/*Nav*/
+
+
+/*Fin Nav*/
+
+/*Portada*/
+
+/*Fin Portada*/
+
+.tablero-izq{
+    position: fixed;
+    top: 0 ;
+}
+
+
+.perfil-name-nav{
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    font-family: 'Raleway Medium';
+    float: left;
+    margin-top: 6px;
+    text-transform: none;
+}
+
+.container-buscador{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 15px;
+    top: 0.53125rem;
+}
+
+.img-buscar{
+width: 20%;background: url('../img/buscar.svg') center no-repeat;background-size: 21px;box-shadow: none;padding: 0;border-left: none;float: left;top: 0!important;border: 0;}
+
+.div-buscador{
+    width: 200px;
+}
+
+
+
+#subir-foto{
+    width: 20%;
+    margin: 0;
+    float: left;
+    height: 100%;
+    box-shadow: none;
+    border: 0px;
+    background: url('../img/camara.svg') center no-repeat;
+    background-size: 20px;
+}
+.post-form{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #C7C7C7;
+}
+#subir-foto img{
+width: 5px;}
+
+
+.sin-padding{
+    padding: 0!important;
+}
+
+/*Header*/
+.header{
+    background: url('../img/cabecera.jpg');
+    background-position: center;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    position: relative;
+}
+
+.text-info-header{
+    padding-top: 25px;
+    padding-left: 0;
+}
+
+.info-perfil{
+position: absolute;bottom: 20px;}
+
+.header-perfil .nombre-header-perfil{
+
+font-size: 14px;color: white;text-shadow: 1px 0 black;padding: 0;margin: 0;margin-left: -10px;font-family: 'Raleway Bold';}
+
+.header-perfil .info-header-perfil{
+    color: white;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-left: -10px;
+    font-family: 'Raleway Bold';
+}
+
+.foto-perfil{
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+/*Fin Header*/
+
+.fotos{
+    width: 400px;
+}
+
+.post{
+    padding: 1em;
+    margin: 1em 0;
+    /* border-top: 2px solid #FF900B; */
+}
+
+
+.bgWh{
+    background: white;
+}
+
+
+.headerPostWp{
+     overflow: hidden;
+    padding: 0 0 1em 0;
+    border-bottom: 1px solid #C7C7C7;
+    margin: 0 0 1em 0;
+}
+
+
+.datosPersonPost{
+    float: left;
+    width: calc(100% - 3.5em);
+}
+
+.datosPersonPost a img{
+    width: 17px;
+}
+
+.nombre {
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-family: Raleway;
+    font-size: .9em;
+
+}
+
+.content p{
+    line-height: 1.3em;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    margin: 0;
+}
+
+.content img{
+    width: 100%;
+}
+
+
+.picProfWp{
+    padding: .2em;
+}
+
+.posteoHeader{
+    margin: 0;
+    padding: 0;
+    border: 0;
+ 
+}
+
+.imgPostWp{
+    width: 3em;
+    margin: 0 .5em 0 0;
+}
+
+.left{
+    float: left;
+}
+
+.datosPersonPost{
+    float: left;
+    width: calc(100% - 3.5em);
+    font-family: Helvetica, sans-serif;
+}
+
+#posteoForm{
+    overflow: hidden;
+    height: 55px;
+}
+
+#postArea{
+    width: 80%;
+    resize: none;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    margin-right: 0;
+    float: left;
+    height: 53px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.headerPostWp{
+     overflow: hidden;
+     /* padding: 0 0 1em 0; */
+     /* border-bottom: 1px solid #C7C7C7; */
+     /* margin: 0 0 1em 0; */
+}
+
+.datosPersonPost{
+    float: left;
+}
+
+.nombre {
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-family: 'Raleway Medium';
+    font-size: 14px;
+}
+
+.fecha{
+    font-size: .8em!important;
+    float: left;
+    margin: 0 .5em 0 0;
+    line-height: 2em!important;
+    color: #959A99;
+}
+
+.lineLikesComents{
+    padding: 1em 0 0 0;
+}
+
+.lineLikesComents a{
+    font-size: .9em;
+    margin: 0 .5em 0 0;
+    border: 1px solid;
+    padding: .5em .7em;
+    border-radius: 3em;
+    color: #0E1F82;
+    font-size: .7em;
+}
+/**/
+
+.img-posteo{
+    margin: 0 .5em 0 0;
+    width: 38px;
+}
+.chat-perfil{
+
+display: block;      color: black;      font-weight: bold;      font-family: 'Raleway Thin';      font-size: 16px;margin: 10px 0 10px 10px;}
+
+.chat-perfil img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+/*================================================ MIN-WIDTH: 480px  =======================================================*/
+
+
+@media (min-width: 480px) {
+    .header-perfil .nombre-header-perfil {
+        margin-left: -40px;
+    }
+
+    .header-perfil .info-header-perfil {
+        margin-left: -40px;
+    }
+
+    .tabs-home-title > a {
+        padding: 15px 4px!important;
+    }
+}
+
+
+/*================================================ MIN-WIDTH: 641px  =======================================================*/
+
+
+@media (min-width: 641px) {
+.buscador{width: 80%!important;}
+    .foto-perfil {
+        height: 100px;
+        width: 100px;
+    }
+
+    .header {
+    height: 200px;
+}
+
+    .perfil-name-nav {
+    margin: 10px;
+}
+
+    .header-perfil .nombre-header-perfil {
+        margin-left: -5px;
+    }
+
+    .header-perfil .info-header-perfil {
+        margin-left: -5px;
+    }
+
+    .tabs-home-title > a {
+        padding: 15px 4px!important;
+    }
+
+    img.perfilImg {
+    height: 35px;
+    float: left;
+    margin-top:5px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 740px) {
+    .acciones ul li:nth-child(even) {
+        background: #EC191A;
+        height: auto;
+        padding: 5px 45px;
+    }
+
+    .acciones ul li:nth-child(odd) {
+        background: #EC3E41;
+        height: auto;
+        padding: 5px 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================ MIN-WIDTH: 1024px  =======================================================*/
+
+
+@media (min-width: 1024px) {
+.buscador{width: 80%!important;}
+    .tabs-content {
+    width: 77%;
+    max-width: 1024px;
+    margin: 20px auto 0;
+}
+
+.acciones{
+    width: 100px;
+    position: fixed;
+    z-index: 10;
+    top: 200px;
+}
+
+.acciones ul{
+    list-style: none;
+    margin: 0;
+    display: block;
+}
+
+.acciones ul li{
+    text-align: center;
+}
+
+.acciones .texto{
+    
+}
+.acciones ul li:nth-child(even){background: #EC191A;height: auto;            padding: 5px 15px!important;}
+
+.acciones ul li:nth-child(odd){background: #EC3E41;      height: auto;      padding: 5px 15px;}
+
+.texto-acciones{
+    text-decoration: none;
+    display: block;
+    font-family: 'Raleway Bold';
+    font-size: 14px;
+    color: #6C8FC3;
+    background: white!important;
+    padding: 12px 0!important;
+    border-top: 2px solid #FF900B;
+}
+
+.perfil-name-nav {
+    margin: 10px;
+}
+    /*Header*/
+.header{
+    background: url('../img/cabecera.jpg') no-repeat center center;
+    height: 200px;
+    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.text-info-header{
+    float: left;
+    padding: 94px 0 0 0px;
+}
+
+.tabs-home{
+    width: 35%;
+    margin-left: 52%;
+    margin-top: -48px;
+}
+
+.tabs-home-title{
+    width: 33.33%;
+    border-top: 2px solid #FF900B;
+}
+
+.tabs-home-title > a{
+
+background-color: #273C5B!important;color: white!important;      font-size: 14px!important;font-family: 'Helvetica'!important;text-align: center;padding: 12px!important;}
+
+.tabs-home-title.active > a{
+
+background-color: #344B6D!important;}
+
+.info-perfil{/* position: absolute; */bottom: 10px;}
+
+.header-perfil .nombre-header-perfil{
+    float: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 1px 2px #000;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.header-perfil .info-header-perfil{      color: white;font-family: Helvetica, sans-serif;font-size: 16px;}
+
+.foto-perfil{
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-left: 50px;
+}
+/*Fin Header*/
+
+.fotos{
+    width: 400px;
+}
+
+.post{
+    padding: 1em;
+    margin: 1em 0;
+    /* border-top: 2px solid #FF900B; */
+}
+
+
+.bgWh{
+    background: white;
+}
+
+
+.headerPostWp{
+     overflow: hidden;
+     padding: 0 0 1em 0;
+     border-bottom: 1px solid #C7C7C7;
+     margin: 0 0 1em 0;
+}
+
+
+.datosPersonPost{
+    float: left;
+     width: calc(100% - 3.5em);
+}
+
+.datosPersonPost a img{
+    width: 17px;
+}
+
+.nombre {
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-family: Raleway;
+    font-size: .9em;
+
+}
+
+.content p{
+    line-height: 1.3em;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    margin: 0;
+}
+
+.content img{
+    width: 100%;
+}
+
+
+.picProfWp{
+    padding: .2em;
+}
+
+.posteoHeader{
+    margin: 0;
+    padding: 0;
+    border: 0;
+ 
+}
+
+.imgPostWp{
+    width: 3em;
+    margin: 0 .5em 0 0;
+}
+
+.left{
+    float: left;
+}
+
+.datosPersonPost{
+    float: left;
+     width: calc(100% - 3.5em);
+}
+
+#posteoForm{
+    overflow: hidden;
+    height: 55px;
+}
+
+#postArea{
+    width: 80%;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.headerPostWp{
+     overflow: hidden;
+     /* padding: 0 0 1em 0; */
+     /* border-bottom: 1px solid #C7C7C7; */
+     /* margin: 0 0 1em 0; */
+}
+
+.datosPersonPost{
+    float: left;
+}
+
+.nombre {
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-family: 'Raleway Medium';
+    font-size: 14px;
+}
+
+.fecha{
+    font-size: .8em!important;
+    float: left;
+    margin: 0 .5em 0 0;
+    line-height: 2em!important;
+    color: #959A99;
+}
+
+.lineLikesComents{
+    padding: 1em 0 0 0;
+}
+
+.lineLikesComents a{
+    font-size: .9em;
+    margin: 0 .5em 0 0;
+    border: 1px solid;
+    padding: .5em .7em;
+    border-radius: 3em;
+    color: #0E1F82;
+    font-size: .7em;
+}
+/**/
+
+.img-posteo{
+    margin: 0 .5em 0 0;
+    width: 38px;
+}
+.chat-perfil{
+
+display: block;      color: black;      font-weight: bold;      font-family: 'Raleway Thin';      font-size: 14px;margin: 0 0 10px 0;}
+
+.chat-perfil img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+}

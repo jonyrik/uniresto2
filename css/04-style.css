@@ -1,0 +1,1444 @@
+/*Style AMIGOS*/
+
+
+/*General*/
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../font/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('../font/Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url('../font/raleway_thin.ttf') format('truetype');
+}
+
+body{
+    font-size: 16px;
+    background: #EBF0FD;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*Fin General*/
+
+/*Nav*/
+.top-bar{
+    background-color: #ED0707;
+}
+
+.top-bar-section ul li{
+    background-color: #ff900b;
+    text-align: center;
+}
+
+.top-bar.expanded .title-area {
+    background: #ff900b;
+}
+
+.top-bar.expanded .toggle-topbar a span::after {
+    box-shadow: 0 0 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
+}
+
+.buscador{
+    background-color: #ff900b!important;
+    width: 80%!important;
+    box-shadow: none!important;
+    float: left!important;
+    border: 0!important;
+    color: white!important;
+    top: 0!important;
+    border-radius: 15px!important;
+}
+
+img.perfilImg{
+    height: 35px;
+    float: left;
+}
+
+.img-post{
+    margin-top: 8px;
+    margin-right: 50px;
+}
+
+.icon-nav-bar{
+    margin-top: 8px;
+    margin-right: 10px;
+}
+/*Fin Nav*/
+
+/*Portada*/
+
+/*Fin Portada*/
+
+.tablero-izq{
+    position: fixed;
+    top: 0 ;
+}
+
+
+.perfil-name-nav{
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    font-family: 'Raleway Medium';
+    float: left;
+    margin-top: 6px;
+    text-transform: none;
+}
+
+.container-buscador{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 15px;
+    top: 0.53125rem;
+}
+
+.img-buscar{
+    width: 20%;background: url('../img/buscar.svg') center no-repeat;background-size: 21px;box-shadow: none;padding: 0;border-left: none;float: left;top: 0!important;border: 0;}
+
+    .div-buscador{
+        width: 200px;
+    }
+    .acciones{
+        width: 100%;
+        /* position: fixed; */
+        z-index: 10;
+        /* top: 200px; */
+    }
+
+    .acciones ul{
+        list-style: none;
+        margin: 0;
+        display: inline-flex;
+    }
+
+    #subir-foto{
+        width: 20%;
+        margin: 0;
+        float: left;
+        height: 100%;
+        box-shadow: none;
+        border: 0px;
+        background: url('../img/camara.svg') center no-repeat;
+        background-size: 20px;
+    }
+    .post-form{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #C7C7C7;
+    }
+    #subir-foto img{
+        width: 5px;}
+
+        .acciones ul li{
+            text-align: center;
+        }
+
+        .acciones .texto{
+
+        }
+
+        .sin-padding{
+            padding: 0!important;
+        }
+
+
+
+        .acciones ul li:nth-child(even){
+
+            background: #F4A60C;            padding: 5px 15px;height: auto;}
+
+            .acciones ul li:nth-child(odd){
+
+                background: #F1C055;      height: auto;      padding: 5px 15px;}
+
+                .texto-acciones{
+                    text-decoration: none;
+                    display: none;
+                    font-family: 'Raleway Bold';
+                    font-size: 14px;
+                    color: #6C8FC3;
+                    background: white;
+                    padding: 12px 0;
+                    border-top: 2px solid #FF900B;
+                }
+
+                /*Header*/
+                .header{
+                    background: url('../img/cabecera.jpg');
+                    background-position: center;
+                    max-width: 100%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 150px;
+                    position: relative;
+                    box-shadow: 0px -50px 110px #252525 inset;
+                }
+
+                .text-info-header{
+                    padding-top: 25px;
+                    padding-left: 0;
+                }
+
+                .tabs-home{
+                    width: 100%;
+                    height: auto;
+                }
+
+                .tabs-home-title{
+                    width: 33.33%;
+                    border-top: 2px solid #FF900B;
+                }
+
+                .tabs-home-title > a{
+
+                    background-color: #273C5B!important;color: white!important;      font-size: 14px!important;font-family: 'Helvetica'!important;text-align: center;padding: 10px 4px!important;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;      white-space:nowrap;      text-overflow: ellipsis;}
+
+                    .tabs-home-title.active > a{
+
+                        background-color: #344B6D!important;}
+
+                        .info-perfil{
+                            position: absolute;bottom: 20px;}
+
+                            .header-perfil .nombre-header-perfil{
+
+                                font-size: 14px;color: white;text-shadow: 1px 0 black;padding: 0;margin: 0;margin-left: -10px;font-family: 'Raleway Bold';}
+
+                                .header-perfil .info-header-perfil{
+                                    color: white;
+                                    font-size: 12px;
+                                    padding: 0;
+                                    margin: 0;
+                                    margin-left: -10px;
+                                    font-family: 'Raleway Bold';
+                                }
+
+                                .foto-perfil{
+                                    height: 90px;
+                                    width: 90px;
+                                    border-radius: 100%;
+                                    border: 2px solid white;
+                                }
+                                /*Fin Header*/
+
+                                .fotos{
+                                    width: 400px;
+                                }
+
+                                .post{
+                                    padding: 1em;
+                                    margin: 1em 0;
+                                    border-top: 2px solid #FF900B;
+                                }
+
+
+                                .bgWh{
+                                    background: white;
+                                }
+
+
+                                .headerPostWp{
+                                    overflow: hidden;
+                                    padding: 0 0 1em 0;
+                                    border-bottom: 1px solid #C7C7C7;
+                                    margin: 0 0 1em 0;
+                                }
+
+
+                                .datosPersonPost{
+                                    float: left;
+                                    width: calc(100% - 3.5em);
+                                }
+
+                                .datosPersonPost a img{
+                                    width: 17px;
+                                }
+
+                                .nombre {
+                                    display: block;
+                                    color: black;
+                                    font-weight: bold;
+                                    font-family: Raleway;
+                                    font-size: .9em;
+
+                                }
+
+                                .content p{
+                                    line-height: 1.3em;
+                                    font-family: 'Helvetica';
+                                    font-size: 14px;
+                                    margin: 0;
+                                }
+
+                                .content img{
+                                    width: 100%;
+                                }
+
+
+                                .picProfWp{
+                                    padding: .2em;
+                                }
+
+                                .posteoHeader{
+                                    margin: 0;
+                                    padding: 0;
+                                    border: 0;
+
+                                }
+
+                                .imgPostWp{
+                                    width: 3em;
+                                    margin: 0 .5em 0 0;
+                                }
+
+                                .left{
+                                    float: left;
+                                }
+
+                                .datosPersonPost{
+                                    float: left;
+                                    width: calc(100% - 3.5em);
+                                }
+
+                                #posteoForm{
+                                    overflow: hidden;
+                                    height: 55px;
+                                }
+
+                                #postArea{
+                                    width: 80%;
+                                    resize: none;
+                                    border: 0;
+                                    box-shadow: none;
+                                    margin: 0;
+                                    margin-right: 0;
+                                    float: left;
+                                    height: 53px;
+                                }
+
+                                .overflow{
+                                    overflow: hidden;
+                                }
+
+                                .headerPostWp{
+                                    overflow: hidden;
+                                    /* padding: 0 0 1em 0; */
+                                    /* border-bottom: 1px solid #C7C7C7; */
+                                    /* margin: 0 0 1em 0; */
+                                }
+
+                                .datosPersonPost{
+                                    float: left;
+                                }
+
+                                .nombre {
+                                    display: block;
+                                    color: black;
+                                    font-weight: bold;
+                                    font-family: 'Raleway Medium';
+                                    font-size: 14px;
+                                }
+
+                                .fecha{
+                                    font-size: .8em!important;
+                                    float: left;
+                                    margin: 0 .5em 0 0;
+                                    line-height: 2em!important;
+                                    color: #959A99;
+                                }
+
+                                .lineLikesComents{
+                                    padding: 1em 0 0 0;
+                                }
+
+                                .lineLikesComents a{
+                                    font-size: .9em;
+                                    margin: 0 .5em 0 0;
+                                    border: 1px solid;
+                                    padding: .5em .7em;
+                                    border-radius: 3em;
+                                    color: #0E1F82;
+                                    font-size: .7em;
+                                }
+                                /**/
+
+                                .img-posteo{
+                                    margin: 0 .5em 0 0;
+                                    width: 38px;
+                                }
+                                .chat-perfil{
+
+                                    display: block;      color: black;      font-weight: bold;      font-family: 'Raleway Thin';      font-size: 16px;margin: 10px 0 10px 10px;}
+
+                                    .chat-perfil img{
+                                        border-radius: 100%;
+                                        width: 40px;
+                                        height: 40px;
+                                        margin-right: 20px;
+                                    }
+
+
+
+
+
+
+                                    /*================================================ MIN-WIDTH: 480px  =======================================================*/
+
+
+                                    @media (min-width: 480px) {
+                                        .header-perfil .nombre-header-perfil {
+                                            margin-left: -40px;
+                                        }
+
+                                        .header-perfil .info-header-perfil {
+                                            margin-left: -40px;
+                                        }
+
+                                        .tabs-home-title > a {
+                                            padding: 15px 4px!important;
+                                        }
+
+                                        .amigos .box .cont-comun .botones .boton {
+                                            float: left;
+                                            font-size: 0.8rem;
+                                            color: #959cae;
+                                            line-height: 2.4;
+                                            margin-right: 0.5rem;
+                                            cursor: pointer;
+                                        }
+
+                                        .amigos .box .cont-comun .botones .boton.tilde, .amigos .box .cont-comun .botones .boton.cruz {
+                                          font-size: 1.7rem;
+                                          line-height: 0;
+                                          color: #CB0606;
+                                        }
+                                        .amigos .box .cont-comun .botones .boton.tilde:hover, .amigos .box .cont-comun .botones .boton.cruz:hover {
+                                          color: #077000;
+                                        }
+                                    }
+
+
+                                    /*================================================ MIN-WIDTH: 641px  =======================================================*/
+
+
+                                    @media (min-width: 641px) {
+                                        .buscador{width: 80%!important;}
+                                        .foto-perfil {
+                                            height: 100px;
+                                            width: 100px;
+                                        }
+
+                                        .header {
+                                            height: 200px;
+                                        }
+
+                                        .perfil-name-nav {
+                                            margin: 10px;
+                                        }
+
+                                        .header-perfil .nombre-header-perfil {
+                                            margin-left: -5px;
+                                        }
+
+                                        .header-perfil .info-header-perfil {
+                                            margin-left: -5px;
+                                        }
+
+                                        .tabs-home-title > a {
+                                            padding: 15px 4px!important;
+                                        }
+
+                                        img.perfilImg {
+                                            height: 35px;
+                                            float: left;
+                                            margin-top:5px;
+                                        }
+                                    }
+
+
+
+
+
+
+
+
+
+
+                                    @media (min-width: 740px) {
+                                        .acciones ul li:nth-child(even) {
+                                            background: #F4A60C;
+                                            height: auto;
+                                            padding: 5px 45px;
+                                        }
+
+                                        .acciones ul li:nth-child(odd) {
+                                            background: #F1C055;
+                                            height: auto;
+                                            padding: 5px 45px;
+                                        }
+                                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    /*================================================ MIN-WIDTH: 1024px  =======================================================*/
+
+
+                                    @media (min-width: 1024px) {
+                                        .buscador{width: 80%!important;}
+                                        .tabs-content {
+                                            width: 77%;
+                                            max-width: 1024px;
+                                            margin: 20px auto 0;
+                                        }
+
+                                        .acciones{
+                                            width: 100px;
+                                            position: fixed;
+                                            z-index: 10;
+                                            top: 200px;
+                                        }
+
+                                        .acciones ul{
+                                            list-style: none;
+                                            margin: 0;
+                                            display: block;
+                                        }
+
+                                        .acciones ul li{
+                                            text-align: center;
+                                        }
+
+                                        .acciones .texto{
+
+                                        }
+                                        .acciones ul li:nth-child(even){
+
+                                            background: #F4A60C;height: auto;            padding: 5px 15px!important;}
+
+                                            .acciones ul li:nth-child(odd){
+
+                                                background: #F1C055;      height: auto;      padding: 5px 15px;}
+
+                                                .texto-acciones{
+                                                    text-decoration: none;
+                                                    display: block;
+                                                    font-family: 'Raleway Bold';
+                                                    font-size: 14px;
+                                                    color: #6C8FC3;
+                                                    background: white!important;
+                                                    padding: 12px 0!important;
+                                                    border-top: 2px solid #FF900B;
+                                                }
+
+                                                .perfil-name-nav {
+                                                    margin: 10px;
+                                                }
+                                                /*Header*/
+                                                .header{
+                                                    background: url('../img/cabecera.jpg') no-repeat center center;
+                                                    height: 200px;
+                                                    margin: 0;
+                                                    -webkit-background-size: cover;
+                                                    -moz-background-size: cover;
+                                                    -o-background-size: cover;
+                                                    background-size: cover;
+                                                    position: relative;
+                                                    box-shadow: 0px -50px 110px #252525 inset;
+                                                }
+
+                                                .medium-offset-2 {
+                                                  padding-top: 85px;
+                                                }
+
+                                                .text-info-header{
+                                                    padding: 130px 0 0 0px;
+                                                    padding-left: 0;
+                                                }
+
+                                                .tabs-home{
+                                                    width: 35%;
+                                                    margin-left: 52%;
+                                                    margin-top: -48px;
+                                                }
+
+                                                .tabs-home-title{
+                                                    width: 33.33%;
+                                                    border-top: 2px solid #FF900B;
+                                                }
+
+                                                .tabs-home-title > a{
+
+                                                    background-color: #273C5B!important;color: white!important;      font-size: 14px!important;font-family: 'Helvetica'!important;text-align: center;padding: 12px!important;}
+
+                                                    .tabs-home-title.active > a{
+
+                                                        background-color: #344B6D!important;}
+
+                                                        .info-perfil{
+                                                            position: absolute;bottom: -25px;}
+
+                                                            .header-perfil .nombre-header-perfil{
+
+                                                                font-size: 18px;color: white;text-shadow: 1px 0 black;padding: 0;margin: 0;margin-left: 40px;font-family: 'Raleway Bold';}
+
+                                                                .header-perfil .info-header-perfil{
+                                                                    color: white;
+                                                                    font-size: 14px;
+                                                                    padding: 0;
+                                                                    margin: 0;
+                                                                    margin-left: 40px;
+                                                                    font-family: 'Raleway Bold';
+                                                                }
+
+                                                                .foto-perfil{
+                                                                    width: 140px;
+                                                                    height: 140px;
+                                                                    border-radius: 100%;
+                                                                    border: 2px solid white;
+                                                                    margin-left: 50px;
+                                                                }
+                                                                /*Fin Header*/
+
+                                                                .fotos{
+                                                                    width: 400px;
+                                                                }
+
+                                                                .post{
+                                                                    padding: 1em;
+                                                                    margin: 1em 0;
+                                                                    border-top: 2px solid #FF900B;
+                                                                }
+
+
+                                                                .bgWh{
+                                                                    background: white;
+                                                                }
+
+
+                                                                .headerPostWp{
+                                                                    overflow: hidden;
+                                                                    padding: 0 0 1em 0;
+                                                                    border-bottom: 1px solid #C7C7C7;
+                                                                    margin: 0 0 1em 0;
+                                                                }
+
+
+                                                                .datosPersonPost{
+                                                                    float: left;
+                                                                    width: calc(100% - 3.5em);
+                                                                }
+
+                                                                .datosPersonPost a img{
+                                                                    width: 17px;
+                                                                }
+
+                                                                .nombre {
+                                                                    display: block;
+                                                                    color: black;
+                                                                    font-weight: bold;
+                                                                    font-family: Raleway;
+                                                                    font-size: .9em;
+
+                                                                }
+
+                                                                .content p{
+                                                                    line-height: 1.3em;
+                                                                    font-family: 'Helvetica';
+                                                                    font-size: 14px;
+                                                                    margin: 0;
+                                                                }
+
+                                                                .content img{
+                                                                    width: 100%;
+                                                                }
+
+
+                                                                .picProfWp{
+                                                                    padding: .2em;
+                                                                }
+
+                                                                .posteoHeader{
+                                                                    margin: 0;
+                                                                    padding: 0;
+                                                                    border: 0;
+
+                                                                }
+
+                                                                .imgPostWp{
+                                                                    width: 3em;
+                                                                    margin: 0 .5em 0 0;
+                                                                }
+
+                                                                .left{
+                                                                    float: left;
+                                                                }
+
+                                                                .datosPersonPost{
+                                                                    float: left;
+                                                                    width: calc(100% - 3.5em);
+                                                                }
+
+                                                                #posteoForm{
+                                                                    overflow: hidden;
+                                                                    height: 55px;
+                                                                }
+
+                                                                #postArea{
+                                                                    width: 80%;
+                                                                }
+
+                                                                .overflow{
+                                                                    overflow: hidden;
+                                                                }
+
+                                                                .headerPostWp{
+                                                                    overflow: hidden;
+                                                                    /* padding: 0 0 1em 0; */
+                                                                    /* border-bottom: 1px solid #C7C7C7; */
+                                                                    /* margin: 0 0 1em 0; */
+                                                                }
+
+                                                                .datosPersonPost{
+                                                                    float: left;
+                                                                }
+
+                                                                .nombre {
+                                                                    display: block;
+                                                                    color: black;
+                                                                    font-weight: bold;
+                                                                    font-family: 'Raleway Medium';
+                                                                    font-size: 14px;
+                                                                }
+
+                                                                .fecha{
+                                                                    font-size: .8em!important;
+                                                                    float: left;
+                                                                    margin: 0 .5em 0 0;
+                                                                    line-height: 2em!important;
+                                                                    color: #959A99;
+                                                                }
+
+                                                                .lineLikesComents{
+                                                                    padding: 1em 0 0 0;
+                                                                }
+
+                                                                .lineLikesComents a{
+                                                                    font-size: .9em;
+                                                                    margin: 0 .5em 0 0;
+                                                                    border: 1px solid;
+                                                                    padding: .5em .7em;
+                                                                    border-radius: 3em;
+                                                                    color: #0E1F82;
+                                                                    font-size: .7em;
+                                                                }
+                                                                /**/
+
+                                                                .img-posteo{
+                                                                    margin: 0 .5em 0 0;
+                                                                    width: 38px;
+                                                                }
+                                                                .chat-perfil{
+
+                                                                    display: block;      color: black;      font-weight: bold;      font-family: 'Raleway Thin';      font-size: 14px;margin: 0 0 10px 0;}
+
+                                                                    .chat-perfil img{
+                                                                        border-radius: 100%;
+                                                                        width: 40px;
+                                                                        height: 40px;
+                                                                        margin-right: 8px;
+                                                                    }
+
+
+                                                                    /* secciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Amigos */
+
+                                                                    .amigos .tabs-content { width: 100%; }
+                                                                    .amigos .tabs-amigos {
+                                                                        float: right;
+                                                                        margin: 0 1rem 35px 0 !important;
+                                                                        line-height: 1;
+                                                                    }
+                                                                    .amigos .tabs dd.active > a, .amigos .tabs .tab-title.active > a {
+                                                                        background-color: transparent;
+                                                                        color: #777;
+                                                                        font-weight: bold;
+                                                                        padding-bottom: 10px;
+                                                                        border-bottom: thin solid;
+                                                                    }
+                                                                    .amigos .tabs dd > a, .amigos .tabs .tab-title > a {
+                                                                        display: block;
+                                                                        background-color: transparent;
+                                                                        color: #777;
+                                                                        font-size: 1.1rem;
+                                                                        padding: 0;
+                                                                        margin: 0 0 0 1.5rem;
+                                                                    }
+
+                                                                    .amigos .columns {
+                                                                        padding-left: 0;
+                                                                        display: flex;
+                                                                    }
+/*.amigos .large-4:last-child .columns {
+padding-right: 0;
+} */
+.amigos .enc {
+    display: table;
+    width: 100%;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.amigos .enc input[type="search"] {
+    border: none;
+    float: right;
+    width: 32%;
+    margin: 0px;
+    border-radius: 10px;
+    color: #a9b1bc;
+}
+.amigos .enc .btn-buscar {
+    background: url('../img/buscar.svg') no-repeat #ED0707;
+    border: none;
+    position: absolute;
+    padding-right: 2rem;
+    right: 1rem;
+    border-radius: 0px 10px 10px 0px;
+    height: 2.25rem;
+    padding-top: 1rem;
+    background-position: center;
+    top: 1px;
+    cursor: pointer;
+    transition: ease 0.25s;
+}
+.amigos .enc .btn-buscar:hover {
+    background: url('../img/buscar.svg') no-repeat #F4A60C;
+    background-position: center;
+}
+
+
+.amigos .box {
+    padding: 0.7em;
+    margin: 1em 0px 0;
+}
+.amigos .box .content { position: relative; }
+/*.amigos .large-4 .row:last-child .box {
+margin: 1em 0;
+}*/
+.amigos .box .picProfWp{
+    width: 50%;
+    padding: 0;
+    margin-right: 1em;
+}
+.amigos .box .datos {
+    float: left;
+    width: 44%;
+    padding-left: 10px;
+    border-left: medium solid #ED0707;
+}
+
+.amigos .box h4 {
+    font-size: 1.1rem;
+    color: #4d4d4d;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.amigos .box .cont-comun {
+    float: left;
+    width: 44%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.amigos .box p.comun {
+    font-size: 0.8rem;
+    color: #959cae;
+    line-height: 1.2;
+    margin: 34px 0 10px;
+}
+.amigos .box p.comun span {color: #ED0707;}
+
+.amigos .box select, .amigos .filtros select {
+    border: medium none;
+    background-color: #EBF0FD;
+    height: 1.9rem;
+    padding: 0.3rem;
+    margin: 0;
+}
+.amigos .cont-filtros {
+    width: 100%;
+    display: table;
+}
+.amigos .filtros {
+    float: right;
+    width: 58%;
+    margin-right: 0.5rem;
+    position: relative;
+}
+.amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+    content: "Filtros";
+    position: absolute;
+    top: -36px;
+    left: 145px;
+    background: #a8b5d5;
+    color: white;
+    display: table;
+    padding: 0.35rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*.amigos .filtros:hover::after { opacity: 0.8; }*/
+.amigos .filtros .tri {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #a8b5d5;
+    left: 46%;
+    bottom: -5px;
+    transition: ease 0.25s;
+}
+
+.amigos .filtros .cont-select {
+    background: white;
+    display: none;
+    width: 32%;
+    float: left;
+    padding: 0.8rem;
+    margin: 15px 0px 14px 5px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2) inset;
+}
+.amigos .filtros select {
+}
+
+.amigos .box .cont-comun .botones .boton {
+    float: left;
+    font-size: 0.7rem;
+    color: #959cae;
+    line-height: 2;
+    /* margin-right: 0.5rem; */
+    cursor: pointer;
+}
+
+.amigos .box .cont-comun .botones .enviada {
+    background: #EBF0FD;
+    color: inherit;
+    position: relative;
+    padding: 0.1rem 0.8rem 0.1rem 0.3rem;
+}
+.amigos .box .cont-comun .botones .enviada .cruz {
+    position: absolute;
+    top: 0px;
+    right: -18px;
+    background: white none repeat scroll 0% 0%;
+    border-radius: 30px;
+}
+.amigos .box .cont-comun .botones .boton.enviar {
+    color: #ED0707;
+    border: thin solid;
+    font-weight: bold;
+    padding: 0px 1rem;
+    border-radius: 10px;
+    font-family: Helvetica;
+    transition: ease 0.25s;
+}
+.amigos .box .cont-comun .botones .boton.enviar:hover {
+    color: white;
+    background: #ED0707;
+    border: 1px solid #ED0707;
+}
+
+
+}
+
+/*================================================ MAX-WIDTH: 1280px  =======================================================*/
+
+
+@media (max-width: 1281px) {
+
+    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+        left: 130px;
+    }
+
+    .amigos .box .cont-comun .botones .enviada {
+        padding: 0rem 0.8rem 0rem 0.3rem;
+    }
+
+    .amigos .box .cont-comun .botones .enviada .cruz {
+        right: -14px;
+        width: 20%;
+        top: -2px;
+    }
+
+    .amigos .box .cont-comun .botones .boton.enviar {
+        padding: 0px 0.8rem;
+    }
+
+}
+
+
+/*================================================ MAX-WIDTH: 1024px  =======================================================*/
+
+
+@media (max-width: 1025px) {
+
+/*.amigos .columns + .columns:last-child {
+display: none;
+}*/
+
+.amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+    left: 405px;
+}
+
+.amigos .filtros {
+    width: 58%;
+    margin-right: 0rem;
+}
+
+}
+
+
+/*================================================ MAX-WIDTH: 1280px  =======================================================*/
+
+
+@media (max-width: 1280px) {
+
+    .acciones {display: inline;}
+
+    .amigos .medium-6 {
+        width: 50%;
+    }
+    /* secciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Amigos */
+
+    .amigos.tabs-content {
+        padding: 0 0 0 1rem;
+    }
+
+    .amigos .tabs-content { width: 100%; }
+    .amigos .tabs-amigos {
+        float: right;
+        margin: 1rem 1rem 35px 0 !important;
+        line-height: 1;
+    }
+    .amigos .tabs dd.active > a, .amigos .tabs .tab-title.active > a {
+        background-color: transparent;
+        color: #253c5b;
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: thin solid;
+    }
+    .amigos .tabs dd > a, .amigos .tabs .tab-title > a {
+        display: block;
+        background-color: transparent;
+        color: #253c5b;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0 0 0 1.5rem;
+    }
+
+    .amigos .columns {
+        padding-left: 0;
+        display: block;
+/*float: none;
+display: flex;*/
+}
+/*.amigos .columns .columns {
+display: block;
+float: left;
+}*/
+/*.amigos .large-4:last-child .columns {
+padding-right: 0;
+} */
+
+
+.column + .column:last-child, .columns + .column:last-child, .column + .columns:last-child, .columns + .columns:last-child {
+    float: left;
+}
+
+.amigos .enc {
+    display: table;
+    width: 100%;
+    padding-right: 1rem;
+    position: relative;
+}
+.amigos .enc h3 {
+    font-size: 0.8rem;
+    color: #62738d;
+    margin: 10px 0 0;
+    float: left;
+}
+.amigos .enc input[type="search"] {
+    border: none;
+    float: right;
+    width: 32%;
+    margin: 0px;
+    border-radius: 10px;
+    color: #a9b1bc;
+}
+.amigos .enc .btn-buscar {
+    background: url('../img/buscar.svg') no-repeat #ED0707;
+    border: none;
+    position: absolute;
+    padding-right: 2rem;
+    right: 0rem;
+    border-radius: 0px 10px 10px 0px;
+    height: 2.25rem;
+    padding-top: 1rem;
+    background-position: center;
+    top: 1px;
+    cursor: pointer;
+    transition: ease 0.25s;
+}
+.amigos .enc .btn-buscar:hover {
+    background: url('../img/buscar.svg') no-repeat #ED0707;
+    background-position: center;
+}
+
+
+.amigos .box {
+    padding: 0.7em;
+    margin: 1em 0px 0;
+}
+.amigos .box .content { position: relative; }
+/*.amigos .large-4 .row:last-child .box {
+margin: 1em 0;
+}*/
+.amigos .box .picProfWp{
+    width: 50%;
+    padding: 0;
+    margin-right: 1em;
+}
+.amigos .box .datos {
+    float: left;
+    width: 44%;
+    padding-left: 10px;
+    border-left: medium solid #CB0606;
+}
+
+.amigos .box h4 {
+    font-size: 1.1rem;
+    color: #4d4d4d;
+    line-height: 1.2;
+    margin: 0;
+}
+.amigos .box h5 {
+    font-size: 0.8rem;
+    color: #959cae;
+    line-height: 1.2;
+    margin: 5px 0 0;
+}
+
+.amigos .box .cont-comun {
+    float: left;
+    width: 44%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.amigos .box p.comun {
+    font-size: 0.8rem;
+    color: #959cae;
+    line-height: 1.2;
+    margin: 34px 0 10px;
+}
+.amigos .box p.comun span { color: #CB0606; }
+
+.amigos .box select, .amigos .filtros select {
+    border: medium none;
+    background-color: #EBF0FD;
+    height: 1.9rem;
+    padding: 0.3rem;
+    margin: 0;
+}
+.amigos .cont-filtros {
+    width: 100%;
+    display: table;
+}
+.amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+    left: 105px;
+}
+
+.amigos .filtros {
+    position: relative;
+    float: right;
+}
+.amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+    content: "Filtros";
+    position: absolute;
+    top: -36px;
+    /*left: 380px;*/
+    left: 115px;
+    background: #a8b5d5;
+    color: white;
+    display: table;
+    padding: 0.35rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*.amigos .filtros:hover::after { opacity: 0.8; }*/
+.amigos .filtros .tri {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #a8b5d5;
+    left: 46%;
+    bottom: -5px;
+    transition: ease 0.25s;
+}
+
+.amigos .filtros .cont-select {
+    background: white;
+    display: none;
+    width: 32%;
+    float: left;
+    padding: 0.8rem;
+    margin: 15px 0px 14px 5px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2) inset;
+}
+.amigos .filtros select {
+}
+
+.amigos .box .cont-comun .botones .boton {
+    float: left;
+    font-size: 0.8rem;
+    color: #959cae;
+    line-height: 2.4;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.amigos .box .cont-comun .botones .boton.tilde, .amigos .box .cont-comun .botones .boton.cruz {
+  font-size: 2rem;
+  line-height: 0;
+  color: #CB0606;
+}
+.amigos .box .cont-comun .botones .boton.tilde:hover, .amigos .box .cont-comun .botones .boton.cruz:hover {
+  color: #077000;
+}
+
+.amigos .box .cont-comun .botones .enviada {
+    background: #EBF0FD;
+    color: inherit;
+    position: relative;
+    padding: 0.1rem 0.8rem 0.1rem 0.3rem;
+}
+.amigos .box .cont-comun .botones .enviada .cruz {
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    background: white none repeat scroll 0% 0%;
+    border-radius: 30px;
+}
+.amigos .box .cont-comun .botones .boton.enviar {
+    color: #CB0606;
+    border: thin solid;
+    padding: 0px 1rem;
+    border-radius: 10px;
+    transition: ease 0.25s;
+}
+.amigos .box .cont-comun .botones .boton.enviar:hover {
+    color: white;
+    background: #077000;
+    border-color: #077000;
+}
+
+
+}
+
+/*================================================ MAX-WIDTH: 1200px  =======================================================*/
+
+
+@media (max-width: 1200px) {
+
+    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 { left: 100px; }
+
+}
+
+/*================================================ MAX-WIDTH: 1120px  =======================================================*/
+
+
+@media (max-width: 1120px) {
+
+    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 { left: 75px; }
+
+}
+
+/*================================================ MAX-WIDTH: 800px  =======================================================*/
+
+
+@media (max-width: 800px) {
+
+    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 { left: 40px; }
+
+}
+
+/*================================================ MAX-WIDTH: 679px  =======================================================*/
+
+
+@media (max-width: 679px) {
+
+    .amigos .filtros {
+        width: 100%;
+    }
+
+}
+
+/*================================================ MAX-WIDTH: 640px  =======================================================*/
+
+
+@media (max-width: 641px) {
+
+    .amigos .tabs dd > a, .amigos .tabs .tab-title > a {
+        margin: 0px 0px 0px 0.7rem;
+    }
+
+    .amigos .cont-filtros {
+        width: 99%;
+    }
+
+    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+        left: 285px;
+    }
+
+}
+
+
+/*================================================ MAX-WIDTH: 678px  =======================================================*/
+
+
+@media (max-width: 678px) {
+
+    /* Seccion Amigos */
+
+    .amigos .medium-6 {
+        width: 100%;
+    }
+
+    .amigos .tabs-amigos {
+        float: none;
+        margin: 1rem 1rem 0px 0px !important;
+    }
+
+    .amigos .tabs dd, .amigos .tabs .tab-title {
+        float: none;
+        margin-bottom: 1rem !important;
+    }
+
+    .amigos .tabs dd.active > a, .amigos .tabs .tab-title.active > a {
+        padding-bottom: 1rem;
+    }
+
+    .amigos .enc h3 {
+        float: none;
+        margin: 10px 0px;
+    }
+
+    .amigos .enc  .cont-search {
+      position: relative;
+      display: table;
+      width: 100%;
+    }
+
+    .amigos .enc input[type="search"] {
+        float: none;
+        width: 100%;
+    }
+
+    /*.amigos .enc .btn-buscar {top: 30px;}*/
+
+
+    .amigos .box .cont-comun .botones .enviada {
+        font-size: 0.7rem;
+    }
+
+    .amigos .box .cont-comun .botones .enviada .cruz {
+        right: -14px;
+        width: 24%;
+    }
+
+    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+        top: 8px;
+        position: relative;
+        left: 0px;
+    }
+
+    .amigos .filtros .cont-select {
+        width: 93%;
+        float: none;
+    }
+
+    .amigos .box .cont-comun .botones .boton.enviar {
+        padding: 0px 0.4rem;
+    }
+}
+
+/*================================================ MAX-WIDTH: 320px  =======================================================*/
+
+@media (max-width: 425px) {
+
+    /* Seccion Amigos */
+
+
+    /*.amigos .enc .btn-buscar {top: 51px;}*/
+
+    .amigos #panel3-4 .enc .btn-buscar {
+        top: 30px;
+    }
+
+}
+
+
+
+/*FIN style AMIGOS*/
+
+
+/*style CARGA PRODUCTOS*/
+
+/*FIN style CARGA PRODUCTOS*/
+
+.info-perfil{
+position: absolute;bottom: 20px;}
+
+.header-perfil .nombre-header-perfil{padding: 0;margin: 0;margin-left: -10px;float: left;     font-family: Helvetica, sans-serif;     font-size: 20px;     color: white;     text-shadow: 0 1px 2px #000;     width: 100%;     margin-bottom: 6px;}
+
+.header-perfil .info-header-perfil{
+    padding: 0;
+    margin: 0;
+    margin-left: -10px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.foto-perfil{
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin: 0;
+    float: right;
+}

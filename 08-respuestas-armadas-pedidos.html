@@ -1,0 +1,186 @@
+
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation | Welcome</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css" />
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/site.js"></script>
+  <link rel="stylesheet" href="css/08-style.css">
+  <link rel="stylesheet" href="css/style-global.css">
+</head>
+
+<body>
+
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Uniresto</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span><img class="perfilImg" src="img/fotoPerfil.png" alt="Foto de Perfil"><p class="perfil-name-nav">Andrés Maldonado</p></span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><img class="perfilImg show-for-medium-up" src="img/fotoPerfil.png" alt="Foto de Perfil"></li>
+      <li><p class="perfil-name-nav show-for-medium-up">Andrés Maldonado</p></li>
+      <li><img class="img-post show-for-medium-up" src="img/post.svg" alt=""></li>
+      <li><img class="icon-nav-bar" src="img/buscar.svg" alt=""><img class="icon-nav-bar" src="img/buscar.svg" alt=""><img class="icon-nav-bar" src="img/buscar.svg" alt=""></li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><form action="" ><input type="text"class="buscador"><input class="img-buscar" type="button"></form></li>
+    </ul>
+  </section>
+</nav>
+
+<div class="acciones">
+    <ul>
+      <li class="texto-acciones">ACCIONES</li>
+      <li><a href="#"><img src="img/HOME.png" alt=""></a></li>
+      <li><a href="#"><img src="img/LOCAL.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+    </ul>
+  </div>
+<!-- Header -->
+  <header class="row header">
+    <div class="info-perfil columns small-12 medium-6">
+      <div class="row header-perfil">
+        <div class="columns small-4  medium-offset-2 medium-4 large-4">
+          <img class="foto-perfil" src="img/cara-perfil.jpg" alt="">
+        </div>
+        <div class="text-info-header columns small-8 medium-6">
+          <p class="nombre-header-perfil">ANDRES MALDONADO</p>
+          <p class="info-header-perfil">Barrio de Villa Pueyrredon</p>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- Fin Header -->
+
+<!-- Tab -->
+
+    <ul class="tabs tabs-home" data-tab role="tablist">
+      <li class="tab-title tabs-home-title active" role="presentation">
+        <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1">Muro</a>
+      </li>
+      <li class="tab-title tabs-home-title" role="presentation">
+        <a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2">Datos de Perfil</a>
+      </li>
+      <li class="tab-title tabs-home-title" role="presentation">
+        <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3">Amigos</a>
+      </li>
+    </ul>
+
+<!-- Fin Tab -->
+
+
+<div class="row">
+
+  <div class="medium-12 columns no-padding-left store-tab">
+    <!--<ul class="tabs vertical">-->
+    <ul class="mnu-resumen-pedido accordion tabs vertical" data-accordion>
+      <!--<li class="tab-title active">-->
+      <li class="accordion-navigation tab-title ">
+          <a href="#panel1a">PRODUCTOS PARA LLEVAR</a>
+          <div id="panel1a" class="content ">
+             <div class="item-submenu">
+              <a class="link-subitem" href=""><span> Solicitudes abiertas </span></a>
+            </div>
+            <div class="item-submenu">
+             <a class="link-subitem" href=""><span> Solicitudes finalizadas </span></a>
+            </div>
+          </div>
+      </li>
+      <li class="accordion-navigation tab-title active">
+          <a href="#panel2a">PEDIDOS POR DELIVERY</a>
+          <div id="panel2a" class="content active">
+             <div class="item-submenu">
+              <a class="link-subitem" href=""><span> Solicitudes abiertas </span></a>
+            </div>
+            <div class="item-submenu">
+             <a class="link-subitem" href=""><span> Solicitudes finalizadas </span></a>
+            </div>
+          </div>
+
+      </li>
+      <li class="tab-title "><a href="/store/info/"><i class="fa fa-info-circle"></i> COMER EN EL LOCAL</a></li>
+    </ul>
+    <div class="tabs-content">
+      <div class="content titulo-resumen-pedidos">
+        <!-- <div class="img-top-pedido-llevar">
+          <img src="img/img-resumen-pedido.png">
+        </div> -->
+        <div class="large-12 columns">
+          <h3 class="dotted-bottom"><img src="img/img-resumen-pedido.png" style="width:75px;">RESUMEN DE PEDIDOS</h3>
+        </div>
+      </div>
+      <div >
+
+        <div class="medium-9 large-10 columns">
+          <div class="row">
+              <!--<div id="demo"></div>-->
+              <div class="product_item">
+                  <div class="row">
+                    <div class="columns small-12" >
+                      <ul class="accordion" data-accordion="">
+                        <li class="accordion-navigation active">
+                          <a href="#panelContact1a" class="link columns small-9" aria-expanded="true">
+                            <div class="acc-titulo-cabecera columns small-12">
+                              <span> Pedido de delivery en
+                                <span>SPICE ART</span>
+                              </span>
+                            </div>
+                          </a>
+                          <p class="separador"></p>
+
+
+                          <div id="panelContact1a" class="contenedor-articulo content active">
+                            <article class="producto-delivery">
+                              <span  class="text-pedido-delivery">
+                                  Lo siento, no disponemos de alguno  de los productos o de los ingredientes por usted solicitados. Si desea modificar la ordern.
+                                  Gracias.
+                              </span>
+                              <span class="disponibilidad-producto"></span>
+                              <span class="disponibilidad-producto-detalle"></span>
+                            </article>
+
+                            <div class="columns small-12 btns-pedido-delivery">
+                              <center>
+                                <input class="aceptar-pedido columns small-3" type="button" value="Modificar Orden">
+                                <input class="cancelar-pedido columns small-3" type="button" value="Cancelar Orden">
+                                <input class="cancelar-pedido columns small-3" type="button" value="Volver">
+                              </center>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

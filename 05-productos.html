@@ -1,0 +1,642 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation | Welcome</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <script src="js/vendor/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/05-style.css">
+  <link rel="stylesheet" href="css/style-global.css">
+</head>
+<body>
+
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Uniresto</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><img class="perfilImg" src="img/fotoPerfil.png" alt="Foto de Perfil"></li>
+      <li><p class="perfil-name-nav">Andrés Maldonado</p></li>
+      <li><img class="img-post" src="img/post.svg" alt=""></li>
+      <li><img class="icon-nav-bar" src="img/buscar.svg" alt=""></li>
+      <li><img class="icon-nav-bar" src="img/buscar.svg" alt=""></li>
+      <li><img class="icon-nav-bar" src="img/buscar.svg" alt=""></li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><form action="" ><input type="text"class="buscador"></form></li>
+      <li><img class="img-buscar" src="img/buscar.svg" alt=""></li>
+    </ul>
+  </section>
+</nav>
+
+<div class="acciones">
+    <ul>
+      <li class="texto-acciones">ACCIONES</li>
+      <li><a href="#"><img src="img/HOME.png" alt=""></a></li>
+      <li><a href="#"><img src="img/LOCAL.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+    </ul>
+  </div>
+<!-- Header -->
+  <header class="row header" style="display:none">
+    <div class="info-perfil columns small-12 medium-6">
+      <div class="row header-perfil">
+        <div class="columns small-4  medium-offset-2 medium-4 large-4">
+          <img class="foto-perfil" src="img/cara-perfil.jpg" alt="">
+        </div>
+        <div class="text-info-header columns small-8 medium-6">
+          <p class="nombre-header-perfil">ANDRES MALDONADO</p>
+          <p class="info-header-perfil">Barrio de Villa Pueyrredon</p>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- Fin Header -->
+
+<!-- Tab -->
+
+    <ul class="tabs tabs-home" data-tab role="tablist" style="display:none">
+      <li class="tab-title tabs-home-title active" role="presentation">
+        <a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1">Muro</a>
+      </li>
+      <li class="tab-title tabs-home-title" role="presentation">
+        <a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2">Datos de Perfil</a>
+      </li>
+      <li class="tab-title tabs-home-title" role="presentation">
+        <a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3">Amigos</a>
+      </li>
+    </ul>
+
+<!-- Fin Tab -->
+
+
+  <div class="tabs-content" id="productos">
+    <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+      <div class="columns small-12 sin-padding">
+        <div class="row">
+            <h2 class="main_title">buscando platos</h2>
+        </div>
+      </div>
+
+      <div class="columns small-12 medium-12 large-3 custom-columns">
+        <div class="row">
+          <div class="columns small-12 filtros">
+            <a class="link"><h2 class="main__title">filtrar por:</h2></a>
+            <ul class="accordion" data-accordion>
+              <li class="accordion-navigation">
+                <a href="#panel1a" class="link">tipo de plato</a>
+                <div id="panel1a" class="content active">
+                  <div class="filtro__opcion">
+                    <input id="Pastas" name="Pastas" type="checkbox" /> <label for="Pastas">Pastas</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <input id="Ensaladas" name="Ensaladas" type="checkbox" /> <label for="Ensaladas">Ensaladas</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <input id="Carnes" name="Carnes" type="checkbox" /> <label for="Carnes">Carnes</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <input id="Carnes1" name="Carnes1" type="checkbox" /> <label for="Carnes1">Carnes Blancas</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <input id="Carnes2" name="Carnes2" type="checkbox" /> <label for="Carnes2">Carnes Blancas</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <input id="Carnes3" name="Carnes3" type="checkbox" /> <label for="Carnes3">Carnes Blancas</label>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <a href="#panel2a" class="link">Ingredientes</a>
+                <div id="panel2a" class="content">
+                  <div class="filtro__opcion">
+                    <input type="text" placeholder="Buscar Ingredientes" class="search_filter" />
+                  </div>
+                  <div class="filtros__contenedor">
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                  </div><!-- /filrtos__contenedor -->
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <a href="#panel3a" class="link">Local</a>
+                <div id="panel3a" class="content orden">
+                  <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="columns small-12 medium-12 large-7 custom-columns"> <!-- Platos -->
+        <div class="row">
+            <!-- Filtros -->
+            <div id="" class="filtros-colap">
+                <label class="ubicacion">Ubicación actual: <input type="text" readonly placeholder="Manzanares 1344, Caba"></label>
+                <label>Tipo: <input type="text" readonly placeholder="Delivery"></label>
+                <label class="modificar">Modificar <a class="flecha f-cerrada"><img src="img/arrowBotton.png"/></a> <a class="flecha f-abierta"><img src="img/arrowUp.jpg"/></a></label>
+            </div>
+
+            <div class="cont-filtros">
+                <h6>Modificar Preferencias</h6>
+                <label>Ubicación actual <input type="text" placeholder="Manzanares 1344, Caba"></label>
+                <div class="sel-mapa"><img src="img/UBICACION.png"/> <a href="#">seleccionar con mapa</a></div>
+                <label class="distancia">Distancia (KMs):</label>
+                <input class="kms" type="text" placeholder="3"><br>
+
+                <div class="check">
+                  <input id="Delivery" name="Delivery" type="checkbox" /> <label for="Delivery">Buscar por Delivery</label>
+                  <input id="Reservas" name="Reservas" type="checkbox" /> <label for="Reservas">Reservas</label>
+                  <input id="Local" name="Local" type="checkbox" /> <label for="Local">Pedidos en el Local</label>
+                </div>
+            </div>
+
+            <!-- fin Filtros -->
+            <div class="small-12 medium-6 large-3"> <div class="product_item">
+              <a href="#" class="thumb">
+                <span class="logo"></span>
+                <img src="img/ZAPALLO.jpg">
+                <span class="label"></span>
+              </a>
+              <h2 class="title">Fideos Marcos</h2>
+                <p class="demora">Prep: 30 min.  (Dem 15 min.)<br>
+                    Sumar demora: 15 min.
+                </p>
+                <span class="mundo"><img src="img/UBICACION.png"/></span>
+              <div class="precio">
+                <span>$70</span>
+                <a href="#" class="producto_logo">
+                  <img src="img/SIN_GLUTEN.png">
+                </a>
+              </div>
+
+              <div class="social">
+                <a class="com" href="#">(15) Lo Recomiendo</a>
+                  <a href="#">Ver Comentarios</a>
+              </div>
+              <div class="controles">
+                <a href="#" class="default_button" data-reveal-id="myModal">ver combos</a>
+                <a href="#" class="default_button">¡Quiero este!</a>
+              </div>
+            </div></div><!-- /product_item -->
+
+
+            <div class="small-12 medium-6 large-3"> <div class="product_item">
+              <a href="#" class="thumb">
+                <span class="logo"></span>
+                <img src="img/ZAPALLO.jpg">
+                <span class="label"></span>
+              </a>
+              <h2 class="title">Fideos Marcos</h2>
+                <p class="demora">Prep: 30 min.  (Dem 15 min.)<br>
+                    Sumar demora: 15 min.
+                </p>
+                <span class="mundo"><img src="img/UBICACION.png"/></span>
+              <div class="precio">
+                <span>$70</span>
+                <a href="#" class="producto_logo">
+                  <img src="img/SIN_GLUTEN.png">
+                </a>
+              </div>
+
+              <div class="social">
+                <a class="com" href="#">(15) Lo Recomiendo</a>
+                  <a href="#">Ver Comentarios</a>
+              </div>
+              <div class="controles">
+                <a href="#" class="default_button" data-reveal-id="myModal">ver combos</a>
+                <a href="#" class="default_button">¡Quiero este!</a>
+              </div>
+            </div></div><!-- /product_item -->
+
+            <div class="small-12 medium-6 large-3"> <div class="product_item">
+              <a href="#" class="thumb">
+                <span class="logo"></span>
+                <img src="img/ZAPALLO.jpg">
+                <span class="label"></span>
+              </a>
+              <h2 class="title">Fideos Marcos</h2>
+                <p class="demora">Prep: 30 min.  (Dem 15 min.)<br>
+                    Sumar demora: 15 min.
+                </p>
+                <span class="mundo"><img src="img/UBICACION.png"/></span>
+              <div class="precio">
+                <span>$70</span>
+                <a href="#" class="producto_logo">
+                  <img src="img/SIN_GLUTEN.png">
+                </a>
+              </div>
+
+              <div class="social">
+                <a class="com" href="#">(15) Lo Recomiendo</a>
+                  <a href="#">Ver Comentarios</a>
+              </div>
+              <div class="controles">
+                <a href="#" class="default_button" data-reveal-id="myModal">ver combos</a>
+                <a href="#" class="default_button">¡Quiero este!</a>
+              </div>
+            </div></div><!-- /product_item -->
+          <div class="columns small-12">
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal -->
+        <div id="m1" class="overlay">
+            <div class="modal">
+                <h5>Demora actual de Delivery:</h5>
+                <p>15 min.</p>
+                <a id="cerrar" class="default_button">Cerrar</a>
+            </div>
+        </div>
+
+    <!-- fin Modal -->
+
+      <div class="columns small-12 medium-12 large-3 custom-columns oculto">
+        <div class="row">
+          <div class="columns small-12 filtros">
+              <a class="link"><h2 class="main__title">filtrar por:</h2></a>
+            <ul class="accordion" data-accordion>
+              <li class="accordion-navigation">
+                <a href="#panel1a" class="link">tipo de plato</a>
+                <div id="panel1a" class="content active">
+                  <div class="filtro__opcion">
+                    <label><input type="checkbox" /> Pastas</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <label><input type="checkbox" /> Ensaladas</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <label><input type="checkbox" /> Carnes</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <label><input type="checkbox" /> Carnes Blancas</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <label><input type="checkbox" /> Carnes Blancas</label>
+                  </div>
+                  <div class="filtro__opcion">
+                    <label><input type="checkbox" /> Carnes Blancas</label>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <a href="#panel2a" class="link">Ingredientes</a>
+                <div id="panel2a" class="content">
+                  <div class="filtro__opcion">
+                    <input type="text" placeholder="Buscar Ingredientes" class="search_filter" />
+                  </div>
+                  <div class="filtros__contenedor">
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                  </div><!-- /filrtos__contenedor -->
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <a href="#panel3a" class="link">Local</a>
+                <div id="panel3a" class="content orden">
+                  <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa Blanca</label>
+                    </div>
+                    <div class="filtro__opcion">
+                      <label><input type="checkbox" /> Salsa fileto</label>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns small-12 medium-12 large-3 custom-columns">
+        <div class="row">
+          <div class="columns small-12" id="contactoChat">
+           <ul class="accordion" data-accordion>
+               <li class="accordion-navigation oculto active">
+                <a href="#panelContact1a" class="link" aria-expanded="true">mi orden</a>
+                <div id="panelContact1a" class="content cart active">
+                    <ul>
+                  <li><p>- Fideos Especiales con salsa de fileto y queso</p> <a href="#" class="cerrar">X</a></li>
+                  <li><p>- Fideos Especiales con salsa de fileto y queso</p> <a href="#" class="cerrar">X</a></li>
+                </ul>
+
+                <div class="total">
+                  <p>total: <span>$ 230</span></p>
+                </div>
+                <div class="controles">
+                  <a href="#" class="default_button">¡hacer pedido!</a>
+                </div>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <a href="#panelContact2a" class="link">Salidas Armadas</a>
+                <div id="panelContact2a" class="content">
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <a href="#panelContact3a" class="link">Chat</a>
+                <div id="panelContact3a" class="content">
+                  <div class="chatContent">
+
+                  </div>
+                </div>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+      <h2>Second panel content goes here...</h2>
+    </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
+      <h2>Third panel content goes here...</h2>
+    </section>
+  </div>
+
+  <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <ul class="example-orbit" data-orbit>
+      <li>
+        <div class="small-12 medium-6 large-4 promos__modal">
+          <div class="product_item">
+            <a href="#" class="thumb">
+              <img src="img/ZAPALLO.jpg">
+              <span class="label"></span>
+            </a>
+            <div class="title">
+              <h2>Fideos Especiales con salsa fileto y queso</h2><span class="precio">$70</span>
+            </div>
+            <p>Incluye:</p>
+            <ul>
+              <li>Plato Principal</li>
+              <li>Bebida</li>
+              <li>Postre</li>
+            </ul>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-4 promos__modal">
+          <div class="product_item">
+            <a href="#" class="thumb">
+              <img src="img/ZAPALLO.jpg">
+              <span class="label"></span>
+            </a>
+            <div class="title">
+              <h2>Fideos Especiales con salsa fileto y queso</h2><span class="precio">$70</span>
+            </div>
+            <p>Incluye:</p>
+            <ul>
+              <li>Plato Principal</li>
+              <li>Bebida</li>
+              <li>Postre</li>
+            </ul>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-4 promos__modal">
+          <div class="product_item">
+            <a href="#" class="thumb">
+              <img src="img/ZAPALLO.jpg">
+              <span class="label"></span>
+            </a>
+            <div class="title">
+              <h2>Fideos Especiales con salsa fileto y queso</h2><span class="precio">$70</span>
+            </div>
+            <p>Incluye:</p>
+            <ul>
+              <li>Plato Principal</li>
+              <li>Bebida</li>
+              <li>Postre</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="small-12 medium-6 large-4 promos__modal">
+          <div class="product_item">
+            <a href="#" class="thumb">
+              <img src="img/ZAPALLO.jpg">
+              <span class="label"></span>
+            </a>
+            <div class="title">
+              <h2>Fideos Especiales con salsa fileto y queso</h2><span class="precio">$70</span>
+            </div>
+            <p>Incluye:</p>
+            <ul>
+              <li>Plato Principal</li>
+              <li>Bebida</li>
+              <li>Postre</li>
+            </ul>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-4 promos__modal">
+          <div class="product_item">
+            <a href="#" class="thumb">
+              <img src="img/ZAPALLO.jpg">
+              <span class="label"></span>
+            </a>
+            <div class="title">
+              <h2>Fideos Especiales con salsa fileto y queso</h2><span class="precio">$70</span>
+            </div>
+            <p>Incluye:</p>
+            <ul>
+              <li>Plato Principal</li>
+              <li>Bebida</li>
+              <li>Postre</li>
+            </ul>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-4 promos__modal">
+          <div class="product_item">
+            <a href="#" class="thumb">
+              <img src="img/ZAPALLO.jpg">
+              <span class="label"></span>
+            </a>
+            <div class="title">
+              <h2>Fideos Especiales con salsa fileto y queso</h2><span class="precio">$70</span>
+            </div>
+            <p>Incluye:</p>
+            <ul>
+              <li>Plato Principal</li>
+              <li>Bebida</li>
+              <li>Postre</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+
+    $(".main__title").on('click', function(){
+      $(".filtros").toggleClass('open');
+    });
+  </script>
+</body>
+</html>

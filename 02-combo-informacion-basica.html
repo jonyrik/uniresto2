@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uniresto</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="css/02-style.css">
+    <link rel="stylesheet" href="css/style-global.css">
+    <link rel="stylesheet" type="text/css" href="css/toastr.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation-datepicker.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/site.js"></script>
+
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+    <link rel="stylesheet" type="text/css"
+    href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+    
+    
+</head>
+<body class="reset store-view">
+<nav class="top-bar top-bar-nav" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Uniresto</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span><img class="perfilImg" src="img/fotoPerfil.png" alt="Foto de Perfil"><p class="perfil-name-nav">Andrés Maldonado</p></span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><img class="perfilImg show-for-medium-up" src="img/fotoPerfil.png" alt="Foto de Perfil"></li>
+      <li><p class="perfil-name-nav show-for-medium-up">Andrés Maldonado</p></li>
+      <li><img class="img-post show-for-medium-up" src="img/post.svg" alt=""></li>
+      <li>        
+        <img class="icon-nav-bar" src="img/mensajes.svg" alt="">
+        <img class="icon-nav-bar" src="img/notificacion.svg" alt="">
+        <img class="icon-nav-bar" src="img/engranaje.svg" alt="">
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li>
+        <form action="" >
+          <div class="container-buscador">
+           <input type="text"class="buscador">
+           <input class="img-buscar" type="button">
+          </div>
+        </form>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+<div class="acciones">
+    <ul>
+      <li class="texto-acciones">ACCIONES</li>
+      <li><a href="#"><img src="img/HOME.png" alt=""></a></li>
+      <li><a href="#"><img src="img/LOCAL.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+    </ul>
+  </div>
+  <main class="no-margin">
+<!--div class="row-fluid">
+    <div class="large-12 columns store-header"></div>
+  </div-->
+  <div id="header" class="shop_header">
+  
+    <img src="img/local_home_bg.jpg">
+
+
+    <div class="shop_bg"></div>
+    <div class="shop_header_data">
+      <div class="container">
+      <div class="row">
+        <div class="columns large-7 medium-7 small-12">
+          <div class="shop_info">
+            <img src="img/local_logo.jpg">
+            <div class="name_cat">
+              <h2>Nombre Local</h2>
+              <p>Categoria</p>
+              <div class="shop_schedule_inside">
+                <p><img src="img/chek_icon.png"> Abierto hasta 01:00 hs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns large-3 medium-4 small-12 large-offset-1 shop_schedule">
+          <p><img src="img/chek_icon.png"> Abierto hasta 01:00 hs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="row store-dashboard hide-for-small-only">
+    <dl class="small-12 medium-3 columns">
+        <dt>Dirección</dt>
+        <dd>arenales 2893
+          <a href="#" id="mapReveal" data-reveal-id="mapContainer">
+              <img src="img/imgo.jpg" /></a>
+          </dd>
+      </dl>
+      <dl class="small-12 medium-2 columns">
+        <dt>Horario de hoy</dt>
+        <dd>
+            Abierto desde 12:00hs a 23:00hs
+        </dd>
+    </dl>
+    <dl class="small-12 medium-2 columns">
+        <dt>Mesas disponibles</dt>
+        <dd>-</dd>
+    </dl>
+    <dl class="small-12 medium-2 columns">
+        <dt>Plato del día</dt>
+        <dd>-</dd>
+    </dl>
+    <dl class="small-12 medium-2 columns end">
+        <dt>Delivery</dt>
+        <dd>En este momento no se hacen envíos</dd>
+    </dl>
+</div>
+<div ><div class="reveal-modal map-container" data-reveal aria-labelledby="modalTitle"
+  aria-hidden="true" role="dialog" id="mapContainer" >
+  <span id="modalHeader"></span>
+  <a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+<a name="map"></a>
+<script>
+    var position = { lat: -34.550312, lng: -58.465078 };
+
+    var platform = new H.service.Platform({
+      'app_id': 'ewkuSKrA4OdvqtMld02o',
+      'app_code': '_471aSVedFlYjPWnESrbVg'
+  });
+
+// Obtain the default map types from the platform object:
+var defaultLayers = platform.createDefaultLayers();
+
+// Instantiate (and display) a map object:
+var map = new H.Map(
+    document.getElementById('mapContainer'),
+    defaultLayers.normal.map,
+    { zoom: 16, center: position });
+
+// MapEvents enables the event system
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// Create the default UI:
+var ui = H.ui.UI.createDefault(map, defaultLayers, 'es-ES');
+
+if(typeof marker === 'undefined') {
+  marker = new H.map.Marker(position);
+}
+
+$(document).ready(function(ev) {
+    map.addObject(marker);
+});
+
+$('#mapReveal').on('click', function(ev) {
+  marker.draggable = false;
+  $('#modalHeader').html('<h9 id="modalTitle">arenales 2893, Buenos Aires, Argentina</h9>');
+});
+
+// When popup becomes visible, resize map in order to show
+$('#mapContainer').toggle( function () {
+  map.getViewPort().resize();
+});
+
+</script>
+</div>
+<div class="row">
+  <div class="medium-12 columns no-padding-left store-tab " style="  padding-right: 0;">
+    <ul class="tabs vertical hide-for-small-only">
+      <li class="tab-title "><a href="/store/orders/"><i class="fa fa-shopping-cart"></i>Pedidos</a></li>
+      <li class="tab-title "><a href="#panel11"><i class="fa fa-bars fa-2"></i> Muro</a></li>
+      <li class="tab-title "><a href="/store/info/"><i class="fa fa-info-circle"></i> Datos del local</a></li>
+      <li class="tab-title active"><a href="/store/products/"><i class="fa fa-cutlery"></i> Platos del local</a></li>
+      <!-- <li class="tab-title "><a href="/store/working/open/"><i class="fa fa-map"></i> Funcionamiento del local</a></li> -->
+      <li class="tab-title "><a href="/store/working/open_view/"><i class="fa fa-map"></i> Funcionamiento del local</a></li>
+      <li class="tab-title "><a href="#panel41"><i class="fa fa-calendar-check-o"></i> Disponibilidad de lugares</a></li>
+      <li class="tab-title "><a href="#panel41"><i class="fa fa-camera"></i> Fotos del local</a></li>
+      <li class="tab-title "><a href="/store/facilities/"><i class="fa fa-building"></i>Comodidades</a></li>
+    </ul>
+
+    <ul class="tabs horizontal show-for-small-only" style="width: 100%;padding: 0;margin: 0;">
+      <li class="tab-title ancho-icon"><a href="/store/orders/"><i class="fa fa-shopping-cart"></i></a></li>
+      <li class="tab-title ancho-icon"><a href="#panel11"><i class="fa fa-bars fa-2"></i> </a></li>
+      <li class="tab-title ancho-icon"><a href="/store/info/"><i class="fa fa-info-circle"></i>   </a></li>
+      <li class="tab-title active ancho-icon"><a href="/store/products/"><i class="fa fa-cutlery"></i>   </a></li>
+      <!-- <li class="tab-title "><a href="/store/working/open/"><i class="fa fa-map"></i> Funcionamiento del local</a></li> -->
+      <li class="tab-title ancho-icon"><a href="/store/working/open_view/"><i class="fa fa-map"></i>   </a></li>
+      <li class="tab-title ancho-icon"><a href="#panel41"><i class="fa fa-calendar-check-o"></i>   </a></li>
+      <li class="tab-title ancho-icon"><a href="#panel41"><i class="fa fa-camera"></i>   </a></li>
+      <li class="tab-title ancho-icon"><a href="/store/facilities/"><i class="fa fa-building"></i></a></li>
+    </ul>
+        <div class="tabs-content-full">
+            <div class="content active">
+                <div class="medium-9 large-9 columns">
+                    <h3 class="dotted-bottom"><i class="fa fa-cube"></i> Cargar un combo</h3>
+                    <div class="wizard-steps">
+                      <div class="active-step"><a href="#step-two"><span>1</span> Información básica</a></div>
+                      <div class=""><a href="#"><span>2</span> Productos</a></div>
+                      <div class=""><a href="#"><span>3</span> Cantidad por Tipo de Producto</a></div>
+                  </div>
+                  <br>
+                  <div id="product-step2" class="row">
+                    <div class="large-12 columns">
+                        <form action="/store/combo/step1/?category=" method="post" enctype="multipart/form-data" onsubmit="indicatorStart('Aguarde por favor ...')">
+                            <input type='hidden' name='csrfmiddlewaretoken' value='pitFgfDpYcRujwnvbk5cTiQN70iraSwq' />
+                            <div class="panel callout radius">
+                                <p class="title-plato">Complete los campos básicos del producto / plato.</p>
+                                <div class="row" style="margin-bottom: -10px;">
+                                    <div class="large-12 columns">
+                                        <label>
+                                            <input class="input-text" value="EMPANADAS" type="text" placeholder="Categoría" readonly="">
+                                        </label>
+                                    </div>
+                                </div>      
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>
+                                            <input class="input-text" id="id_name" maxlength="50" name="name" type="text" placeholder="Nombre de producto">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>
+                                            <textarea cols="40" id="id_description" maxlength="255" name="description" rows="5" placeholder="Descripción"></textarea>
+                                        </label>            
+                                    </div>  
+                                </div>
+                                <div class="row">
+                                    <div class="large-4 columns">
+                                        <label>
+                                            Es para celiaco?
+                                            <input id="id_delivery" name="delivery" type="checkbox">
+                                        </label>            
+                                    </div>   
+                                    <div class="large-4 columns">
+                                        <label>
+                                            Puede ser enviado?
+                                            <input id="id_delivery" name="delivery" type="checkbox">
+                                        </label>            
+                                    </div>
+                                    <div class="large-4 columns">
+                                        <label>
+                                            Está activo?
+                                            <input id="id_delivery" name="delivery" type="checkbox">
+                                        </label>            
+                                    </div> 
+                                </div>
+                                <div class="row">    
+                                    <div class="large-12 columns">
+                                        <label>
+                                            Imágen
+                                            <input id="id_image" name="image" type="file">
+                                        </label>            
+                                    </div>    
+                                </div>
+                                <div class="row">    
+                                    <div class="large-12 columns">
+                                        <label>
+                                            Banner
+                                            <input id="id_banner" name="banner" type="file">
+                                        </label>            
+                                    </div>    
+                                </div>
+                            </div>
+                            <input type="submit" value="SIGUIENTE" class="boton-naranja button round">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<style>
+    .store-cover {
+      background: url('img/banner-default.jpg') center center no-repeat;
+  }
+</style>
+
+</main>
+<script src="js/modernizr.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/foundation-datepicker.min.js"></script>
+<script src="js/jquery.autocomplete.min.js"></script>
+<script src="js/toastr.js"></script>
+
+
+<div id="mdl-confirm" class="reveal-modal small" data-reveal aria-labelledby="ing-title" aria-hidden="true" role="dialog">
+    <h4 id="ing-title">Confirmación</h4>
+    <p></p>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <a href="#" class="button" id="alert-cancel">Cancel</a>
+    <a href="#" class="button alert" id="alert-ok">Ok</a>
+</div>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

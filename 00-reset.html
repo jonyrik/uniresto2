@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uniresto</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/00-style.css">
+  <link rel="stylesheet" href="css/style-global.css">
+
+  <link rel="stylesheet" type="text/css" href="css/toastr.css">
+  <link rel="stylesheet" type="text/css" href="css/foundation-datepicker.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/site.js"></script>
+
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+  type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+  type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js"
+  type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="UTF-8"
+  src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+  <link rel="stylesheet" type="text/css"
+  href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+
+
+</head>
+<body class="reset ">
+  <nav class="top-bar nav-orange" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <a href="/">
+          <img src="img/logo.svg">
+        </a>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+
+
+        <li><a href="/#why-register">¿Por qué registrarme?</a></li>
+        <li><a href="/accounts/login/" class="active">Ingresar</a></li>
+
+      </ul>
+    </section>
+  </nav>
+  <main class="">
+    <div class="columns large-6 large-offset-3 medium-6 medium-offset-3 small-10 small-offset-1">
+      <div class="wrapper box-reset">
+        <div class="container caja-default">
+          <h2 class="text-center titulo-form">Olvidó la clave</h2>
+          <form method="post" action=".">
+           <div class="row">
+            <div class="large-12 columns">
+              <div data-alert="" class="alert-box alert-naranja primary">
+
+                Ingrese su email en el campo de abajo para  que le enviemos la clave.
+                
+                <a href="#" class="close">×</a>
+              </div>
+            </div>
+          </div>
+          <input type='hidden' name='csrfmiddlewaretoken' value='lbrHxS0EYwJAVATEz38Jh13L8ZGX8R6x' /> 
+
+
+
+
+
+          <div class="row">
+
+            <div class="large-12 columns">
+              <label>
+                <input id="id_email" maxlength="254" class="input-text" placeholder="Email" name="email" type="email" />
+              </label>
+
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="columns large-3 large-offset-3">
+                <input type="submit" class="button round boton-naranja-full" value="Enviar" />
+              </div>
+              <div class="columns large-3 left">
+                <a href="/" class="button round boton-naranja-full"> Volver </a>
+              </div>                
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+
+  </main>
+  <script src="js/modernizr.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation-datepicker.min.js"></script>
+  <script src="js/jquery.autocomplete.min.js"></script>
+  <script src="js/toastr.js"></script>
+
+
+  <div id="mdl-confirm" class="reveal-modal small" data-reveal aria-labelledby="ing-title" aria-hidden="true" role="dialog">
+    <h4 id="ing-title">Confirmación</h4>
+    <p></p>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <a href="#" class="button" id="alert-cancel">Cancel</a>
+    <a href="#" class="button alert" id="alert-ok">Ok</a>
+  </div>
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uniresto</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/03-style.css">
+  <link rel="stylesheet" href="css/style-global.css">
+  <link rel="stylesheet" href="css/toastr.css">
+  <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/site.js"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" charset="utf-8"></script>
+  <script charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+  <link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />    
+</head>
+<body class="reset store-view">
+  <nav class="top-bar top-bar-nav" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">Uniresto</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span><img class="perfilImg" src="img/fotoPerfil.png" alt="Foto de Perfil"><p class="perfil-name-nav">Andrés Maldonado</p></span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><img class="perfilImg show-for-medium-up" src="img/fotoPerfil.png" alt="Foto de Perfil"></li>
+        <li><p class="perfil-name-nav show-for-medium-up">Andrés Maldonado</p></li>
+        <li><img class="img-post show-for-medium-up" src="img/post.svg" alt=""></li>
+      <li>        
+        <img class="icon-nav-bar" src="img/mensajes.svg" alt="">
+        <img class="icon-nav-bar" src="img/notificacion.svg" alt="">
+        <img class="icon-nav-bar" src="img/engranaje.svg" alt="">
+      </li>
+      </ul>
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li>
+          <form action="" >
+            <div class="container-buscador">
+             <input type="text"class="buscador">
+             <input class="img-buscar" type="button">
+           </div>
+         </form>
+       </li>
+     </ul>
+   </section>
+ </nav>
+
+<div class="acciones">
+    <ul>
+      <li class="texto-acciones">ACCIONES</li>
+      <li><a href="#"><img src="img/HOME.png" alt=""></a></li>
+      <li><a href="#"><img src="img/LOCAL.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+      <li><a href="#"><img src="img/amigos2.png" alt=""></a></li>
+    </ul>
+  </div>
+<main class="no-margin">
+<!--div class="row-fluid">
+    <div class="large-12 columns store-header"></div>
+  </div-->
+  <div id="header" class="shop_header">
+
+    <img src="img/local_home_bg.jpg">
+
+
+    <div class="shop_bg"></div>
+    <div class="shop_header_data">
+      <div class="container">
+        <div class="row">
+          <div class="columns large-7 medium-7 small-12">
+            <div class="shop_info">
+              <img src="img/local_logo.jpg">
+              <div class="name_cat">
+                <h2>Nombre Local</h2>
+                <p>Categoria</p>
+                <div class="shop_schedule_inside">
+                  <p><img src="img/chek_icon.png"> Abierto hasta 01:00 hs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns large-3 medium-4 small-12 large-offset-1 shop_schedule">
+            <p><img src="img/chek_icon.png"> Abierto hasta 01:00 hs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row store-dashboard hide-for-small-only">
+    <dl class="small-12 medium-3 columns">
+      <dt>Dirección</dt>
+      <dd>arenales 2893
+        <a href="#" id="mapReveal" data-reveal-id="mapContainer">
+          <img src="img/imgo.jpg" /></a>
+        </dd>
+      </dl>
+      <dl class="small-12 medium-2 columns">
+        <dt>Horario de hoy</dt>
+        <dd>
+          Cerrado
+        </dd>
+      </dl>
+      <dl class="small-12 medium-2 columns">
+        <dt>Mesas disponibles</dt>
+        <dd>-</dd>
+      </dl>
+      <dl class="small-12 medium-2 columns">
+        <dt>Plato del día</dt>
+        <dd>-</dd>
+      </dl>
+      <dl class="small-12 medium-2 columns end">
+        <dt>Delivery</dt>
+        <dd>En este momento no se hacen envíos</dd>
+      </dl>
+    </div>
+
+    <a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="show-for-small-only" style="width: 45px;"><i class="fa fa-info-circle" style="font-size: 25px;color: #FF900B;margin: 10px;"></i></a>
+    <div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+      <dl class="small-12 medium-3 columns">
+        <dt>Dirección</dt>
+        <dd>arenales 2893
+          <a href="#" id="mapReveal" data-reveal-id="mapContainer">
+            <img src="img/imgo.jpg" /></a>
+          </dd>
+        </dl>
+        <dl class="small-12 medium-2 columns">
+          <dt>Horario de hoy</dt>
+          <dd>
+            Cerrado
+          </dd>
+        </dl>
+        <dl class="small-12 medium-2 columns">
+          <dt>Mesas disponibles</dt>
+          <dd>-</dd>
+        </dl>
+        <dl class="small-12 medium-2 columns">
+          <dt>Plato del día</dt>
+          <dd>-</dd>
+        </dl>
+        <dl class="small-12 medium-3 columns end">
+          <dt>Delivery</dt>
+          <dd>En este momento no se hacen envíos</dd>
+        </dl>
+      </div>
+
+      <div ><div class="reveal-modal map-container" data-reveal aria-labelledby="modalTitle"
+        aria-hidden="true" role="dialog" id="mapContainer" >
+        <span id="modalHeader"></span>
+        <a class="close-reveal-modal" aria-label="Close">×</a>
+      </div>
+      <a name="map"></a>
+    </div>
+
+
+    <div class="row">
+      <div class="medium-12 columns no-padding-left store-tab " style="  padding-right: 0;">
+        <ul class="tabs vertical hide-for-small-only">
+          <li class="tab-title "><a href="/store/orders/"><i class="fa fa-shopping-cart"></i>Pedidos</a></li>
+          <li class="tab-title "><a href="#panel11"><i class="fa fa-bars fa-2"></i> Muro</a></li>
+          <li class="tab-title "><a href="/store/info/"><i class="fa fa-info-circle"></i> Datos del local</a></li>
+          <li class="tab-title"><a href="/store/products/"><i class="fa fa-cutlery"></i> Platos del local</a></li>
+          <!-- <li class="tab-title "><a href="/store/working/open/"><i class="fa fa-map"></i> Funcionamiento del local</a></li> -->
+          <li class="tab-title "><a href="/store/working/open_view/"><i class="fa fa-map"></i> Funcionamiento del local</a></li>
+          <li class="tab-title "><a href="#panel41"><i class="fa fa-calendar-check-o"></i> Disponibilidad de lugares</a></li>
+          <li class="tab-title "><a href="#panel41"><i class="fa fa-camera"></i> Fotos del local</a></li>
+          <li class="tab-title "><a href="/store/facilities/"><i class="fa fa-building"></i>Comodidades</a></li>
+        </ul>
+
+        <ul class="tabs horizontal show-for-small-only" style="width: 100%;padding: 0;margin: 0;">
+          <li class="tab-title ancho-icon"><a href="/store/orders/"><i class="fa fa-shopping-cart"></i></a></li>
+          <li class="tab-title ancho-icon"><a href="#panel11"><i class="fa fa-bars fa-2"></i> </a></li>
+          <li class="tab-title ancho-icon"><a href="/store/info/"><i class="fa fa-info-circle"></i>   </a></li>
+          <li class="tab-title ancho-icon"><a href="/store/products/"><i class="fa fa-cutlery"></i>   </a></li>
+          <!-- <li class="tab-title "><a href="/store/working/open/"><i class="fa fa-map"></i> Funcionamiento del local</a></li> -->
+          <li class="tab-title ancho-icon"><a href="/store/working/open_view/"><i class="fa fa-map"></i>   </a></li>
+          <li class="tab-title ancho-icon"><a href="#panel41"><i class="fa fa-calendar-check-o"></i>   </a></li>
+          <li class="tab-title ancho-icon"><a href="#panel41"><i class="fa fa-camera"></i>   </a></li>
+          <li class="tab-title ancho-icon"><a href="/store/facilities/"><i class="fa fa-building"></i></a></li>
+        </ul>
+        <div class="tabs-content-full">
+          <div class="content active">
+            <div class="medium-9 large-9 columns">
+              <h3 class="dotted-bottom"><i class="fa fa-cutlery"></i> Recursos Humanos</h3>
+              <div class="row">
+                <div class="large-12 columns sin-padding">
+                  <div class="medium-3 large-3 columns min-padding">
+                    <a href="#" class="button tiny btn-category root-cat arrow_box" data-cat="59">PERSONAL</a>
+                  </div>
+                  <div class="medium-3 large-3 columns min-padding">
+                    <a href="#" class="button tiny btn-category root-cat" data-cat="60">AGREGAR USUARIO</a>
+                  </div>       
+                </div>
+              </div>
+              <div class="row min-padding">
+                <div class="columns large-12 sin-padding caja-default">
+                  <ul class="accordion" data-accordion>
+                    <li class="accordion-static header-accordion-static">
+                      <div class="row">
+                        <div class="columns large-12">
+                          <h2 class="title-rrhh">PERSONAL DE <span class="title-link-rrhh">LA COCINA DE LA NONA</span></h2>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-static">
+                      <div class="row">
+                        <div class="columns large-3">
+                          <h3 class="subtitle-rrhh">NOMBRE</h3>
+                        </div>
+                        <div class="columns large-2">
+                          <h3 class="subtitle-rrhh">ROL</h3>
+                        </div>
+                        <div class="columns large-3">
+                          <h3 class="subtitle-rrhh">CORREO</h3>
+                        </div>
+                        <div class="columns large-3">
+                          <h3 class="subtitle-rrhh">HORARIOS</h3>
+                        </div>
+                        <div class="colums large-1">                          
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#panel3a">
+                        <div class="row">
+                          <div class="columns large-3">
+                            <p class="item-detail-rrhh name-title-item">Juan Pablo Moressi</p>
+                          </div>
+                          <div class="columns large-2">
+                            <p class="item-detail-rrhh">COCINERO</p>
+                          </div>
+                          <div class="columns large-3">
+                            <p class="item-detail-rrhh">juan.moressi@gmail.com</p>
+                          </div>
+                          <div class="columns large-3">
+                            <p class="item-detail-rrhh">15:00 a 21:00 hs</p>
+                          </div>
+                          <div class="columns large-1">
+                            <img class="img-flecha-rrhh" src="img/arrowBotton.jpg">
+                          </div>
+                        </div>
+                      </a>
+                      <div id="panel3a" class="content caja-detail-rrhh">
+                        <div class="row">
+                          <div class="columns large-12 caja-title-modificar-perfil">
+                            <h2 class="title-modificar-perfil">MODIFICANDO DATOS DE PERFIL</h2>
+                          </div>
+                          <div class="columns large-2">
+                            <p class="item-detail-rrhh title-photo-rrhh">FOTO:</p>
+                          </div>
+                          <div class="columns large-2 sin-padding">
+                            <img src="img/propic/propic3.jpg" alt="">
+                          </div>
+                          <div class="columns large-8">
+                            <input type="button" value="seleccionar nueva foto" class="seleccionar-nueva-foto">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <form class="row margin-top-15">
+                            <div class="large-6 columns">
+                              <div class="row padding-left-15">
+                                <div class="large-12 columns">
+                                  <label for="right-label" class="left">NOMBRE:</label>
+                                </div>
+                                <div class="large-12 columns">
+                                  <input type="text" id="right-label" class="input-text" placeholder=" Text Input">
+                                </div>
+                              </div>
+                              <div class="row padding-left-15">
+                                <div class="large-3 columns">
+                                  <label for="right-label" class="left">ROL:</label>
+                                </div>
+                                <div class="large-12 columns">
+                                  <input type="text" id="right-label" class="input-text" placeholder=" Text Input">
+                                </div>
+                              </div>
+                              <div class="row padding-left-15">
+                                <div class="large-3 columns">
+                                  <label for="right-label" class="left">MAIL:</label>
+                                </div>
+                                <div class="large-12 columns">
+                                  <input type="text" id="right-label" class="input-text" placeholder=" Text Input">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="large-6 columns">
+                              <div class="row padding-right-15">
+                                <div class="large-12 columns">
+                                  <label for="right-label" class="left">DIRECCION:</label>
+                                </div>
+                                <div class="large-12 columns">
+                                  <input type="text" id="right-label" class="input-text" placeholder=" Text Input">
+                                </div>
+                              </div>
+                              <div class="row padding-right-15">
+                                <div class="large-12 columns">
+                                  <label for="right-label" class="left">DNI:</label>
+                                </div>
+                                <div class="large-12 columns">
+                                  <input type="text" id="right-label" class="input-text" placeholder=" Text Input">
+                                </div>
+                              </div>
+                              <div class="row padding-right-15">
+                                <div class="large-12 columns">
+                                  <label for="right-label" class="left">TELEFONO:</label>
+                                </div>
+                                <div class="large-12 columns">
+                                  <input type="text" id="right-label" class="input-text" placeholder=" Text Input">
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="row padding-15">
+                          <table id="formset" class="form caja-default " data-formset-table="delivery_hours">
+                            <thead>
+                              <tr>
+                                <th class="title-plato">Día de semana</th>
+                                <th class="title-plato">Desde hora</th>
+                                <th class="title-plato">Hasta hora</th>
+                                <th class="title-plato">Eliminar</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <input id="id_delivery_hours-0-id" name="delivery_hours-0-id" type="hidden" value="3">
+                                  <input id="id_delivery_hours-0-commerce" name="delivery_hours-0-commerce" type="hidden" value="5">
+                                  <select id="id_delivery_hours-0-day" name="delivery_hours-0-day">
+                                    <option value="">---------</option>
+                                    <option value="0">Lunes</option>
+                                    <option value="1">Martes</option>
+                                    <option value="2">Miércoles</option>
+                                    <option value="3">Jueves</option>
+                                    <option value="4">Viernes</option>
+                                    <option value="5">Sábado</option>
+                                    <option value="6" selected="selected">Domingo</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <select class="small-5 columns" id="id_delivery_hours-0-from_hour_hour" name="delivery_hours-0-from_hour_hour">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16" selected="selected">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                  </select>
+                                  <select class="small-5 small-offset-1 columns end" id="id_delivery_hours-0-from_hour_minute" name="delivery_hours-0-from_hour_minute">
+                                    <option value="00" selected="selected">00</option>
+                                    <option value="30">30</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <select class="small-5 columns" id="id_delivery_hours-0-to_hour_hour" name="delivery_hours-0-to_hour_hour">
+                                    <option value="00" selected="selected">00</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                  </select>
+                                  <select class="small-5 small-offset-1 columns end" id="id_delivery_hours-0-to_hour_minute" name="delivery_hours-0-to_hour_minute">
+                                    <option value="00" selected="selected">00</option>
+                                    <option value="30">30</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <a href="/store/combo/delete/128/63/" class="delete-product" data-name="JyQ" data-tooltip="" data-selector="tooltip-igp938u21" aria-describedby="tooltip-igp938u21" title=""><i class="fa fa-trash" style="font-size: 20px;"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                              <td colspan="4">
+                                  <input type="button" data-addmore-nested="delivery_hours" value="+ Agregar más" id="add_more" class="button tiny boton-naranja-pequeno">
+                                </td>
+                              </tr>
+                            </tfoot>
+                          </table>
+                        </div>
+                        <div class="row">
+                          <div class="columns large-12">
+                            <input class="boton-editar-personal-rrhh" type="button" value="GUARDAR CAMBIOS">
+                          </div>
+                        </div>                
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .store-cover {
+        background: url('img/banner-default.jpg') center center no-repeat;
+      }
+    </style>
+
+  </main>
+  <script src="js/modernizr.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation-datepicker.min.js"></script>
+  <script src="js/jquery.autocomplete.min.js"></script>
+  <script src="js/toastr.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>

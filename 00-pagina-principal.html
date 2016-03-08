@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uniresto</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css" />
+
+  <link rel="stylesheet" href="css/00-style.css">
+  <link rel="stylesheet" href="css/style-global.css">
+
+  <link rel="stylesheet" href="css/toastr.css">
+  <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src=".js/jquery.js"></script>
+  <script src=".js/site.js"></script>
+
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" charset="utf-8"></script>
+  <script charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+  <link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+
+
+</head>
+<body class="reset pagina-principal">
+  <nav class="top-bar nav-orange" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <a href="00-pagina-principal.html">
+          <img src="img/logo.svg">
+        </a>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+
+
+        <li><a href="/#why-register">¿Por qué registrarme?</a></li>
+        <li><a href="00-iniciar-sesion.html" class="active">Ingresar</a></li>
+
+      </ul>
+    </section>
+  </nav>
+  <main class="">
+
+
+    <section class="page">
+      <!-- Titulo pagina principal -->
+      <div class="row">
+        <div class="columns large-10 large-offset-1">
+          <h1 class="title1">Unite a nuestra red social<br>revolucioná tu experiencia gourmet.
+          </h1>
+        </div>
+      </div>
+
+      <!-- Botones pagina principal -->
+      <div class="row">
+        <div class="columns large-8 large-offset-2" style="margin-top: 50px;">
+          <div class="columns large-12"><button class=" boton-naranja-full" onclick="location.href='02-platos.html';">Ver productos</button></div>
+          <div class="columns large-12"><button class=" boton-naranja-full">Ver comercios</button></div>
+          <div class="columns large-6"><button class="ghost-button" onclick="location.href='00-registro-usuario.html';">Soy usuario</button></div>
+          <div class="columns large-6"><button class="ghost-button" onclick="location.href='00-registro-local.html';">Soy local</button></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns large-12">
+          <a href="#why-register"><img class="boton-abajo" src="img/botonAbajo.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="why-register" class="page background-color-white" >
+      <div class="row">
+        <div class="columns large-10 large-offset-1">
+          <h2 class="title2">Aquí te mostramos solo algunas de las tantas cosas que podrás hacer en UniResto¡</h2>
+
+
+          <div class="iconGroup  medium-centered  columns ">
+            <h3 class="titleh3">Como usuario Podrás</h3>
+
+            <div class="row">
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/compartir_experiencias.png"  alt="">
+                </div>
+                <p class="detail-why-register">Compartí tus experiencias</p>
+              </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/invitar-amigos.png"  alt="">
+                </div>
+                <p class="detail-why-register">Invitar amigos y armar grupos</p>
+              </div>
+
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/org-clientes.png"  alt="">
+                </div>
+                <p class="detail-why-register">Organizar tus salidas</p>
+              </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/privacidad.png"  alt="">
+                </div>
+                <p class="detail-why-register">Definir privacidad de tu contenido</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/buscar-locales.png"  alt="">
+                </div>
+                <p class="detail-why-register">Buscar y Reservar locales</p>
+              </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/bandeja_ensalada.png"  alt="">
+                </div>
+                <p class="detail-why-register">Buscar por tipo de platos</p>
+              </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/pasar-buscar.png"  alt="">
+                </div>
+                <p class="detail-why-register">Pedir para llevar</p>
+              </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/personalizar.png"  alt="">
+                </div>
+                <p class="detail-why-register">Personalizar y Calificar tu pedido</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="iconGroup  medium-centered  columns ">
+            <h3 class="titleh3">Como local Podrás</h3>
+
+          <div class="row">
+            <div class="small-6 medium-3 columns">
+              <div class="iconWp">
+                <img src="img/menu-movil.png"  alt="">
+              </div>
+              <p class="detail-why-register">Modernizar tu servicio</p>
+            </div>
+            <div class="small-6 medium-3 columns">
+              <div class="iconWp">
+                <img src="img/galeria.png"  alt="">
+              </div>
+              <p class="detail-why-register">Mostrar tus productos y comodidades</p>
+            </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/buscar-cliente.png"  alt="">
+                </div>
+                <p class="detail-why-register">Aumentar tu visibilidad</p>
+              </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/red-cliente.png"  alt="">
+                </div>
+                <p class="detail-why-register">Integrarte a una Red Social gastronómica</p>
+              </div>
+
+
+            </div>
+
+            <div class="row">
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/bajar-costos.png"  alt="">
+                </div>
+                <p class="detail-why-register">Bajar tus costos</p>
+              </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/plato-cub.png"  alt="">
+                </div>
+                <p class="detail-why-register">Organizar tus pedidos</p>
+              </div>
+
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/reservas.png"  alt="">
+                </div>
+                <p class="detail-why-register">Gestionar tus reservas</p>
+              </div>
+              <div class="small-6 medium-3 columns">
+                <div class="iconWp">
+                  <img src="img/gestion-rrhh.png"  alt="">
+                </div>
+                <p class="detail-why-register">Gestionar tus Recursos Humanos</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  <script src="js/modernizr.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation-datepicker.min.js"></script>
+  <script src="js/jquery.autocomplete.min.js"></script>
+  <script src="js/toastr.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>
