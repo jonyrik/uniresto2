@@ -2161,7 +2161,6 @@ ul.ingredients-list li:before {
     width: 100%;
 }
 .finalizar-pedido .datos label {
-  /*width: 50%; */
   width: 36%;
   line-height: 1.1;
 }
