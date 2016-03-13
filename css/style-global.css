@@ -761,16 +761,17 @@ input[type="checkbox"] + label:after {
 }
 
 @media (min-width: 740px) {
+
     .acciones ul li:nth-child(even) {
         background: #273C5B;
-        height: 0;
-        /*padding: 5px 45px;*/
+        height: auto;
+        padding: 5px 45px;
     }
 
     .acciones ul li:nth-child(odd) {
         background: #314D77;
-        height: 0;
-        /*padding: 5px 45px;*/
+        height: auto;
+        padding: 5px 45px;
     }
 }
 
@@ -801,6 +802,9 @@ input[type="checkbox"] + label:after {
     .acciones .texto-acciones {
       display: block;
       cursor: pointer;
+    }
+    .acciones #acciones1 {
+      display: block;
     }
     .acciones #acciones2 {
       padding: 12px 0;
@@ -1411,10 +1415,21 @@ right: 0;
 
 @media (max-width: 1024px) {
 
+  .header {
+    height: 270px;
+  }
+
+  .acciones {
+    position: absolute;
+  }
+
   .acciones ul {
     height: auto !important;
   }
-  .acciones ul li#acciones2 {
+  .acciones #acciones1 {
+    display: none !important;
+  }
+  .acciones #acciones2 {
     display: none !important;
   }
     .margin-top-15 {
