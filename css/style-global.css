@@ -762,7 +762,7 @@ input[type="checkbox"] + label:after {
 
 @media (min-width: 740px) {
 
-    .acciones ul li:nth-child(even) {
+    /*.acciones ul li:nth-child(even) {
         background: #273C5B;
         height: auto;
         padding: 5px 45px;
@@ -772,7 +772,7 @@ input[type="checkbox"] + label:after {
         background: #314D77;
         height: auto;
         padding: 5px 45px;
-    }
+    }*/
 }
 
 /*================================================ MIN-WIDTH: 1024px  =======================================================*/
@@ -1432,6 +1432,19 @@ right: 0;
   .acciones #acciones2 {
     display: none !important;
   }
+
+  .acciones ul li:nth-child(even) {
+      background: #273C5B;
+      height: auto;
+      padding: 5px 45px;
+  }
+
+  .acciones ul li:nth-child(odd) {
+      background: #314D77;
+      height: auto;
+      padding: 5px 45px;
+  }
+  
     .margin-top-15 {
         margin-top: 15px;
     }
