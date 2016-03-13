@@ -24,21 +24,33 @@ $(document).ready(function() {
   });
 
 // Acciones
-  var btn_acciones = $('#acciones1');
-    var btn_acciones2 = $('#acciones2');
-    var li_acc = $('.acciones ul');
+var btn_acciones = $('#acciones1');
+  var btn_acciones2 = $('#acciones2');
+  var ul_acc = $('.acciones ul');
+  var li_acc = $('.acciones ul li');
 
 
-  $(btn_acciones).click(function () {
-    $(li_acc).css('height', '400px');
-    $(this).css('display', 'none');
-    $(btn_acciones2).css('display', 'block');
-  });
-  $(btn_acciones2).click(function () {
-    $(this).css('display', 'none');
-    $(btn_acciones).css('display', 'block');
-    $(li_acc).css('height', '');
-  });
+$(btn_acciones).click(function () {
+  $(ul_acc).css('height', '400px');
+  $(li_acc).css('height', 'auto');
+  $(li_acc).css('padding', '5px 15px');
+  $(li_acc).css('visibility', 'visible');
+  // $(li_acc).css('margin-top', '10px');
+  $(this).css('display', 'none');
+  $(btn_acciones2).css('display', 'block');
+  $(btn_acciones2).css('height', '48px');
+  // $(btn_acciones2).css('margin-top', '0px');
+});
+$(btn_acciones2).click(function () {
+  // $(this).css('display', 'none');
+  $(btn_acciones).css('display', 'block');
+  $(btn_acciones2).css('height', '');
+  $(btn_acciones2).css('display', 'none');
+  $(ul_acc).css('height', '');
+  $(li_acc).css('height', '');
+  $(li_acc).css('padding', '');
+  $(li_acc).css('visibility', '');
+});
 
   // Amigos
     var btn_filtros = $('#btn-filtros');

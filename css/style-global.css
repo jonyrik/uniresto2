@@ -731,14 +731,14 @@ input[type="checkbox"] + label:after {
 
 .acciones ul li:nth-child(even) {
     background: #273C5B;
-    padding: 5px 15px;
-    height: auto;
+    /*padding: 5px 15px;*/
+    height: 0;
 }
 
 .acciones ul li:nth-child(odd) {
     background: #314D77;
-    height: auto;
-    padding: 5px 15px;
+    height: 0;
+    /*padding: 5px 15px;*/
 }
 
 .texto-acciones {
@@ -751,18 +751,21 @@ input[type="checkbox"] + label:after {
     padding: 12px 0;
     border-top: 2px solid #ED0707;
 }
+.acciones #acciones1 {
+  visibility: visible;
+}
 
 @media (min-width: 740px) {
     .acciones ul li:nth-child(even) {
         background: #273C5B;
-        height: auto;
-        padding: 5px 45px;
+        height: 0;
+        /*padding: 5px 45px;*/
     }
 
     .acciones ul li:nth-child(odd) {
         background: #314D77;
-        height: auto;
-        padding: 5px 45px;
+        height: 0;
+        /*padding: 5px 45px;*/
     }
 }
 
@@ -790,12 +793,13 @@ input[type="checkbox"] + label:after {
         text-align: center;
         /*display: none;*/
     }
-    .acciones ul li.texto-acciones {
+    .acciones .texto-acciones {
       display: block;
       cursor: pointer;
     }
-    .acciones ul li#acciones2 {
-      padding: 12px 0 !important;
+    .acciones #acciones2 {
+      padding: 12px 0;
+      display: none;
     }
 
 
@@ -804,16 +808,23 @@ input[type="checkbox"] + label:after {
 
     }
 
+    .acciones ul li {
+      visibility: hidden;
+    }
+
     .acciones ul li:nth-child(even) {
         background: #273C5B;
-        height: auto;
-        padding: 5px 15px !important;
+        height: 0;
+        /*padding: 5px 15px;*/
     }
+      .acciones #acciones1, .acciones #acciones2 {
+        height: 48px;
+      }
 
     .acciones ul li:nth-child(odd) {
         background: #314D77;
-        height: auto;
-        padding: 5px 15px;
+        height: 0;
+        /*padding: 5px 15px;*/
     }
 
     .texto-acciones {
@@ -825,6 +836,7 @@ input[type="checkbox"] + label:after {
         background: white !important;
         padding: 12px 0 !important;
         border-top: 2px solid #ED0707;
+        text-align: center;
     }
 }
 
