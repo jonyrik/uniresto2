@@ -68,19 +68,19 @@ body {
 }
 
 .cluster-vacio{
-    
+
 border: 2px solid #576A7D;
-    
+
 color: #576A7D;
-    
+
 height: 225px;
-    
+
 text-align: center;
-    
+
 display: table;
-    
+
 padding: 70px 15px 0 15px;
-    
+
 box-sizing: border-box;
 }
 
@@ -110,7 +110,7 @@ box-sizing: border-box;
 }
 
 .min-padding{
-    
+
 padding: 0px 5px;
 }
 
@@ -123,13 +123,13 @@ padding: 0px 5px;
 }
 
 .input-text{
-    
+
 height: 40px!important;
-    
+
 border: 2px solid #576A7D!important;
-    
+
 box-shadow: none!important;
-    
+
 padding-left: 1rem!important;
 }
 
@@ -142,17 +142,17 @@ option{
     }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #576A7D;
-  
+
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #576A7D;
-  
+
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #576A7D;
-  
+
 }
 
 ::-webkit-textarea-placeholder { /* WebKit, Blink, Edge */
@@ -160,12 +160,12 @@ option{
     }
 :-ms-textarea-placeholder { /* Internet Explorer 10-11 */
    color:    #576A7D;
-  
+
 }
 
-textarea{    
-border: 2px solid #576A7D;    
-box-shadow: none;    
+textarea{
+border: 2px solid #576A7D;
+box-shadow: none;
 padding-left: 1rem;
 }
 
@@ -267,18 +267,18 @@ main{
 }
 
 .select-uniresto:hover{
-    
+
 border: 2px solid #576A7D!important;
-    
+
 background-color: transparent!important;
 }
 
 .select-uniresto{
-    
+
 border: 2px solid #576A7D!important;
-    
+
 background-color: transparent!important;
-    
+
 color: #576A7D;
 }
 .page{
@@ -1499,7 +1499,7 @@ ul.combos {
     margin-bottom: 20px;
 }
 
-ul.ingredient-types, 
+ul.ingredient-types,
 .ingredients ul {
     list-style: none;
 }
@@ -1509,7 +1509,7 @@ ul.ingredient-types > li > span {
 }
 
 .ingredients ul li label {
-    margin-left: 50px; 
+    margin-left: 50px;
     font-size: 1.1em;
 }
 
@@ -1607,7 +1607,7 @@ ul.ingredients-list {
 }
 
 ul.ingredients-list li:before {
-    content: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ ";
+    content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ ";
     color: #FF900B !important;
 }
 
@@ -1630,7 +1630,7 @@ i.hotel-bell{
     position: relative;
     float: left;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     margin-right: 15px;
 }
 
@@ -1724,7 +1724,7 @@ i.hotel-bell img {
 
 
 /* DETALLE DE "MIS PEDIDOS */
-.product_item { 
+.product_item {
     border-radius: 2px;
     margin-top: 10px;
     padding: .3rem .6rem;
@@ -1760,7 +1760,7 @@ i.hotel-bell img {
     padding: 0 0 4px 14px;
     font-weight: normal;
     border-bottom: 1px solid #ccc;
-    position: relative; 
+    position: relative;
     float: inherit;
 }
 
@@ -1861,7 +1861,7 @@ i.hotel-bell img {
     padding: 5px 0;
     font-weight: normal;
     border-bottom: 1px solid #ccc;
-    position: relative; 
+    position: relative;
 }
 
 .accordion .accordion-navigation > a {
@@ -1897,7 +1897,7 @@ i.hotel-bell img {
     border-bottom: 1px solid #ccc;
     padding: 5px 10px 5px 0;
     position: relative;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .accordion .accordion-navigation > .content.active {
@@ -1925,7 +1925,7 @@ i.hotel-bell img {
     padding-top: 4px;
     padding-left: 8px;
     position: relative;
-    float: initial;    
+    float: initial;
 }
 
 .accordion .accordion-navigation > a .estado-controles {
@@ -1970,14 +1970,14 @@ i.hotel-bell img {
 }
 @media screen and (max-width: 893px) {
     .footer-resumen-articulo .total {
-/*        margin-top: 5px;  
+/*        margin-top: 5px;
         color: gray;*/
         padding-left: 0px!important;
     }
     .footer-resumen-articulo .usuario-resum .text-cliente {
         margin-left: 35px!important;
         margin-top: -40px!important;
-    }    
+    }
 }
 
 @media screen and (max-width: 851px) {
@@ -1988,26 +1988,26 @@ i.hotel-bell img {
     .contenedor-articulo p {
     border-bottom: 1px solid #ccc;
     border-bottom-style: dashed;
-    }    
+    }
 }
 
 @media screen and (max-width: 785px) {
     .footer-resumen-articulo .total {
         padding-right: 0px;
     }
-}    
+}
 
 
 
 @media screen and (max-width: 722px) {
     .footer-resumen-articulo .usuario-resum .text-cliente {
        width: 60%!important;
-    }   
+    }
     .footer-resumen-articulo .usuario-resum .text-cliente .name {
         font-size: 15px!important;
-    }    
+    }
 
-    .footer-resumen-articulo .total .columns.prec {    
+    .footer-resumen-articulo .total .columns.prec {
         padding-left: 4px!important;
         padding-right: 4px!important;
     }
@@ -2026,9 +2026,9 @@ i.hotel-bell img {
         margin-top: 47px;
         position: relative;
         float: left;
-    }    
+    }
     .footer-resumen-articulo .usuario-resum .foto-cliente {
-     /*   width: 40px;    
+     /*   width: 40px;
         height: 40px;*/
     }
 
@@ -2039,13 +2039,13 @@ i.hotel-bell img {
         margin-left: -60px;*/
         margin-top: 7px!important;
         margin-left: -30px!important;
-        
+
     }
     .footer-resumen-articulo .usuario-resum .text-cliente {
         margin-top: 5px!important;
     }
     /**/
-    .footer-resumen-articulo .datos-entrega {    
+    .footer-resumen-articulo .datos-entrega {
         width: 100%;
         border-left:none;
         border-right:none;
@@ -2054,10 +2054,10 @@ i.hotel-bell img {
 
         border-top: 1px solid #ccc;
         border-top-style: solid;
-        border-bottom: 1px solid #ccc;            
+        border-bottom: 1px solid #ccc;
         border-bottom-style: solid;
     }/**/
-        .footer-resumen-articulo .total {    
+        .footer-resumen-articulo .total {
 
         width: 100%;
     }
@@ -2083,12 +2083,16 @@ i.hotel-bell img {
 }
 
 .articulo-pedido .img-art-pedido img{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     margin-top: 10px;
+}
+
+.logo-resto img {
+  width: auto;
 }
 
 .contenedor-articulo {
@@ -2110,7 +2114,7 @@ i.hotel-bell img {
     border-top-style: solid;
     width: 100%;
     position: relative;
-    float: left;    
+    float: left;
     margin-top: 10px;
 }
 
@@ -2121,7 +2125,7 @@ i.hotel-bell img {
 }
 
 .footer-resumen-articulo .usuario-resum .foto-cliente {
-    width: 40px;    
+    width: 40px;
     height: 40px;
 }
 
@@ -2130,7 +2134,7 @@ i.hotel-bell img {
     height: 100%;
     margin-top: 15px;
     margin-left: -60px;
-    
+
 }
 
 .footer-resumen-articulo .usuario-resum .text-cliente {
@@ -2138,7 +2142,7 @@ i.hotel-bell img {
     position: relative;
     float: left;
     margin-left: 0px;
-    margin-top: 5px;  
+    margin-top: 5px;
     color: gray;
 }
 
@@ -2150,18 +2154,18 @@ i.hotel-bell img {
 .footer-resumen-articulo .usuario-resum .text-cliente .ubicacion{
     font-size: 14px;
    /* font-weight: bold;*/
-   
+
 }
 
 
 .footer-resumen-articulo .datos-entrega {
     position: relative;
-    float: left;  
+    float: left;
     border-left: 1px solid #ccc;
     border-left-style: solid;
     border-right: 1px solid #ccc;
-    border-right-style: solid;      
-    margin-top: 5px;  
+    border-right-style: solid;
+    margin-top: 5px;
     color: gray;
 }
 
@@ -2171,7 +2175,7 @@ i.hotel-bell img {
 .footer-resumen-articulo .datos-entrega .text-cliente .titulo{
     font-size: 13px;
     font-style: normal;
-   
+
 }
 
 .footer-resumen-articulo .datos-entrega .text-cliente .titulo .titulo-bold {
@@ -2194,7 +2198,7 @@ i.hotel-bell img {
 
 
 .footer-resumen-articulo .total {
-    margin-top: 5px;  
+    margin-top: 5px;
     color: gray;
     padding-left: 25px;
 }
