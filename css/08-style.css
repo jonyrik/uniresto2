@@ -1435,6 +1435,10 @@ a.arrowRight-noactive {
         width: 99%;
         margin-bottom: 10px;
     }
+
+    .product_item .btns-pedido-delivery {
+      margin-left: 0%;
+    }
 }
 
 @media screen and (max-width: 511px) {
