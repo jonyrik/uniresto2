@@ -1421,16 +1421,15 @@ right: 0;
 
   .acciones {
     position: absolute;
+    top: 222px !important;
   }
 
   .acciones ul {
     height: auto !important;
   }
-  .acciones #acciones1 {
-    display: none !important;
-  }
+
   .acciones #acciones2 {
-    display: none !important;
+    display: none ;
   }
 
   .acciones ul li:nth-child(even) {
@@ -1444,7 +1443,7 @@ right: 0;
       height: auto;
       padding: 5px 45px;
   }
-  
+
     .margin-top-15 {
         margin-top: 15px;
     }
@@ -1552,8 +1551,19 @@ right: 0;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
 
+
+  .acciones {
+    top: 0px !important;
+  }
+  .acciones #acciones1 {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 640px) {
   .store-tab .tabs .tab-title a {
     text-align: center;
   }
