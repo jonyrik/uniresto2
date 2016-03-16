@@ -24,6 +24,38 @@
 
 /*=== GENERALES ===*/
 
+/* checkbox */
+label {
+  position: relative;
+  font-size: 0.8rem;
+}
+input[type="checkbox"] {
+    margin: 0 15px 10px 0;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label:after {
+    background: #ED0707;
+    border: 0;
+}
+
+input[type="checkbox"] + label:after {
+    content: "";
+    display: block;
+    width: 12px;
+    /* margin: 3px 0 0 0; */
+    height: 12px;
+    border: 0;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    visibility: visible;
+    position: absolute;
+    top: 2px;
+    left: -20px;
+}
+/* */
+
 .ocultar {
     display: none;
 }
@@ -666,36 +698,6 @@ textarea {
 
 table tbody tr td {
   text-align: center;
-}
-
-label {
-  position: relative;
-  font-size: 0.8rem;
-}
-input[type="checkbox"] {
-    margin: 0 15px 10px 0;
-    visibility: hidden;
-}
-
-input[type="checkbox"]:checked + label:after {
-    background: #ED0707;
-    border: 0;
-}
-
-input[type="checkbox"] + label:after {
-    content: "";
-    display: block;
-    width: 12px;
-    /* margin: 3px 0 0 0; */
-    height: 12px;
-    border: 0;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    background: white;
-    visibility: visible;
-    position: absolute;
-    top: 2px;
-    left: -20px;
 }
 
 /*=== FIN FORM ===*/
@@ -1507,7 +1509,7 @@ right: 0;
         font-size: 0.8rem;
         padding: 10px;
         font-weight: normal;
-        /* border-bottom: 1px solid #ccc; */
+         border-bottom: 1px solid #ccc;
         position: relative;
         float: inherit;
         font-weight: bold;
