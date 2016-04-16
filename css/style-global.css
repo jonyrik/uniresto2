@@ -632,6 +632,8 @@ img.perfilImg {
 .store-tab .tabs {
     margin-right: 10px;
     font-weight: bold;
+    width: auto;
+    max-width: inherit;
 }
 
 .store-tab .tabs a .fa {
