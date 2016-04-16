@@ -1,20 +1,5 @@
 /*General*/
 
-@font-face {
-font-family: 'Raleway Bold';
-src: url('../font/Raleway-Bold.ttf') format('truetype');
-}
-
-@font-face {
-font-family: 'Raleway Medium';
-src: url('../font/Raleway-Medium.ttf') format('truetype');
-}
-
-@font-face {
-font-family: 'Raleway Thin';
-src: url('../font/raleway_thin.ttf') format('truetype');
-}
-
 body{
     font-size: 16px;
     background: #EBF0FD;
@@ -356,7 +341,7 @@ PRODUCTOS
     width: 100%;
     display: block;
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
     border: 1px solid #ED0707;
     color: #ED0707;
     text-transform: capitalize;
@@ -364,6 +349,10 @@ PRODUCTOS
     padding: 5px 0;
     margin-bottom: 10px;
     font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+#productos .default_button {
+  font-weight: 100;
 }
 
 .default_button:hover {
@@ -700,10 +689,12 @@ PRODUCTOS
 }
 
 #productos .product_item h2.title, #productos .product_item p.demora, #restos .product_item p.demora {
-    font-size: 13px;
+    font-size: 14px;
     padding: 12px 0 10px;
-    color: #484848;
+    /*color: #484848;*/
     margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
 }
 #productos .product_item p.demora {
     padding: 0 0 10px;
@@ -727,11 +718,11 @@ PRODUCTOS
 
 #productos .product_item .precio span, #restos .product_item .precio span {
     float: right;
-    font-size: 28px;
+    font-size: 24px;
     padding: 0 0 0 0.5rem;
     width: 30%;
-    color: #999;
-    line-height: 22px;
+    /*color: #999;*/
+    line-height: 28px;
 }
 
 #productos .product_item .precio .producto_logo, #restos .product_item .precio .producto_logo {
