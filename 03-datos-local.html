@@ -19,12 +19,6 @@
   <script charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
   <link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
 
-  <!-- Toggle button -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="js/supertoggle.js"></script>
-
 </head>
 <body class="reset store-view">
   <nav class="top-bar top-bar-nav" data-topbar role="navigation">
@@ -352,17 +346,11 @@
                                     <div class="tit bold">
                                       Efectivo
                                     </div>
-                                    <div>
-                                      <button class="on-off endis efec"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis.efec").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: true,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="efectivo" type="checkbox" checked name="efectivo">
+                                      <label class="switch-paddle" for="efectivo">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
@@ -373,17 +361,11 @@
                                     <div class="tit bold">
                                       Tarjetas de crédito
                                     </div>
-                                    <div>
-                                      <button class="on-off endis cred"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis.cred").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: false,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="tarcred" type="checkbox" name="tarcred">
+                                      <label class="switch-paddle" for="tarcred">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
@@ -433,17 +415,11 @@
                                     <div class="tit bold">
                                       Tarjetas de débito
                                     </div>
-                                    <div>
-                                      <button class="on-off endis deb"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis.deb").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: true,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="tarjdeb" type="checkbox" checked name="tarjdeb">
+                                      <label class="switch-paddle" for="tarjdeb">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
@@ -499,17 +475,11 @@
                                     <div class="tit bold">
                                       Efectivo
                                     </div>
-                                    <div>
-                                      <button class="on-off endis delefec"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis.delefec").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: true,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="efec" type="checkbox" checked name="efec">
+                                      <label class="switch-paddle" for="efec">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
@@ -520,17 +490,11 @@
                                     <div class="tit bold">
                                       Tarjetas de crédito
                                     </div>
-                                    <div>
-                                      <button class="on-off endis delcred"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis.delcred").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: true,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="deltarcred" type="checkbox" checked name="deltarcred">
+                                      <label class="switch-paddle" for="deltarcred">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
@@ -541,17 +505,11 @@
                                     <div class="tit bold">
                                       Tarjetas de débito
                                     </div>
-                                    <div>
-                                      <button class="on-off endis deldeb"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis.deldeb").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: false,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="deltardeb" type="checkbox" name="deltardeb">
+                                      <label class="switch-paddle" for="deltardeb">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
