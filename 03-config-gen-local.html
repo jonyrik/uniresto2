@@ -20,10 +20,10 @@
   <link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
 
   <!-- Toggle button -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="js/supertoggle.js"></script>
+  <script src="js/supertoggle.js"></script> -->
 
 </head>
 <body class="reset store-view">
@@ -215,17 +215,11 @@
                                       <div class="tit">
                                         Órdenes en el local:
                                       </div>
-                                      <div>
-                                        <button class="on-off endis ord-local"></button>
-                                          <script type="text/javascript">
-                                      		$(".on-off.endis.ord-local").supertoggle({
-                                      			onVal: 1,
-                                      			onContent: "<i class='fa fa-circle'></i> Si",
-                                      			offVal: 0,
-                                      			offContent: "<i class='fa fa-circle'></i> No",
-                                      			defaultState: false,
-                                      		});
-                                      		</script>
+                                      <div class="switch tiny">
+                                        <input class="switch-input" id="orloc" type="checkbox" name="orloc">
+                                        <label class="switch-paddle" for="orloc">
+                                          <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                        </label>
                                       </div>
                                     </div>
 
@@ -233,17 +227,11 @@
                                       <div class="tit">
                                         Entregas a domicilio:
                                       </div>
-                                      <div>
-                                        <button class="on-off endis domi"></button>
-                                          <script type="text/javascript">
-                                      		$(".on-off.endis.domi").supertoggle({
-                                      			onVal: 1,
-                                      			onContent: "<i class='fa fa-circle'></i> Si",
-                                      			offVal: 0,
-                                      			offContent: "<i class='fa fa-circle'></i> No",
-                                      			defaultState: true,
-                                      		});
-                                      		</script>
+                                      <div class="switch tiny">
+                                        <input class="switch-input" id="endom" type="checkbox" checked name="endom">
+                                        <label class="switch-paddle" for="endom">
+                                          <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                        </label>
                                       </div>
                                     </div>
 
@@ -279,17 +267,11 @@
                                     <div class="tit">
                                       Opción genérica 1:
                                     </div>
-                                    <div>
-                                      <button class="on-off endis"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: false,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="opgen1a" type="checkbox" name="opgen1a">
+                                      <label class="switch-paddle" for="opgen1a">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
@@ -297,17 +279,11 @@
                                     <div class="tit">
                                       Opción genérica 2:
                                     </div>
-                                    <div>
-                                      <button class="on-off endis"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: false,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="opgen2a" type="checkbox" name="opgen2a">
+                                      <label class="switch-paddle" for="opgen2a">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
@@ -315,17 +291,11 @@
                                     <div class="tit">
                                       Opción genérica 3:
                                     </div>
-                                    <div>
-                                      <button class="on-off endis"></button>
-                                        <script type="text/javascript">
-                                    		$(".on-off.endis").supertoggle({
-                                    			onVal: 1,
-                                    			onContent: "<i class='fa fa-circle'></i> Si",
-                                    			offVal: 0,
-                                    			offContent: "<i class='fa fa-circle'></i> No",
-                                    			defaultState: false,
-                                    		});
-                                    		</script>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="opgen3a" type="checkbox" checke name="opgen3a">
+                                      <label class="switch-paddle" for="opgen3a">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
                                     </div>
                                   </div>
 
@@ -346,17 +316,11 @@
                                   <div class="tit">
                                     Administrado por el local:
                                   </div>
-                                  <div>
-                                    <button class="on-off endis adlocal"></button>
-                                      <script type="text/javascript">
-                                      $(".on-off.endis.adlocal").supertoggle({
-                                        onVal: 1,
-                                        onContent: "<i class='fa fa-circle'></i> Si",
-                                        offVal: 0,
-                                        offContent: "<i class='fa fa-circle'></i> No",
-                                        defaultState: true,
-                                      });
-                                      </script>
+                                  <div class="switch tiny">
+                                    <input class="switch-input" id="adlocal" type="checkbox" checked name="exampleSwitchadlocal">
+                                    <label class="switch-paddle" for="adlocal">
+                                      <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                    </label>
                                   </div>
                                 </div>
 
@@ -364,17 +328,11 @@
                                   <div class="tit">
                                     Abierto al público:
                                   </div>
-                                  <div>
-                                    <button class="on-off endis abpub"></button>
-                                      <script type="text/javascript">
-                                      $(".on-off.endis.abpub").supertoggle({
-                                        onVal: 1,
-                                        onContent: "<i class='fa fa-circle'></i> Si",
-                                        offVal: 0,
-                                        offContent: "<i class='fa fa-circle'></i> No",
-                                        defaultState: true,
-                                      });
-                                      </script>
+                                  <div class="switch tiny">
+                                    <input class="switch-input" id="abpub" type="checkbox" checked name="abpub">
+                                    <label class="switch-paddle" for="abpub">
+                                      <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                    </label>
                                   </div>
                                 </div>
 
@@ -382,17 +340,11 @@
                                   <div class="tit">
                                     Permitir comentarios:
                                   </div>
-                                  <div>
-                                    <button class="on-off endis comm"></button>
-                                      <script type="text/javascript">
-                                      $(".on-off.endis.comm").supertoggle({
-                                        onVal: 1,
-                                        onContent: "<i class='fa fa-circle'></i> Si",
-                                        offVal: 0,
-                                        offContent: "<i class='fa fa-circle'></i> No",
-                                        defaultState: false,
-                                      });
-                                      </script>
+                                  <div class="switch tiny">
+                                    <input class="switch-input" id="percom" type="checkbox" name="percom">
+                                    <label class="switch-paddle" for="percom">
+                                      <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                    </label>
                                   </div>
                                 </div>
 
@@ -410,17 +362,11 @@
                               <div class="tit">
                                 Opción genérica 1:
                               </div>
-                              <div>
-                                <button class="on-off endis"></button>
-                                  <script type="text/javascript">
-                                  $(".on-off.endis").supertoggle({
-                                    onVal: 1,
-                                    onContent: "<i class='fa fa-circle'></i> Si",
-                                    offVal: 0,
-                                    offContent: "<i class='fa fa-circle'></i> No",
-                                    defaultState: false,
-                                  });
-                                  </script>
+                              <div class="switch tiny">
+                                <input class="switch-input" id="opgen1" type="checkbox" name="opgen1">
+                                <label class="switch-paddle" for="opgen1">
+                                  <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                </label>
                               </div>
                             </div>
 
@@ -428,17 +374,11 @@
                               <div class="tit">
                                 Opción genérica 2:
                               </div>
-                              <div>
-                                <button class="on-off endis"></button>
-                                  <script type="text/javascript">
-                                  $(".on-off.endis").supertoggle({
-                                    onVal: 1,
-                                    onContent: "<i class='fa fa-circle'></i> Si",
-                                    offVal: 0,
-                                    offContent: "<i class='fa fa-circle'></i> No",
-                                    defaultState: false,
-                                  });
-                                  </script>
+                              <div class="switch tiny">
+                                <input class="switch-input" id="opgen2" type="checkbox" name="opgen2">
+                                <label class="switch-paddle" for="opgen2">
+                                  <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                </label>
                               </div>
                             </div>
 

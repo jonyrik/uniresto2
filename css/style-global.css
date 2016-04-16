@@ -5,7 +5,7 @@
     src: url(font/Carrington.woff);
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Raleway Bold';
     src: url('../fonts/Raleway-Bold.ttf') format('truetype');
 }
@@ -18,11 +18,26 @@
 @font-face {
     font-family: 'Raleway Regular';
     src: url('../fonts/Raleway-Regular_0.ttf') format('truetype');
-}
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300italic,300,200italic,200,100,100italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 /*=== FIN FUENTES ===*/
 
 /*=== GENERALES ===*/
+
+body {
+  color: #504d5b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  color: inherit;
+}
+
+img {
+  vertical-align: sub;
+}
 
 /* checkbox */
 label {
@@ -35,15 +50,47 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label:after {
-    background: #ED0707;
+    /*background: #ED0707;*/
     border: 0;
 }
 
+.switch input + label {
+  background: #ED0707;
+}
+.switch input:checked + label {
+  background: #00a57b;
+}
+.config-gen-local .switch-paddle {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  transition: all 0.25s ease-out;
+  border-radius: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+.switch-active, .switch-inactive {
+    position: absolute;
+    top: 51%;
+    color: white;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.switch-active {
+    left: 8%;
+    display: none;
+}
+.switch-inactive {
+    right: 115%;
+}
+
 input[type="checkbox"] + label:after {
-    content: "";
+    /*content: "";
     display: block;
     width: 12px;
-    /* margin: 3px 0 0 0; */
     height: 12px;
     border: 0;
     border-radius: 20px;
@@ -52,7 +99,7 @@ input[type="checkbox"] + label:after {
     visibility: visible;
     position: absolute;
     top: 2px;
-    left: -20px;
+    left: -20px;*/
 }
 /* */
 
@@ -337,22 +384,25 @@ img.perfilImg {
 
     .shop_header .shop_info .name_cat {
         float: left;
-        padding: 94px 0 0 24px;
+        padding: 66px 0 0 24px;
     }
 
     .shop_header .shop_info h2 {
         float: left;
-        font-size: 23px;
+        font-size: 25px;
+        font-weight: 800;
         color: white;
         text-shadow: 0 1px 2px #000;
         width: 100%;
-        margin-bottom: 6px;
+        margin-bottom: 0px;
     }
 
     .shop_header .shop_info p {
         float: left;
         color: white;
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 200;
+        font-family: 'Raleway', sans-serif;
     }
 
     .shop_header .shop_schedule {
@@ -361,7 +411,9 @@ img.perfilImg {
 
     .shop_header .shop_schedule p {
         color: white;
-        font-size: 15px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
     }
 
     .shop_header .shop_header_data {
@@ -506,7 +558,7 @@ img.perfilImg {
     padding: 10px;
     width: 100%;
     font-size: 1.1rem;
-    font-family: 'Raleway Regular';
+    font-family: 'Raleway';
     font-weight: bold;
 }
 
@@ -591,10 +643,12 @@ img.perfilImg {
     background-color: rgb(41, 53, 65);
     border-bottom: 0px;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 14px;
     margin-bottom: 2px;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    white-space: nowrap;
 }
 
 .store-tab .tabs {
@@ -1123,12 +1177,12 @@ table tbody tr td {
 }
 
 .dotted-bottom {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 10px;
-    font-size: 1.6rem;
+    font-size: 23px;
     text-transform: uppercase;
     color: #484848;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .amigos .tabs dd > a, .amigos .tabs .tab-title > a {
