@@ -2,22 +2,6 @@
 
 
 /*General*/
-
-@font-face {
-    font-family: 'Raleway Bold';
-    src: url('../font/Raleway-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway Medium';
-    src: url('../font/Raleway-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway Thin';
-    src: url('../font/raleway_thin.ttf') format('truetype');
-}
-
 body{
     font-size: 16px;
     background: #EBF0FD;
@@ -162,7 +146,7 @@ img.perfilImg{
                 .texto-acciones{
                     text-decoration: none;
                     display: none;
-                    font-family: 'Raleway Bold';
+                    /*font-family: 'Raleway';*/
                     font-size: 14px;
                     color: #6C8FC3;
                     background: white;
@@ -210,7 +194,7 @@ img.perfilImg{
 
                             .header-perfil .nombre-header-perfil{
 
-                                font-size: 14px;color: white;text-shadow: 1px 0 black;padding: 0;margin: 0;margin-left: -10px;font-family: 'Raleway Bold';}
+                                font-size: 14px;color: white;text-shadow: 1px 0 black;padding: 0;margin: 0;margin-left: -10px;}
 
                                 .header-perfil .info-header-perfil{
                                     color: white;
@@ -218,7 +202,6 @@ img.perfilImg{
                                     padding: 0;
                                     margin: 0;
                                     margin-left: -10px;
-                                    font-family: 'Raleway Bold';
                                 }
 
                                 .foto-perfil{
@@ -545,7 +528,6 @@ img.perfilImg{
                                                 .texto-acciones{
                                                     text-decoration: none;
                                                     display: block;
-                                                    font-family: 'Raleway Bold';
                                                     font-size: 14px;
                                                     color: #6C8FC3;
                                                     background: white!important;
@@ -602,7 +584,7 @@ img.perfilImg{
 
                                                             .header-perfil .nombre-header-perfil{
 
-                                                                font-size: 18px;color: white;text-shadow: 1px 0 black;padding: 0;margin: 0;margin-left: 40px;font-family: 'Raleway Bold';}
+                                                                font-size: 18px;color: white;text-shadow: 1px 0 black;padding: 0;margin: 0;margin-left: 40px;}
 
                                                                 .header-perfil .info-header-perfil{
                                                                     color: white;
@@ -610,7 +592,6 @@ img.perfilImg{
                                                                     padding: 0;
                                                                     margin: 0;
                                                                     margin-left: 40px;
-                                                                    font-family: 'Raleway Bold';
                                                                 }
 
                                                                 .foto-perfil{
@@ -1421,14 +1402,14 @@ margin: 1em 0;
 /*FIN style CARGA PRODUCTOS*/
 
 .info-perfil{
-position: absolute;bottom: 20px;}
+position: absolute;bottom: -35px;}
 
-.header-perfil .nombre-header-perfil{padding: 0;margin: 0;margin-left: -10px;float: left;     font-family: Helvetica, sans-serif;     font-size: 20px;     color: white;     text-shadow: 0 1px 2px #000;     width: 100%;     margin-bottom: 6px;}
+.header-perfil .nombre-header-perfil{padding: 0;margin: 0;margin-left: 17px;float: left;     font-family: Helvetica, sans-serif;     font-size: 20px;     color: white;     text-shadow: 0 1px 2px #000;     width: 100%;}
 
 .header-perfil .info-header-perfil{
     padding: 0;
     margin: 0;
-    margin-left: -10px;
+    margin-left: 17px;
     color: white;
     font-family: Helvetica, sans-serif;
     font-size: 16px;

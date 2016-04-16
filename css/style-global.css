@@ -784,7 +784,6 @@ table tbody tr td {
 .acciones .texto-acciones {
     text-decoration: none;
     display: none;
-    font-family: 'Raleway Bold';
     font-size: 14px;
     color: #6C8FC3;
     background: white;
@@ -857,7 +856,8 @@ table tbody tr td {
     }
 
     .acciones ul li:nth-child(even) {
-        background: #273C5B;
+        /*background: #273C5B;*/
+        background: #01d7a1;
         height: 0;
         /*padding: 5px 15px;*/
     }
@@ -866,7 +866,8 @@ table tbody tr td {
       }
 
     .acciones ul li:nth-child(odd) {
-        background: #314D77;
+        /*background: #314D77;*/
+        background: #00a57b;
         height: 0;
         /*padding: 5px 15px;*/
     }
@@ -874,7 +875,6 @@ table tbody tr td {
     .texto-acciones {
         text-decoration: none;
         display: block;
-        font-family: 'Raleway Bold';
         font-size: 14px;
         color: #6C8FC3;
         background: white !important;
@@ -1188,11 +1188,13 @@ table tbody tr td {
 }
 
 #productos .custom-columns .filtros h2.main__title, #restos .custom-columns .filtros h2.main__title {
-    font-size: 0.9rem;
+    /*font-size: 0.9rem;*/
     text-transform: uppercase;
     /* margin: 20px 0 1px 15px; */
-    color: #777;
-    font-weight: bold;
+    /*color: #777;*/
+    font-weight: normal;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 #productos .custom-columns .filtros .accordion .accordion-navigation > a,
@@ -1200,12 +1202,14 @@ table tbody tr td {
 #restos .custom-columns .filtros .accordion .accordion-navigation.active > a {
     background: transparent;
     text-transform: uppercase;
-    color: #777;
-    font-size: 0.9rem;
+    /*color: #777;*/
+    /*font-size: 0.9rem;*/
     padding: 6px 0 10px 5px;
     font-weight: normal;
     border-bottom: 1px solid #d9dee4;
     position: relative;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 #productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion, #restos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion {

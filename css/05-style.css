@@ -531,7 +531,10 @@ PRODUCTOS
 }
 
 #productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion label, #restos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion label {
-    font-size: 0.775rem;
+    /*font-size: 0.775rem;*/
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
 }
 
 #productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion input[type="checkbox"], #productos .cont-filtros input[type="checkbox"] {
@@ -563,6 +566,7 @@ PRODUCTOS
     font-size: 12px;
     color: #979797;
     border: 1px solid #979797;
+    font-weight: 100;
 }
 
 #productos #contactoChat, #restos #contactoChat {
