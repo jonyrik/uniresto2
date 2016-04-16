@@ -1,20 +1,5 @@
 /*General*/
 
-@font-face {
-font-family: 'Raleway Bold';
-src: url('../font/Raleway-Bold.ttf') format('truetype');
-}
-
-@font-face {
-font-family: 'Raleway Medium';
-src: url('../font/Raleway-Medium.ttf') format('truetype');
-}
-
-@font-face {
-font-family: 'Raleway Thin';
-src: url('../font/raleway_thin.ttf') format('truetype');
-}
-
 body{
     font-size: 16px;
     background: #EBF0FD;
@@ -383,13 +368,14 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
   display: table;
   text-align: center;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 16px;
   border: 1px solid #ED0707;
   color: #ED0707;
   border-radius: 20px;
   padding: 5px 10px;
   margin: 20px 0;
   transition: 0.25s;
+  font-family: 'Raleway', sans-serif;
 }
 .default_button:hover, .default_button.crear:hover {
   color: white;
@@ -892,6 +878,9 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
   margin: 0;
   display: flex;
 }
+.fotos-local .logo-local .crear-galeria ul.fotos-sel {
+  align-items: center;
+}
 .single.historias .crear-galeria ul.fotos-sel li, .fotos-local .crear-galeria ul.fotos-sel li {
   width: 16%;
   margin-right: 1rem;
@@ -907,7 +896,7 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 .single.historias .crear-galeria ul.fotos-sel li .boton.cruz, .fotos-local .crear-galeria ul.fotos-sel li .boton.cruz {
   position: absolute;
   top: 0px;
-  right: 0px; 
+  right: 0px;
   background: white none repeat scroll 0% 0%;
   border-radius: 30px;
   font-size: 2rem;

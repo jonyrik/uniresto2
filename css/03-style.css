@@ -68,7 +68,8 @@
     font-size: 0.8rem;
     float: left;
     margin: 0px;
-    width: 50%;
+    /*width: 50%;*/
+    width: 43%;
 }
 .fotos-local .sel-portada h2.tit, .fotos-local .crear-galeria h2.tit {
   float: none;
