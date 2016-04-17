@@ -79,26 +79,26 @@
   </div-->
   <div id="header" class="shop_header">
 
-    <img src="img/local_home_bg.jpg">
+    <!-- <img src="img/local_home_bg.jpg"> -->
 
 
     <div class="shop_bg"></div>
     <div class="shop_header_data">
       <div class="container">
         <div class="row">
-          <div class="columns large-7 medium-7 small-12">
+          <div class="columns large-7 medium-8 small-12">
             <div class="shop_info">
               <img src="img/local_logo.jpg">
               <div class="name_cat">
                 <h2>Nombre Local</h2>
                 <p>Categoria</p>
-                <div class="shop_schedule_inside">
+                <!-- <div class="shop_schedule_inside">
                   <p><img src="img/chek_icon.png"> Abierto hasta 01:00 hs</p>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
-          <div class="columns large-3 medium-4 small-12 large-offset-1 shop_schedule">
+          <div class="columns large-3 medium-5 small-12 large-offset-1 shop_schedule">
             <p><img src="img/chek_icon.png"> Abierto hasta 01:00 hs</p>
           </div>
         </div>
@@ -134,7 +134,7 @@
       </dl>
     </div>
 
-    <a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="show-for-small-only" style="width: 45px;"><i class="fa fa-info-circle" style="font-size: 25px;color: #FF900B;margin: 10px;"></i></a>
+    <!-- <a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="show-for-small-only" style="width: 45px;"><i class="fa fa-info-circle" style="font-size: 25px;color: #FF900B;margin: 10px;"></i></a> -->
     <div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
       <dl class="small-12 medium-3 columns">
         <dt>Dirección</dt>
@@ -199,7 +199,7 @@
         </ul>
         <div class="tabs-content-full">
           <div class="content active">
-            <div class="medium-9 large-9 columns">
+            <div class="small-12 medium-9 large-9 columns">
               <h3 class="dotted-bottom"><img src="img/menu2.png" style="width:50px;" /> Configuración general del local</h3>
 
               <div class="row min-padding">
@@ -239,7 +239,7 @@
                                       <div class="tit">
                                         Costo de delivery:
                                       </div>
-                                      <div class="flex">
+                                      <div class="flex txt-input">
                                         <label>$</label> <input type="text" />
                                       </div>
                                     </div>
@@ -248,7 +248,7 @@
                                       <div class="tit max-dis">
                                         Máxima distancia de delivery:
                                       </div>
-                                      <div class="flex">
+                                      <div class="flex txt-input">
                                         <label>km.</label> <input type="text" />
                                       </div>
                                     </div>
@@ -288,6 +288,18 @@
                                   </div>
 
                                   <div class="row columns flex">
+                                    <div class="tit">
+                                      Opción genérica 3:
+                                    </div>
+                                    <div class="switch tiny">
+                                      <input class="switch-input" id="opgen3a" type="checkbox" checke name="opgen3a">
+                                      <label class="switch-paddle" for="opgen3a">
+                                        <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                      </label>
+                                    </div>
+                                  </div>
+
+                                  <div class="row columns flex" style="opacity:0;">
                                     <div class="tit">
                                       Opción genérica 3:
                                     </div>
@@ -348,6 +360,18 @@
                                   </div>
                                 </div>
 
+                                <div class="row columns flex" style="opacity:0;">
+                                  <div class="tit">
+                                    Permitir comentarios:
+                                  </div>
+                                  <div class="switch tiny">
+                                    <input class="switch-input" id="percom" type="checkbox" name="percom">
+                                    <label class="switch-paddle" for="percom">
+                                      <!-- <span class="show-for-sr">Download Kittens</span> -->
+                                    </label>
+                                  </div>
+                                </div>
+
                               </div> <!-- columns -->
                             </div> <!-- row -->
               </div>
@@ -386,7 +410,7 @@
                               <div class="tit">
                                 Opción genérica 3:
                               </div>
-                              <div class="flex">
+                              <div class="flex txt-input">
                                 <label>$</label> <input type="text" />
                               </div>
                             </div>
@@ -395,7 +419,7 @@
                               <div class="tit">
                                 Opción genérica 4:
                               </div>
-                              <div class="flex">
+                              <div class="flex txt-input">
                                 <label>km.</label> <input type="text" />
                               </div>
                             </div>

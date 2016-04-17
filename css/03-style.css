@@ -118,6 +118,10 @@ a {
   width: 48%;
 }
 
+/*.config-gen-local .panel .flex {
+  justify-content: space-between;
+  width: 50%;
+}*/
 .config-gen-local .panel .tit {
     margin: 0px 10px;
     font-size: 0.9rem;
@@ -127,6 +131,7 @@ a {
 }
 .config-gen-local .panel .tit.max-dis {
   line-height: 1.1;
+  white-space: wrap;
 }
 .config-gen-local .panel .row.flex {
   width: 100%;
@@ -136,12 +141,13 @@ a {
   font-size: 0.8rem;
   line-height: 2;
 }
+
 .config-gen-local .panel input[type="text"] {
     border: none;
     background: #EBF0FD;
-    width: 38px;
+    width: 48px;
     height: 25px;
-    margin: 0 0 8px 5px;
+    margin: 0 0 1.5rem 5px;
     box-shadow: none;
 }
 
@@ -805,6 +811,26 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
     padding: 0;
   }
 
+  .config-gen-local .panel .txt-input {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .config-gen-local .panel .txt-input label {
+    width: 25px;
+    margin-right: 5px;
+    text-align: right;
+    line-height: 2.4;
+  }
+
+  .config-gen-local .panel input[type="text"] {
+    display: block;
+    height: 1.5rem;
+    width: 3rem
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 1.5rem 0px;
+  }
+
   .padding-left-15, .padding-right-15 {
     padding: 0 !important;
   }
@@ -838,6 +864,21 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
   }
   .nuevo-rrhh .tabs-content-full .caja-default {
     margin-bottom: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .tabs.vertical.hide-for-small-only {
+    display: none !important;
+  }
+
+  .tabs.horizontal.show-for-small-only {
+    display: inherit !important;
+  }
+
+  .config-gen-local .tabs-content-full .content .small-12 {
+    width: 100%;
   }
 
 }
@@ -1643,12 +1684,6 @@ color: #576A7D;
     height: 200px!important;
   }
 
-  .shop_header .shop_info {
-    float: left;
-    margin-top: 10px;
-    padding-left: 16px;
-    width: 100%;
-  }
 
   .shop_header .shop_info .shop_schedule_inside {
     color: white;
@@ -1665,32 +1700,32 @@ color: #576A7D;
     font-size: 14px;
   }
 
-  .shop_header .shop_info img {
+  /*.shop_header .shop_info img {
     float: left;
     width: 25%;
-  }
+  }*/
 
-  .shop_header .shop_info .name_cat{
+  /*.shop_header .shop_info .name_cat{
     float: left;
     padding: 0 0 0 24px;
-  }
+  }*/
 
-  .shop_header .shop_info h2 {
+  /*.shop_header .shop_info h2 {
     float: left;
     font-size: 16px;
     color: white;
     text-shadow: 0 1px 2px #000;
     width: 100%;
     margin-bottom: 6px;
-  }
+  }*/
 
-  .shop_header .shop_info p {
+  /*.shop_header .shop_info p {
     float: left;
     color: white;
     font-size: 15px;
-  }
+  }*/
 
-  .shop_header .shop_schedule {
+  /*.shop_header .shop_schedule {
     padding: 15px 0 0 20px;
     display: none;
   }
@@ -1706,7 +1741,7 @@ color: #576A7D;
     overflow: hidden;
     margin: 0 auto;
     width: 100%;
-  }
+  }*/
 
   #content {
     margin-top: 20px;
@@ -2804,13 +2839,6 @@ ul.ingredients-list li:before {
     height: 100%;
   }
 
-  .shop_header .shop_info {
-    float: left;
-    margin-top: 85px;
-    padding-top: 88px;
-    padding-left: 16px;
-  }
-
   .shop_header .shop_info img {
     float: left;
     width: 160px;
@@ -2846,7 +2874,7 @@ ul.ingredients-list li:before {
   }
 
   .shop_header .shop_header_data {
-    top: -340px;
+    /*top: -340px;*/
   }
 
   #content .content_nav {

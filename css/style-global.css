@@ -27,9 +27,17 @@ input[type="checkbox"] {
     visibility: hidden;
 }
 
+.row {
+  position: relative;
+}
+
 .filtros input[type="checkbox"]:checked + label:after {
     background: #ED0707;
     border: 0;
+}
+
+.switch {
+  margin-right: 12px;
 }
 
 .switch input + label {
@@ -220,10 +228,12 @@ img.perfilImg {
 }
 
 .shop_header .shop_info {
-    float: left;
-    margin-top: 10px;
-    padding-left: 16px;
+    /*margin-top: 10px;*/
     width: 100%;
+    float: left;
+    padding-left: 16px;
+    margin-top: 35px;
+/*padding-top: 88px;*/
 }
 
 .shop_header .shop_info .shop_schedule_inside {
@@ -243,42 +253,58 @@ img.perfilImg {
 
 .shop_header .shop_info img {
     float: left;
-    width: 25%;
+    width: 160px;
 }
 
 .shop_header .shop_info .name_cat {
     float: left;
-    padding: 0 0 0 24px;
+    padding: 66px 0 0 24px;
 }
 
 .shop_header .shop_info h2 {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-shadow: 0 1px 2px #000;
-    width: 100%;
-    margin-bottom: 6px;
+  float: left;
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 1px 2px #000;
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .shop_header .shop_info p {
-    float: left;
-    color: white;
-    font-size: 15px;
+  float: left;
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: 'Raleway', sans-serif;
 }
 
-.shop_header .shop_schedule {
+/*.shop_header .shop_schedule {
     padding: 15px 0 0 20px;
     display: none;
+}*/
+
+.shop_header .shop_schedule {
+    /*padding: 87px 0 0 20px;*/
+    display: block;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .shop_header .shop_schedule p {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
 }
 
 .shop_header .shop_header_data {
-    position: relative;
-    top: -159px;
+    /*position: relative;*/
+    /*top: -159px;*/
+    position: absolute;
+    bottom: 0;
     overflow: hidden;
     margin: 0 auto;
     width: 100%;
@@ -308,6 +334,8 @@ img.perfilImg {
     overflow: hidden;
     position: relative;
     height: 200px !important;
+    background: url('../img/local_home_bg.jpg') no-repeat;
+    background-size: cover;
 }
 
 @media (min-width: 756px) {
@@ -348,13 +376,6 @@ img.perfilImg {
         height: 100%;
     }
 
-    .shop_header .shop_info {
-        float: left;
-        margin-top: 85px;
-        padding-top: 88px;
-        padding-left: 16px;
-    }
-
     .shop_header .shop_info img {
         float: left;
         width: 160px;
@@ -363,24 +384,6 @@ img.perfilImg {
     .shop_header .shop_info .name_cat {
         float: left;
         padding: 66px 0 0 24px;
-    }
-
-    .shop_header .shop_info h2 {
-        float: left;
-        font-size: 25px;
-        font-weight: 800;
-        color: white;
-        text-shadow: 0 1px 2px #000;
-        width: 100%;
-        margin-bottom: 0px;
-    }
-
-    .shop_header .shop_info p {
-        float: left;
-        color: white;
-        font-size: 20px;
-        font-weight: 200;
-        font-family: 'Raleway', sans-serif;
     }
 
     .shop_header .shop_schedule {
@@ -395,7 +398,7 @@ img.perfilImg {
     }
 
     .shop_header .shop_header_data {
-        top: -340px;
+        /*top: -340px;*/
     }
 
     #content .content_nav {
@@ -1608,9 +1611,51 @@ right: 0;
 
 }
 
+@media (max-width: 768px) {
+  .store-tab .tabs a .fa {
+    width: auto;
+    float: none;
+  }
+}
+
 @media (max-width: 640px) {
+
+  #header {
+    height: 300px !important;
+    max-height: 300px;
+  }
   .store-tab .tabs .tab-title a {
     text-align: center;
+  }
+
+  .shop_header .shop_schedule {
+    position: relative;
+  }
+  .shop_header .shop_schedule p {
+    text-align: center;
+  }
+
+  .shop_header .shop_bg {
+    height: 300px !important;
+  }
+
+  .shop_header .shop_info {
+    text-align: center;
+  }
+
+  .shop_header .shop_info img {
+    float: none;
+  }
+
+  .shop_header .shop_info .name_cat {
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .shop_header .shop_info p {
+    text-align: center;
+    width: 100%;
   }
 
 }
