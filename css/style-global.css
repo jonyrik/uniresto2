@@ -641,8 +641,8 @@ img.perfilImg {
     margin-right: 5px;
     font-size: 1.3em;
     width: 20px;
-    display: table;
     float: left;
+    text-align: center;
 }
 
 .store-name a {
