@@ -1658,11 +1658,22 @@ right: 0;
     width: 100%;
   }
 
+  .acciones ul li:nth-child(2n+1), .acciones ul li:nth-child(2n) {
+    padding: 5px;
+  }
+  .acciones ul li a {
+    width: 50%;
+    display: table;
+    margin: 0 auto;
+  }
+
 }
 
 .panel.callout li{
     color: #777;
     font-size: 12px;
 }
+
+
 
 /* FIN PANTALLA 07 */
