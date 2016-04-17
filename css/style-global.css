@@ -640,6 +640,9 @@ img.perfilImg {
     color: #ED0707;
     margin-right: 5px;
     font-size: 1.3em;
+    width: 20px;
+    display: table;
+    float: left;
 }
 
 .store-name a {
