@@ -1087,7 +1087,7 @@ padding-right: 0;
     right: 0rem;
     border-radius: 0px 10px 10px 0px;
     height: 2.25rem;
-    padding-top: 1rem;
+    /*padding-top: 1rem;*/
     background-position: center;
     top: 1px;
     cursor: pointer;
