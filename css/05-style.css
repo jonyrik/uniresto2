@@ -790,6 +790,7 @@ PRODUCTOS
     width: 100%;
     border-top: 1px solid #ccc;
     padding: 11px 0;
+    text-align: center;
 }
 
 #productos .product_item .social a {
@@ -933,7 +934,7 @@ PRODUCTOS
 
 .filtros-colap {
     width: 98%;
-    padding: 10px 20px 0;
+    padding: 10px 20px;
     display: table;
     background: white;
     margin-top: 10px;
@@ -963,13 +964,18 @@ PRODUCTOS
 }
 
 .filtros-colap label.modificar {
-    float: right;
+    /*float: right;*/
     color: #ED0707;
     text-transform: uppercase;
+    width: 100%;
+    position: relative;
 }
 .filtros-colap label.modificar .flecha {
-    display: inline-block;
-    padding: 0.4rem;
+    /*display: inline-block;
+    padding: 0.4rem;*/
+    position: absolute;
+    right: 0;
+    top: 3px;
 }
 .filtros-colap label.modificar .flecha.f-abierta {
     display: none;
@@ -982,7 +988,7 @@ PRODUCTOS
     padding: 10px 20px;
     display: none;
 }
-.cont-filtros input[type="text"] {
+.cont-filtros input[type="text"], .buscando input[type="text"] {
     width: 60%;
     display: inline-block;
     border: solid thin #EBF0FD;
@@ -992,6 +998,15 @@ PRODUCTOS
     margin: 0px 10px;
     height: auto;
 }
+.buscando {
+  display: flex;
+  width: 98%;
+  padding: 10px 0 0 20px;
+}
+.buscando .ubicacion {
+  width: 42%;
+}
+
 .cont-filtros label {
     width: 48%;
 }
@@ -1854,6 +1869,16 @@ RESTOS
     #productos .custom-columns .filtros h2.main__title, #restos .custom-columns .filtros h2.main__title {
         margin: 10px 0 1px 15px;
     }
+
+    #productos .product_item .social a {
+      width: auto;
+      display: block;
+      padding-left: 1%;
+    }
+    #productos .product_item .social a.com::after {
+      left: 55px;
+    }
+
 }
 
 
