@@ -167,7 +167,7 @@ a {
 }
 
 .datos-local .accordion-navigation .enc {
-  margin: 10px 0 20px;
+  margin: 0px 0 20px;
 }
 .datos-local .accordion-navigation h2 {
   font-size: 1.1rem;
@@ -201,6 +201,10 @@ a {
 
 .datos-local .accordion-navigation .en-local h4,.datos-local .accordion-navigation .delivery h4 {
   margin-bottom: 20px;
+}
+.datos-local .icn {
+  width: 20px;
+  display: table;
 }
 .datos-local .en-local i, .datos-local .delivery i {
   color: #B0BABB;
