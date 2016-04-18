@@ -84,6 +84,10 @@ img.perfilImg{
     top: 0.53125rem;
 }
 
+.amigos .enc .cont-search {
+  position: relative;
+}
+
 .img-buscar{
     width: 20%;background: url('../img/buscar.svg') center no-repeat;background-size: 21px;box-shadow: none;padding: 0;border-left: none;float: left;top: 0!important;border: 0;}
 
@@ -804,7 +808,7 @@ padding-right: 0;
     border: none;
     position: absolute;
     padding-right: 2rem;
-    right: 1rem;
+    right: 0rem;
     border-radius: 0px 10px 10px 0px;
     height: 2.25rem;
     padding-top: 1rem;

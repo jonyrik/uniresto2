@@ -200,6 +200,7 @@ img.perfilImg {
 
 .tab-title.tabs-home-title, .tab-title.tabs-home-title.ocultar {
   display: block;
+  margin-left: 2px;
 }
 .tab-title.tabs-home-title.ver {
   display: block;
@@ -801,10 +802,10 @@ table tbody tr td {
     text-decoration: none;
     display: none;
     font-size: 14px;
-    color: #6C8FC3;
+    color: #00a57b;
     background: white;
     padding: 12px 0;
-    border-top: 2px solid #ED0707;
+    border-top: none;
 }
 .acciones #acciones1 {
   visibility: visible;
@@ -983,16 +984,16 @@ table tbody tr td {
     .tabs-home {
         width: 48%;
         margin-left: 52%;
-        margin-top: -48px;
+        margin-top: -46px;
     }
 
     .tabs-home-title {
         width: 19.33%;
-        border-top: 2px solid #ED0707;
+        border-top: none;
     }
 
     .tabs-home-title > a {
-        background-color: #273C5B !important;
+        background-color: #01D7A1 !important;
         color: white !important;
         font-size: 14px !important;
         font-family: 'Helvetica' !important;
@@ -1001,7 +1002,7 @@ table tbody tr td {
     }
 
     .tabs-home-title.active > a {
-        background-color: #344B6D !important;
+        background-color: #00A57B !important;
     }
 
 }
@@ -1473,6 +1474,10 @@ right: 0;
 
   .header {
     height: 270px;
+  }
+
+  .medium-offset-2 {
+    margin-left: 6.667% !important;
   }
 
   .acciones {
