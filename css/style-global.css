@@ -31,6 +31,10 @@ input[type="checkbox"] {
   position: relative;
 }
 
+.medium-3 {
+    width: 24.4%;
+}
+
 .filtros input[type="checkbox"]:checked + label:after {
     background: #ED0707;
     border: 0;
@@ -206,6 +210,10 @@ img.perfilImg {
 
 /*=== HEADER ===*/
 
+#header img {
+    vertical-align: middle;
+}
+
 .shop_header {
     float: left;
     width: 100%;
@@ -295,7 +303,7 @@ img.perfilImg {
 
 .shop_header .shop_schedule p {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
 }
@@ -390,12 +398,12 @@ img.perfilImg {
         padding: 272px 0 0;
     }
 
-    .shop_header .shop_schedule p {
+    /*.shop_header .shop_schedule p {
         color: white;
         font-size: 20px;
         font-weight: 500;
         font-family: 'Raleway', sans-serif;
-    }
+    }*/
 
     .shop_header .shop_header_data {
         /*top: -340px;*/
@@ -1615,6 +1623,10 @@ right: 0;
   .store-tab .tabs a .fa {
     width: auto;
     float: none;
+  }
+
+  .medium-3 {
+    width: 24.2%;
   }
 }
 
