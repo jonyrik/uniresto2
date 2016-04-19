@@ -787,13 +787,13 @@ table tbody tr td {
 }
 
 .acciones ul li:nth-child(even) {
-    background: #273C5B;
+    background: #00a57b;
     /*padding: 5px 15px;*/
     height: 0;
 }
 
 .acciones ul li:nth-child(odd) {
-    background: #314D77;
+    background: #01D7A1;
     height: 0;
     /*padding: 5px 15px;*/
 }
@@ -912,7 +912,7 @@ table tbody tr td {
 
 .tabs-home-title {
     width: 33.33%;
-    border-top: 2px solid #ED0707;
+    border-top: none;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -920,7 +920,7 @@ table tbody tr td {
 }
 
 .tabs-home-title > a {
-    background-color: #273C5B !important;
+    background-color: #01D7A1 !important;
     color: white !important;
     font-size: 14px !important;
     font-family: 'Helvetica' !important;
@@ -935,7 +935,7 @@ table tbody tr td {
 
 .tabs-home-title.active > a {
 
-    background-color: #344B6D !important;
+    background-color: #00A57B !important;
 }
 
 /*================================================ MIN-WIDTH: 480px  =======================================================*/
@@ -1494,13 +1494,13 @@ right: 0;
   }
 
   .acciones ul li:nth-child(even) {
-      background: #273C5B;
+      /*background: #273C5B;*/
       height: auto;
       padding: 5px 45px;
   }
 
   .acciones ul li:nth-child(odd) {
-      background: #314D77;
+      /*background: #314D77;*/
       height: auto;
       padding: 5px 45px;
   }
@@ -1522,7 +1522,7 @@ right: 0;
     }
 
     .tabs-home-title {
-        width: 20%;
+        width: 19%;
     }
 
     .mostrar-detalles .img-orden-naranja img {
