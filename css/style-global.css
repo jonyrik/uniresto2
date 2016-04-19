@@ -1645,6 +1645,19 @@ right: 0;
 
 @media (max-width: 640px) {
 
+  .small-6 {
+    width: 50%;
+  }
+
+  .text-info-header .nombre-header-perfil {
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .text-info-header .info-header-perfil {
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
   #header {
     height: 300px !important;
     max-height: 300px;
