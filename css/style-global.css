@@ -1633,6 +1633,14 @@ right: 0;
   .medium-3 {
     width: 24.2%;
   }
+
+  .texto-acciones {
+    display: none !important;
+  }
+  .acciones ul li:nth-child(2n+1), .acciones ul li:nth-child(2n) {
+    padding: 5px 45px !important;
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -1676,7 +1684,7 @@ right: 0;
   }
 
   .acciones ul li:nth-child(2n+1), .acciones ul li:nth-child(2n) {
-    padding: 5px;
+    padding: 5px !important;
   }
   .acciones ul li a {
     width: 50%;
