@@ -532,14 +532,15 @@ PRODUCTOS
 
 #productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion label, #restos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion label {
     /*font-size: 0.775rem;*/
-    font-size: 12px;
+    font-size: 15px;
     font-family: Helvetica, sans-serif;
     font-weight: 100;
 }
 
-#productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion input[type="checkbox"], #productos .cont-filtros input[type="checkbox"] {
+#productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion input[type="checkbox"], #productos .cont-filtros input[type="checkbox"], #restos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion input[type="checkbox"], #restos .cont-filtros input[type="checkbox"] {
     margin: 0 15px 10px 0;
     visibility: hidden;
+    position: absolute;
 }
 
 /*#productos .custom-columns .filtros .accordion .accordion-navigation .filtro__opcion input[type="checkbox"]:after {
@@ -599,9 +600,9 @@ PRODUCTOS
 #restos #contactoChat .accordion .accordion-navigation.active > a {
     background: transparent;
     text-transform: uppercase;
-    color: #777;
-    font-size: 12px;
-    padding: 5px 0;
+    color: #c0c7c1;
+    font-size: 15px;
+    padding: 0px 0 5px;
     font-weight: normal;
     border-bottom: 1px solid #ccc;
     position: relative;
@@ -692,7 +693,7 @@ PRODUCTOS
     background-size: 100%;
 }
 
-#productos .product_item h2.title, #productos .product_item p.demora, #restos .product_item p.demora {
+#productos .product_item p.demora, #restos .product_item p.demora {
     font-size: 14px;
     padding: 12px 0 10px;
     /*color: #484848;*/
@@ -700,10 +701,19 @@ PRODUCTOS
     font-family: Helvetica, sans-serif;
     font-weight: normal;
 }
+#productos .product_item h2.title {
+    font-size: 20px;
+    padding: 12px 0 10px;
+    color: black;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
 #productos .product_item p.demora {
     padding: 0 0 10px;
     float: left;
-    font-size: 11px;
+    font-size: 12px;
+    color: #c0c7d1;
 }
 #productos .product_item span.mundo {
     float: right;
@@ -722,11 +732,11 @@ PRODUCTOS
 
 #productos .product_item .precio span, #restos .product_item .precio span {
     float: right;
-    font-size: 24px;
+    font-size: 23px;
     padding: 0 0 0 0.5rem;
     width: 30%;
-    /*color: #999;*/
-    line-height: 28px;
+    color: black;
+    line-height: 30px;
 }
 
 #productos .product_item .precio .producto_logo, #restos .product_item .precio .producto_logo {
@@ -790,17 +800,18 @@ PRODUCTOS
     width: 100%;
     border-top: 1px solid #ccc;
     padding: 11px 0;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #productos .product_item .social a {
-    width: 196px;
+    width: 225px;
     position: relative;
     display: inline-block;
     margin: 0 auto;
-    text-align: center;
-    font-size: 11px;
-    color: #777;
+    /*text-align: center;*/
+    font-size: 13px;
+    color: #c0c7d1;
+    padding-left: 50px;
 }
 
 #productos .product_item .social a.com:after {
@@ -957,7 +968,8 @@ PRODUCTOS
 }
 .filtros-colap label, .cont-filtros label {
     float: left;
-    font-size: 12px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
 }
 .filtros-colap label.ubicacion, .cont-filtros label.ubicacion {
     width: 45%;
@@ -1003,8 +1015,11 @@ PRODUCTOS
   width: 98%;
   padding: 10px 0 0 20px;
 }
+.buscando label, .buscando label input[type="text"] {
+  font-size: 15px;
+}
 .buscando .ubicacion {
-  width: 42%;
+  width: 50%;
 }
 
 .cont-filtros label {
@@ -1873,10 +1888,10 @@ RESTOS
     #productos .product_item .social a {
       width: auto;
       display: block;
-      padding-left: 1%;
+      /*padding-left: 1%;*/
     }
     #productos .product_item .social a.com::after {
-      left: 55px;
+      /*left: 55px;*/
     }
 
 }
