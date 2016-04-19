@@ -805,7 +805,7 @@ table tbody tr td {
     color: #00a57b;
     background: white;
     padding: 12px 0;
-    border-top: none;
+    border-top: 2px solid #ED0707;
 }
 .acciones #acciones1 {
   visibility: visible;
@@ -912,7 +912,7 @@ table tbody tr td {
 
 .tabs-home-title {
     width: 33.33%;
-    border-top: none;
+    border-top: 2px solid #ED0707;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -984,12 +984,12 @@ table tbody tr td {
     .tabs-home {
         width: 48%;
         margin-left: 52%;
-        margin-top: -46px;
+        margin-top: -48px;
     }
 
     .tabs-home-title {
         width: 19.33%;
-        border-top: none;
+        border-top: 2px solid #ED0707;
     }
 
     .tabs-home-title > a {
