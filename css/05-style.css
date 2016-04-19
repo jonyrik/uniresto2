@@ -804,11 +804,11 @@ PRODUCTOS
 }
 
 #productos .product_item .social a {
-    width: 225px;
+    width: 200px;
     position: relative;
     display: inline-block;
     margin: 0 auto;
-    /*text-align: center;*/
+    text-align: right;
     font-size: 13px;
     color: #c0c7d1;
     padding-left: 50px;
