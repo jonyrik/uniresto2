@@ -84,7 +84,7 @@ img.perfilImg{
     top: 0.53125rem;
 }
 
-.amigos .enc .cont-search {
+.amigos .enc .cont-search, .bempleado .enc .cont-search {
   position: relative;
 }
 
@@ -757,22 +757,22 @@ img.perfilImg{
                                                                     }
 
 
-                                                                    /* secciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Amigos */
+                                                                    /* seccion Amigos */
 
-                                                                    .amigos .tabs-content { width: 100%; }
+                                                                    .amigos .tabs-content, .bempleado .tabs-content { width: 100%; }
                                                                     .amigos .tabs-amigos {
                                                                         float: right;
                                                                         margin: 0 1rem 35px 0 !important;
                                                                         line-height: 1;
                                                                     }
-                                                                    .amigos .tabs dd.active > a, .amigos .tabs .tab-title.active > a {
+                                                                    .amigos .tabs dd.active > a, .amigos .tabs .tab-title.active > a, .bempleado .tabs dd.active > a, .bempleado .tabs .tab-title.active > a {
                                                                         background-color: transparent;
                                                                         color: #777;
                                                                         font-weight: bold;
                                                                         padding-bottom: 10px;
                                                                         border-bottom: thin solid;
                                                                     }
-                                                                    .amigos .tabs dd > a, .amigos .tabs .tab-title > a {
+                                                                    .amigos .tabs dd > a, .amigos .tabs .tab-title > a, .bempleado .tabs dd > a, .bempleado .tabs .tab-title > a {
                                                                         display: block;
                                                                         background-color: transparent;
                                                                         color: #777;
@@ -788,14 +788,14 @@ img.perfilImg{
 /*.amigos .large-4:last-child .columns {
 padding-right: 0;
 } */
-.amigos .enc {
+.amigos .enc, .bempleado .enc {
     display: table;
     width: 100%;
     padding-right: 1rem;
     position: relative;
 }
 
-.amigos .enc input[type="search"] {
+.amigos .enc input[type="search"], .bempleado .enc input[type="search"] {
     border: none;
     float: right;
     width: 32%;
@@ -803,7 +803,7 @@ padding-right: 0;
     border-radius: 10px;
     color: #a9b1bc;
 }
-.amigos .enc .btn-buscar {
+.amigos .enc .btn-buscar, .bempleado .enc .btn-buscar {
     background: url('../img/buscar.svg') no-repeat #ED0707;
     border: none;
     position: absolute;
@@ -817,33 +817,33 @@ padding-right: 0;
     cursor: pointer;
     transition: ease 0.25s;
 }
-.amigos .enc .btn-buscar:hover {
+.amigos .enc .btn-buscar:hover, .bempleado .enc .btn-buscar:hover {
     background: url('../img/buscar.svg') no-repeat #F4A60C;
     background-position: center;
 }
 
 
-.amigos .box {
+.amigos .box, .bempleado .box {
     padding: 0.7em;
     margin: 1em 0px 0;
 }
-.amigos .box .content { position: relative; }
+.amigos .box .content, .bempleado .box .content { position: relative; }
 /*.amigos .large-4 .row:last-child .box {
 margin: 1em 0;
 }*/
-.amigos .box .picProfWp{
+.amigos .box .picProfWp, .bempleado .box .picProfWp {
     width: 50%;
     padding: 0;
     margin-right: 1em;
 }
-.amigos .box .datos {
+.amigos .box .datos, .bempleado .box .datos {
     float: left;
     width: 44%;
     padding-left: 10px;
     border-left: medium solid #ED0707;
 }
 
-.amigos .box h4 {
+.amigos .box h4, .bempleado .box h4 {
     font-size: 1.1rem;
     color: #4d4d4d;
     line-height: 1.2;
@@ -857,6 +857,31 @@ margin: 1em 0;
     bottom: 0;
     right: 0;
 }
+.bempleado .box .cont-comun {
+    float: left;
+    width: 47%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 10px;
+    line-height: 1;
+}
+.bempleado .box .cont-comun .columns div {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120%;
+}
+.bempleado .box .cont-comun .columns div img {
+  width: 20px;
+  height: auto;
+}
+.bempleado .box .cont-comun .columns div span {
+  width: 70%;
+  /*color: #c0c7d1;*/
+}
+
 .amigos .box p.comun {
     font-size: 0.8rem;
     color: #959cae;
@@ -865,7 +890,7 @@ margin: 1em 0;
 }
 .amigos .box p.comun span {color: #ED0707;}
 
-.amigos .box select, .amigos .filtros select {
+.amigos .box select, .amigos .filtros select, .bempleado .box select, .bempleado .filtros select {
     border: medium none;
     /*background-color: #EBF0FD;*/
     background-color: #f0fbf7;
@@ -873,7 +898,7 @@ margin: 1em 0;
     padding: 0.3rem;
     margin: 0;
 }
-.amigos .cont-filtros {
+.amigos .cont-filtros, .bempleado .cont-filtros {
     width: 100%;
     display: table;
 }
@@ -883,6 +908,13 @@ margin: 1em 0;
     margin-right: 0.5rem;
     position: relative;
 }
+.bempleado .filtros {
+    float: right;
+    width: 100%;
+    margin-right: 0.5rem;
+    position: relative;
+}
+
 .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
     content: "Filtros";
     position: absolute;
@@ -895,8 +927,20 @@ margin: 1em 0;
     border-radius: 10px;
     cursor: pointer;
 }
+.bempleado .filtros #btn-filtros, .bempleado .filtros #btn-filtros2 {
+    content: "Filtros";
+    position: absolute;
+    top: -36px;
+    left: 350px;
+    background: #a8b5d5;
+    color: white;
+    display: table;
+    padding: 0.35rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
 /*.amigos .filtros:hover::after { opacity: 0.8; }*/
-.amigos .filtros .tri {
+.amigos .filtros .tri, .bempleado .filtros .tri {
     position: absolute;
     width: 0;
     height: 0;
@@ -908,7 +952,7 @@ margin: 1em 0;
     transition: ease 0.25s;
 }
 
-.amigos .filtros .cont-select {
+.amigos .filtros .cont-select, .bempleado .filtros .cont-select {
     background: white;
     display: none;
     width: 32%;
@@ -981,6 +1025,31 @@ margin: 1em 0;
 
     .amigos .box .cont-comun .botones .boton.enviar {
         padding: 0px 0.8rem;
+    }
+
+    .bempleado .box .cont-comun {
+        float: left;
+        width: 47%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 10px;
+        line-height: 1;
+    }
+    .bempleado .box .cont-comun .columns div {
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 120%;
+    }
+    .bempleado .box .cont-comun .columns div img {
+      width: 20px;
+      height: auto;
+    }
+    .bempleado .box .cont-comun .columns div span {
+      width: 70%;
+      /*color: #c0c7d1;*/
     }
 
 }
@@ -1064,19 +1133,19 @@ padding-right: 0;
     float: left;
 }
 
-.amigos .enc {
+.amigos .enc, .bempleado .enc {
     display: table;
     width: 100%;
     padding-right: 1rem;
     position: relative;
 }
-.amigos .enc h3 {
+.amigos .enc h3, .bempleado .enc h3 {
     font-size: 0.8rem;
     color: #62738d;
     margin: 10px 0 0;
     float: left;
 }
-.amigos .enc input[type="search"] {
+.amigos .enc input[type="search"], .bempleado .enc input[type="search"] {
     border: none;
     float: right;
     width: 32%;
@@ -1084,7 +1153,7 @@ padding-right: 0;
     border-radius: 10px;
     color: #a9b1bc;
 }
-.amigos .enc .btn-buscar {
+.amigos .enc .btn-buscar, .bempleado .enc .btn-buscar {
     background: url('../img/buscar.svg') no-repeat #ED0707;
     border: none;
     position: absolute;
@@ -1098,39 +1167,39 @@ padding-right: 0;
     cursor: pointer;
     transition: ease 0.25s;
 }
-.amigos .enc .btn-buscar:hover {
+.amigos .enc .btn-buscar:hover, .bempleado .enc .btn-buscar:hover {
     background: url('../img/buscar.svg') no-repeat #ED0707;
     background-position: center;
 }
 
 
-.amigos .box {
+.amigos .box, .bempleado .box {
     padding: 0.7em;
     margin: 1em 0px 0;
 }
-.amigos .box .content { position: relative; }
+.amigos .box .content, .bempleado .box .content { position: relative; }
 /*.amigos .large-4 .row:last-child .box {
 margin: 1em 0;
 }*/
-.amigos .box .picProfWp{
+.amigos .box .picProfWp, .bempleado .box .picProfWp {
     width: 50%;
     padding: 0;
     margin-right: 1em;
 }
-.amigos .box .datos {
+.amigos .box .datos, .bempleado .box .datos {
     float: left;
     width: 44%;
     padding-left: 10px;
     border-left: medium solid #CB0606;
 }
 
-.amigos .box h4 {
+.amigos .box h4, .bempleado .box h4 {
     font-size: 1.1rem;
     color: #4d4d4d;
     line-height: 1.2;
     margin: 0;
 }
-.amigos .box h5 {
+.amigos .box h5, .bempleado .box h5 {
     font-size: 0.8rem;
     color: #959cae;
     line-height: 1.2;
@@ -1152,14 +1221,14 @@ margin: 1em 0;
 }
 .amigos .box p.comun span { color: #CB0606; }
 
-.amigos .box select, .amigos .filtros select {
+.amigos .box select, .amigos .filtros select, .bempleado .box select, .bempleado .filtros select {
     border: medium none;
     background-color: #f0fbf7;
     height: 1.9rem;
     padding: 0.3rem;
     margin: 0;
 }
-.amigos .cont-filtros {
+.amigos .cont-filtros, .bempleado .cont-filtros {
     width: 100%;
     display: table;
 }
@@ -1167,7 +1236,7 @@ margin: 1em 0;
     left: 105px;
 }
 
-.amigos .filtros {
+.amigos .filtros, .bempleado .filtros {
     position: relative;
     float: right;
 }
@@ -1184,8 +1253,21 @@ margin: 1em 0;
     border-radius: 10px;
     cursor: pointer;
 }
+.bempleado .filtros #btn-filtros, .bempleado .filtros #btn-filtros2 {
+    content: "Filtros";
+    position: absolute;
+    top: -36px;
+    /*left: 380px;*/
+    left: 350px;
+    background: #a8b5d5;
+    color: white;
+    display: table;
+    padding: 0.35rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
 /*.amigos .filtros:hover::after { opacity: 0.8; }*/
-.amigos .filtros .tri {
+.amigos .filtros .tri, .bempleado .filtros .tri {
     position: absolute;
     width: 0;
     height: 0;
@@ -1197,7 +1279,7 @@ margin: 1em 0;
     transition: ease 0.25s;
 }
 
-.amigos .filtros .cont-select {
+.amigos .filtros .cont-select, .bempleado .filtros .cont-select {
     background: white;
     display: none;
     width: 32%;
@@ -1280,6 +1362,17 @@ margin: 1em 0;
 
     .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 { left: 40px; }
 
+    .bempleado .tabs-content-full .content .medium-9 {
+      width: 100%;
+    }
+
+    .bempleado .filtros #btn-filtros {
+      left: -375px;
+    }
+    .bempleado .filtros #btn-filtros2 {
+      left: 104px;
+    }
+
 }
 
 /*================================================ MAX-WIDTH: 679px  =======================================================*/
@@ -1287,7 +1380,7 @@ margin: 1em 0;
 
 @media (max-width: 679px) {
 
-    .amigos .filtros {
+    .amigos .filtros, .bempleado .filtros {
         width: 100%;
     }
 
@@ -1298,15 +1391,15 @@ margin: 1em 0;
 
 @media (max-width: 641px) {
 
-    .amigos .tabs dd > a, .amigos .tabs .tab-title > a {
+    .amigos .tabs dd > a, .amigos .tabs .tab-title > a, .bempleado .tabs dd > a, .bempleado .tabs .tab-title > a {
         margin: 0px 0px 0px 0.7rem;
     }
 
-    .amigos .cont-filtros {
+    .amigos .cont-filtros, .bempleado .cont-filtros {
         width: 99%;
     }
 
-    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2, .bempleado .filtros #btn-filtros, .bempleado .filtros #btn-filtros2 {
         left: 285px;
     }
 
@@ -1373,15 +1466,36 @@ margin: 1em 0;
         width: 24%;
     }
 
-    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 {
+    .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2, .bempleado .filtros #btn-filtros, .bempleado .filtros #btn-filtros2 {
         top: 8px;
         position: relative;
         left: 0px;
     }
 
-    .amigos .filtros .cont-select {
+    .amigos .filtros .cont-select, .bempleado .filtros .cont-select {
         width: 93%;
         float: none;
+    }
+
+    .amigos .enc .cont-search, .bempleado .enc .cont-search {
+      display: table;
+      width: 100%;
+    }
+    .bempleado .enc input[type="search"] {
+        width: 100%;
+    }
+
+    .bempleado .box .datos {
+      width: 43%;
+    }
+
+    .bempleado .box .cont-comun {
+      width: 100%;
+      position: relative;
+      margin-top: 10px;
+    }
+    .bempleado .box .cont-comun .columns div {
+      width: auto;
     }
 
     .amigos .box .cont-comun .botones .boton.enviar {

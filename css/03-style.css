@@ -351,6 +351,9 @@ a {
         font-size: 1rem;
         padding: 0.8rem 1rem;
 }
+.bempleado .accordion-static {
+  background: #F0FBF7;
+}
 
 .tabs-content-full .caja-default {
   margin-bottom: 80px;
@@ -970,6 +973,15 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
     border-radius: 0px!important;
     border: 2px solid #D5DDF2;
 }
+.bempleado .caja-default {
+  border: none;
+}
+.bempleado .accordion-static .columns .row .columns {
+  padding-left: 0;
+}
+.bempleado .content .columns.large-9.medium-9.small-12 {
+  padding-bottom: 100px;
+}
 
 .cluster-vacio{
 
@@ -1153,7 +1165,7 @@ margin: 8vh 0 0 0;
 main{
 	position: relative;
 	padding: 3.125em 0 0 0;
-	background: #EBF0FD!important;
+	background: #F0FBF7!important;
 }
 
 
