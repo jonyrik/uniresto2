@@ -84,7 +84,7 @@ img.perfilImg{
     top: 0.53125rem;
 }
 
-.amigos .enc .cont-search, .bempleado .enc .cont-search {
+.amigos .enc .cont-search, .bempleado .enc .cont-search, .bempleado.agregar-usuario-in .cont-search {
   position: relative;
 }
 .bempleado.agregar-usuario .enc .cont-search {
@@ -820,9 +820,15 @@ padding-right: 0;
     border-radius: 10px;
     color: #a9b1bc;
 }
-.bempleado.agregar-usuario .enc input[type="search"] {
+.bempleado.agregar-usuario .enc input[type="search"], .bempleado.agregar-usuario.agregar-usuario-in .cont-search input[type="text"] {
   float: left;
   width: 100%;
+}
+.bempleado.agregar-usuario.agregar-usuario-in .cont-search input[type="text"] {
+  border: none;
+  margin: 0px;
+  border-radius: 10px;
+  color: #a9b1bc;
 }
 .amigos .enc .btn-buscar, .bempleado .enc .btn-buscar {
     background: url('../img/buscar.svg') no-repeat #ED0707;
@@ -843,6 +849,23 @@ padding-right: 0;
     background-position: center;
 }
 
+.bempleado.agregar-usuario-in .cont-search .btn-enviar {
+    background: #ED0707;
+    color: white;
+    border: none;
+    position: absolute;
+    padding: 0 1rem;
+    right: 0rem;
+    border-radius: 0px 10px 10px 0px;
+    height: 2.25rem;
+    background-position: center;
+    top: 1px;
+    cursor: pointer;
+    transition: ease 0.25s;
+}
+.bempleado.agregar-usuario-in .cont-search .btn-enviar:hover {
+    background: #F4A60C;
+}
 
 .amigos .box, .bempleado .box {
     padding: 0.7em;
@@ -1181,9 +1204,31 @@ display: none;
     .amigos .columns {
         padding-left: 0;
         display: block;
-/*float: none;
-display: flex;*/
-}
+    }
+
+    .bempleado.agregar-usuario.agregar-usuario-in .cont-search input[type="text"] {
+        border: none;
+        margin: 0px;
+        border-radius: 10px;
+        color: #a9b1bc;
+    }
+    .bempleado.agregar-usuario-in .cont-search .btn-enviar {
+        background: #ED0707;
+        color: white;
+        border: none;
+        position: absolute;
+        padding: 0 1rem;
+        right: 0rem;
+        border-radius: 0px 10px 10px 0px;
+        height: 2.25rem;
+        background-position: center;
+        top: 1px;
+        cursor: pointer;
+        transition: ease 0.25s;
+    }
+    .bempleado.agregar-usuario-in .cont-search .btn-enviar:hover {
+        background: #F4A60C;
+    }
 /*.amigos .columns .columns {
 display: block;
 float: left;

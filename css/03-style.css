@@ -2200,7 +2200,7 @@ span.today-hour i {
 }
 
 body.store-view {
-    background: rgba(212, 212, 255, 0.3) none repeat scroll 0% 0%;
+    /*background: rgba(212, 212, 255, 0.3) none repeat scroll 0% 0%;*/
     font-family: Helvetica, sans-serif;
 }
 
