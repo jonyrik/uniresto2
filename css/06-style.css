@@ -1479,9 +1479,6 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
       position: relative;
   }
 
-  .actividad-trabajo.single.historias .medium-9 {
-    width: 100%;
-  }
   .actividad-trabajo.single.historias .medium-9 .cont-datos {
     padding: 0 0.9375rem !important;
     margin: 10px 0;
@@ -1565,6 +1562,10 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 
   .single.historias .fr-command.fr-btn+.fr-dropdown-menu {
       margin-top: 0px;
+  }
+
+  .actividad-trabajo.single.historias .medium-9 {
+    width: 100%;
   }
 
 }
