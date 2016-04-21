@@ -279,6 +279,33 @@ a {
     color: #FFF;
 }
 
+.actividad-trabajo .tabs-content-full .caja-default {
+  padding: 2%;
+  color: #504d5b;
+  font-size: 14px;
+}
+.actividad-trabajo .cont-datos {
+  margin-top: 35px;
+}
+.actividad-trabajo .nombre {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ED0707;
+  font-weight: bold;
+}
+
+.actividad-trabajo .cont-datos .dire, .actividad-trabajo .cont-datos .tel, .actividad-trabajo .cont-datos .dni {
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;*/
+}
+.actividad-trabajo .cont-datos img {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
 
 .on-off.endis{
   width:53px;
@@ -357,6 +384,10 @@ a {
 
 .tabs-content-full .caja-default {
   margin-bottom: 80px;
+}
+
+.actividad-trabajo .tabs-content-full .caja-default {
+  margin-bottom: 0px;
 }
 
 body {
@@ -861,6 +892,10 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
 
   .accordion .caja-detail-rrhh .sin-padding img {
     width: auto;
+  }
+
+  .nuevo-rrhh.actividad-trabajo .cont-datos img {
+    width: 20px;
   }
 
   .nuevo-rrhh .content img {
