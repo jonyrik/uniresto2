@@ -713,7 +713,7 @@ PRODUCTOS
     padding: 0 0 10px;
     float: left;
     font-size: 12px;
-    color: #c0c7d1;
+    color: #777;
 }
 #productos .product_item span.mundo {
     float: right;
@@ -810,7 +810,7 @@ PRODUCTOS
     margin: 0 auto;
     text-align: right;
     font-size: 13px;
-    color: #c0c7d1;
+    color: #777;
     padding-left: 50px;
 }
 
