@@ -875,7 +875,7 @@ padding-right: 0;
 /*.amigos .large-4 .row:last-child .box {
 margin: 1em 0;
 }*/
-.amigos .box .picProfWp {
+.amigos .box .picProfWp, .agregar-usuario.bempleado .box .picProfWp {
     width: 50%;
     padding: 0;
     margin-right: 1em;
@@ -899,7 +899,7 @@ margin: 1em 0;
     margin: 0;
 }
 
-.amigos .box .cont-comun {
+.amigos .box .cont-comun, .agregar-usuario.bempleado .box .cont-comun {
     float: left;
     width: 44%;
     position: absolute;
@@ -1121,6 +1121,7 @@ margin: 1em 0;
     .bempleado.agregar-usuario .box .cont-comun {
         font-size: 14px;
         bottom: 3px;
+        width: 47%;
     }
     .bempleado.agregar-usuario .box .cont-comun .btn-invitar {
         text-align: center;
@@ -1301,7 +1302,7 @@ padding-right: 0;
 /*.amigos .large-4 .row:last-child .box {
 margin: 1em 0;
 }*/
-.amigos .box .picProfWp {
+.amigos .box .picProfWp, .agregar-usuario.bempleado .box .picProfWp {
     width: 50%;
     padding: 0;
     margin-right: 1em;
@@ -1658,7 +1659,7 @@ margin: 1em 0;
       width: 43%;
     }
 
-    .bempleado .box .cont-comun {
+    .bempleado .box .cont-comun, .bempleado.agregar-usuario .box .cont-comun {
       width: 100%;
       position: relative;
       margin-top: 10px;
