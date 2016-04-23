@@ -341,7 +341,7 @@ img.perfilImg {
 #header {
     width: 100%;
     max-height: 200px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
     height: 200px !important;
     background: url('../img/local_home_bg.jpg') no-repeat;
@@ -1370,16 +1370,14 @@ right: 0;
         margin-top: 15px;
     }
     .foto-perfil {
-        height: 90px;
-        width: 90px;
         border-radius: 100%;
         border: 2px solid white;
         margin-top: 20px;
     }
 
     .text-info-header {
-        padding-top: 25px;
-        padding-left: 35px;
+        padding-top: 15px;
+        padding-left: 0px;
     }
 
     .margin-bottom-15 {
@@ -1647,8 +1645,33 @@ right: 0;
 
 @media (max-width: 640px) {
 
+  .header-perfil {
+    text-align: center;
+  }
+  .header-perfil .small-12 {
+    width: 100%;
+    margin-left: 0 !important;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .header-perfil .small-12.columns + .columns:last-child {
+    float: none;
+  }
+  #header .header-perfil img.foto-perfil {
+    width: 160px;
+    height: 160px;
+    float: none;
+  }
+
   .small-6 {
     width: 50%;
+  }
+
+  .header-perfil .text-info-header .nombre-header-perfil {
+    margin: 15px 0 5px 0;
+  }
+  .header-perfil .text-info-header .info-header-perfil {
+    margin: 15px 0 0px 0;
   }
 
   .text-info-header .nombre-header-perfil {

@@ -560,7 +560,7 @@ img.perfilImg{
                                                     margin: 10px;
                                                 }
                                                 /*Header*/
-                                                .header{
+                                                #header.header{
                                                     background: url('../img/cabecera.jpg') no-repeat center center;
                                                     height: 200px;
                                                     margin: 0;
@@ -1507,6 +1507,11 @@ margin: 1em 0;
 
 
 @media (max-width: 800px) {
+
+  .header-perfil .foto-perfil{
+      width: 100px;
+      height: 100px;
+  }
 
     .amigos .filtros #btn-filtros, .amigos .filtros #btn-filtros2 { left: 40px; }
 
