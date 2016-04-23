@@ -36,7 +36,7 @@ input[type="checkbox"] {
     width: 24.4%;
 }
 
-.filtros input[type="checkbox"]:checked + label:after {
+input[type="checkbox"]:checked + label:after {
     background: #ED0707;
     border: 0;
 }
@@ -78,7 +78,7 @@ input[type="checkbox"] {
     right: 115%;
 }
 
-.filtros input[type="checkbox"] + label:after {
+input[type="checkbox"] + label:after {
     content: "";
     display: block;
     width: 12px;
@@ -89,7 +89,7 @@ input[type="checkbox"] {
     background: white;
     visibility: visible;
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: -20px;
 }
 /* */

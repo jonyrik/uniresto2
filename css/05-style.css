@@ -752,7 +752,7 @@ PRODUCTOS
 #productos .product_item .resto, #restos .product_item .resto {
     float: left;
     width: 100%;
-    padding: 5px 0 0;
+    padding: 2px 0 0;
 }
 
 #productos .product_item .resto .logo, #prestos .product_item .resto .logo {
@@ -1048,12 +1048,15 @@ PRODUCTOS
 .cont-filtros .check {
     display: table;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-left: 12px;
 }
 .cont-filtros .check label {
     width: auto;
     margin-right: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Helvetica, sans-serif;
 }
 .cont-filtros .check label input[type="radio"] {
     margin-right: 5px;
@@ -1336,9 +1339,18 @@ RESTOS
 
 #restos .product_item .resto .local {
     display: table;
+    margin-bottom: -2px;
 }
+#restos .product_item .resto .local:nth-child(2) p {
+  margin-right: 1px;
+}
+#restos .product_item .resto .local:nth-child(2) a:nth-child(2) {
+  margin-right: -10px;
+}
+
 #restos .local img {
   width: 75%;
+  vertical-align: middle;
 }
 #restos .product_item .resto p {
     float: left;
