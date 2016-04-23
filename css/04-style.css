@@ -875,8 +875,13 @@ padding-right: 0;
 /*.amigos .large-4 .row:last-child .box {
 margin: 1em 0;
 }*/
-.amigos .box .picProfWp, .bempleado .box .picProfWp {
+.amigos .box .picProfWp {
     width: 50%;
+    padding: 0;
+    margin-right: 1em;
+}
+.bempleado .box .picProfWp {
+    width: 20%;
     padding: 0;
     margin-right: 1em;
 }
@@ -903,11 +908,11 @@ margin: 1em 0;
 }
 .bempleado .box .cont-comun {
     float: left;
-    width: 47%;
+    width: 78%;
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1;
 }
 .bempleado.agregar-usuario .box .cont-comun {
@@ -939,7 +944,8 @@ margin: 1em 0;
   height: auto;
 }
 .bempleado .box .cont-comun .columns div span {
-  width: 70%;
+  /*width: 70%;*/
+  width: 90%;
   /*color: #c0c7d1;*/
 }
 
@@ -1104,11 +1110,12 @@ margin: 1em 0;
 
     .bempleado .box .cont-comun {
         float: left;
-        width: 47%;
+        /*width: 47%;*/
+        width: 78%;
         position: absolute;
         bottom: 0;
         right: 0;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 1;
     }
     .bempleado.agregar-usuario .box .cont-comun {
@@ -1135,7 +1142,7 @@ margin: 1em 0;
       height: auto;
     }
     .bempleado .box .cont-comun .columns div span {
-      width: 70%;
+      width: 90%;
       /*color: #c0c7d1;*/
     }
 
@@ -1294,8 +1301,13 @@ padding-right: 0;
 /*.amigos .large-4 .row:last-child .box {
 margin: 1em 0;
 }*/
-.amigos .box .picProfWp, .bempleado .box .picProfWp {
+.amigos .box .picProfWp {
     width: 50%;
+    padding: 0;
+    margin-right: 1em;
+}
+.bempleado .box .picProfWp {
+    width: 20%;
     padding: 0;
     margin-right: 1em;
 }
@@ -1671,6 +1683,12 @@ margin: 1em 0;
 
     .amigos #panel3-4 .enc .btn-buscar {
         top: 30px;
+    }
+
+    .bempleado .box .picProfWp {
+        width: 50%;
+        padding: 0;
+        margin-right: 1em;
     }
 
 }

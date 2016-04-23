@@ -380,6 +380,7 @@ a {
 }
 .bempleado .accordion-static {
   background: #F0FBF7;
+  padding: 0 0 10px;
 }
 
 .tabs-content-full .caja-default {
