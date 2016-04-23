@@ -1475,7 +1475,7 @@ right: 0;
 @media (max-width: 1024px) {
 
   .header {
-    height: 270px;
+    height: 200px;
   }
 
   .medium-offset-2 {
@@ -1484,7 +1484,7 @@ right: 0;
 
   .acciones {
     position: absolute;
-    top: 222px !important;
+    top: 152px !important;
   }
 
   .acciones ul {
