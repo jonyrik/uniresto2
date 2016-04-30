@@ -2155,7 +2155,7 @@ ul.ingredients-list li:before {
     }
 
 .flex {
-  /*display: table;*/
+  display: table;
   float: none;
 }
 .finalizar-pedido .enc.flex {
@@ -2247,7 +2247,7 @@ ul.ingredients-list li:before {
     width: 100%;
 }
 
-.personaliza .flex select {
+.personaliza .flex input[type='text'] {
   width: 100% !important;
 }
 .precios a.precio {
@@ -2255,7 +2255,7 @@ ul.ingredients-list li:before {
   float: left;
   width: 100%;
 }
-.cantidad input {
+.cantidad input[type='text'] {
   width: 100%;
   margin: 0;
 }
@@ -2264,10 +2264,10 @@ ul.ingredients-list li:before {
   margin: 10px 5px 0 0;
 }
 .total {
-  /*position: relative;
+  position: relative;
   right: auto;
   float: right;
-  top: 5px;*/
+  top: 5px;
 }
 
 .elegir-producto .boton-naranja {
