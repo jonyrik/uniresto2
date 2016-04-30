@@ -507,7 +507,7 @@ img.perfilImg {
 }
 
 .boton-naranja-full:hover {
-    background: #077000;
+    background: #00a57b;
 }
 
 .boton-naranja {
@@ -557,7 +557,7 @@ img.perfilImg {
 }
 
 .ghost-button:hover {
-    background: #077000 !important;
+    background: #00a57b !important;
     color: white !important;
 }
 
@@ -584,12 +584,12 @@ img.perfilImg {
 }
 
 .boton-naranja:hover {
-    background: #077000;
+    background: #00a57b;
 }
 
 .btn-category:hover {
-    background-color: #077000;
-    border: 1px solid #077000;
+    background-color: #00a57b;
+    border: 1px solid #00a57b;
     color: white;
 }
 

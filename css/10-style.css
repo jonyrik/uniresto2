@@ -370,7 +370,7 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 
 
 .elegir-producto .panel.callout, .elegir-producto .panel.callout p {
-  color: #c0c7d1;
+  color: #504d5b;
   font-size: 0.9rem;
   font-family: 'Raleway';
 }
@@ -499,8 +499,7 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
     cursor: pointer;
 }
 .elegir-producto .boton.mas:hover, .elegir-producto .boton.menos:hover {
-    /*color: #00a57b;*/
-    color: #077000;
+    color: #00a57b;
 }
 
 .elegir-producto .boton-naranja {
