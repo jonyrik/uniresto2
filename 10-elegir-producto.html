@@ -154,36 +154,75 @@
                                       </div>
                                     </div>
                                 </div>
+                                <div class="solid-line large-12 columns"></div>
                                 <div class="large-12 columns personaliza">
+                                    <div class="row">
+                                      <div class="large-12 columns bebida">
+                                        <h5>BEBIDA (Elija 1 Opción)</h5>
+                                      </div>
+                                    </div>
                                     <div class="row">
                                         <div class="large-12 columns flex">
                                             <label>
-                                                Coca cola
+                                                Fanta
                                             </label>
-                                                <select id="id_product_type" name="product_type" class="select-uniresto" style="width:10%">
+                                            <div class="boton menos">
+                                              <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <input id="id_product_type" class="select-uniresto" type="text" name="product_type" value="" style="width:10%;">
+                                            <div class="boton mas">
+                                              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            </div>
+
+                                                <!-- <select id="id_product_type" name="product_type" class="select-uniresto" style="width:10%">
                                                     <option value="" selected="selected">1</option>
                                                     <option value="PP">2</option>
                                                     <option value="PG">3</option>
                                                     <option value="PB">4</option>
-                                                </select>
+                                                </select> -->
 
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="dont-line"></div>
+                                <div class="dont-line large-12 columns"></div>
+                                <div class="large-12 columns personaliza ingredientes">
+                                    <div class="row">
+                                      <div class="large-12 columns flex">
+                                          <label>
+                                              Coca cola
+                                            </label>
+                                            <div class="boton menos">
+                                              <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                            </div>
+                                              <input id="id_category" name="category" type="text" readonly="" class="select-uniresto" value="1" style="width:10%;">
+                                              <div class="boton mas">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                              </div>
+                                      </div>
+                                    </div>
+                                  </div>
 
-                                <div class="large-12 columns personaliza">
+                                <div class="solid-line large-12 columns"></div>
+
+                                <div class="large-12 columns personaliza ingredientes">
+                                  <div class="row">
+                                    <div class="large-12 columns bebida">
+                                      <h5>PLATO PRINCIPAL (Elija 2 Opciones)</h5>
+                                    </div>
+                                  </div>
                                     <div class="row">
                                         <div class="large-12 columns flex">
-                                            <label>
-                                                Ensalada
-                                              </label>
-                                                <select id="id_category" name="category" class="select-uniresto">
-                                                    <option value="" selected="selected">1</option>
-                                                    <option value="63">2</option>
-                                                </select>
-
+                                          <label>
+                                            Ensalada (Máximo 3 opcionales)
+                                          </label>
+                                          <div class="boton menos">
+                                            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                          </div>
+                                          <input id="id_category" name="category" type="text" class="select-uniresto" value="" style="width:10%;">
+                                          <div class="boton mas">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -191,28 +230,46 @@
                                 <div class="large-12 columns precios">
                                     <div class="row">
                                         <div class="large-12 columns flex">
-                                          <a class="precio">Salsa $5</a>
-                                          <a class="precio">Carne $5</a>
-                                          <a class="precio">Queso $5</a>
-                                          <a class="precio">Laurel $5</a>
+                                          <a class="precio"><label class="flex"><input type="checkbox"><div class="checkbox"></div> <span>Salsa $5</span></label></a>
+                                          <a class="precio"><label class="flex"><input type="checkbox"><div class="checkbox"></div> <span>Salsa $5</span></label></a>
+                                          <a class="precio"><label class="flex"><input type="checkbox"><div class="checkbox"></div> <span>Salsa $5</span></label></a>
                                           <a id="ver-precios">ver <i class="fa fa-caret-down"></i></a>
                                           <a id="ver-precios2" style="display:none;">ver <i class="fa fa-caret-up"></i> </a>
                                           <div id="sel-precios" style="display:none;">
                                             <label class="flex"><input type="checkbox"><div class="checkbox"></div> Salsa $5</label>
-                                            <label class="flex"><input type="checkbox"><div class="checkbox"></div> Queso $5</label>
-                                            <label class="flex"><input type="checkbox"><div class="checkbox"></div> Laurel $5</label>
-                                            <label class="flex"><input type="checkbox"><div class="checkbox"></div> Carne $5</label>
+                                            <label class="flex"><input type="checkbox"><div class="checkbox"></div> Salsa $5</label>
+                                            <label class="flex"><input type="checkbox"><div class="checkbox"></div> Salsa $5</label>
+                                            <label class="flex"><input type="checkbox"><div class="checkbox"></div> Salsa $5</label>
                                           </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="dont-line large-12 columns"></div>
+                                <div class="large-12 columns personaliza ingredientes">
+                                    <div class="row">
+                                      <div class="large-12 columns flex">
+                                          <label>
+                                              Asado
+                                            </label>
+                                            <div class="boton menos">
+                                              <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                            </div>
+                                              <input id="id_category" name="category" type="text" class="select-uniresto" value="" style="width:10%;">
+                                              <div class="boton mas">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                              </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
                                 <div class="large-12 columns">
                                     <div class="row">
                                         <div class="large-12 columns">
                                           <h6>Tamaño</h6>
-                                          <label class="flex"><input type="checkbox"><div class="checkbox"></div> Pequeño</label>
-                                          <label class="flex"><input type="checkbox"><div class="checkbox"></div> Mediano</label>
-                                          <label class="flex"><input type="checkbox"><div class="checkbox"></div> Grande</label>
+                                          <label class="flex"><input type="checkbox"><div class="checkbox"></div> <span>Pequeño</span></label>
+                                          <label class="flex"><input type="checkbox"><div class="checkbox"></div> <span>Mediano</span></label>
+                                          <label class="flex"><input type="checkbox"><div class="checkbox"></div> <span>Grande</span></label>
                                         </div>
                                     </div>
                                 </div>
@@ -220,10 +277,18 @@
                                     <div class="row">
                                         <div class="large-12 columns flex cont-cantidad">
                                           <div class="cantidad">
-                                            <label>Cantidad </label><input type="text" />
+                                            <label>Cantidad </label><input class="select-uniresto" type="text" />
                                           </div>
-                                          <a class="btn-circ">+</a>
-                                          <a class="btn-circ">-</a>
+
+                                          <div class="cont-botones">
+                                            <div class="boton menos">
+                                              <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="boton mas">
+                                              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            </div>
+                                          </div>
+
                                           <div class="total">
                                             $70
                                           </div>
@@ -254,7 +319,7 @@
                                             <h6>Pagos</h6>
                                             <div class="flex">
                                               <img src="img/efectivo.png" />
-                                              <img src="img/tarjetasc.png" />
+                                              <img class="tarjetas" src="img/tarjetasc.png" />
                                             </div>
                                           </div>
                                           <div class="entrega">

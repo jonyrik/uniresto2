@@ -7,6 +7,7 @@
 body {
   color: #504d5b;
   background: #f0fbf7;
+  font-family: 'Helvetica', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -516,9 +517,11 @@ img.perfilImg {
     background: #ED0707;
     color: white;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: normal;
     padding: 10px !important;
-    font-size: 0.9rem !important;
+    font-size: 0.8rem;
+    font-family: 'Helvetica', sans-serif;
+    text-transform: uppercase;
 }
 
 .boton-naranja-pequeno {

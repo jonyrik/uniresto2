@@ -91,6 +91,7 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .flex .col3 {
@@ -369,22 +370,28 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 
 
 .elegir-producto .panel.callout, .elegir-producto .panel.callout p {
-  color: #777;
+  color: #c0c7d1;
   font-size: 0.9rem;
+  font-family: 'Raleway';
 }
 .elegir-producto .panel.callout p.title-plato {
-  color: #484848 !important;
+  color: #504d5b !important;
   font-size: 1.1rem;
+  font-family: 'Raleway';
 }
+
 .personaliza .flex label {
-  width: 90%;
-  padding-top: 8px;
+  width: 80%;
+  /*padding-top: 8px;*/
   font-size: 0.9rem;
-  color: #484848;
+  color: #504d5b;
   font-weight: bold;
 }
 .personaliza .flex select {
   width: 10%;
+}
+.personaliza.ingredientes {
+  margin-bottom: 1rem;
 }
 
 .elegir-producto .title-plato, .elegir-producto .descripcion, .elegir-producto .ver-combos {
@@ -404,8 +411,12 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
   color: #484848;
   font-size: 0.9rem;
   text-transform: uppercase;
-  border-bottom: thin solid #EBF0FD;
+  /*border-bottom: thin solid #EBF0FD;*/
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-weight: bold;
+  font-family: 'Raleway';
 }
 .elegir-producto.store-tab .content .panel h6 {
   color: #484848;
@@ -417,25 +428,43 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
   font-weight: bold;
 }
 
+.elegir-producto.store-tab .content .panel .bebida h5 {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
 .precios a {
-  font-size: 0.9rem;
-  color: #777;
-  font-weight: bold;
+  font-size: 14px;
+  color: #504d5b;
+  font-weight: 100;
   padding: 5px 10px;
   transition: ease 0.25s;
+  font-family: 'Helvetica', sans-serif;
 }
 .panel.callout .precios a:hover {
   color: #ED0707;
 }
+.elegir-producto label {
+  font-size: 14px;
+  color: #504d5b;
+  font-weight: 100;
+  font-family: 'Helvetica', sans-serif;
+}
 .precios .precio {
-    background: #EBF0FD;
+    background: #e8edf6;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 3px 10px;
     margin-right: 5px;
 }
-.panel.callout .precios .precio:hover {
-  background: #777;
-  color: #EBF0FD;
+/*.panel.callout .precios .precio:hover {
+  background: #2f3742;
+  color: #c0c7d1;
+}*/
+.elegir-producto input[type="checkbox"] + .checkbox {
+  margin-top:0;
+}
+.elegir-producto label span {
+  margin-top: 3px;
 }
 
 .precios .columns {
@@ -451,6 +480,27 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
   background: white;
   padding: 10px;
   border: solid thin #EBF0FD;
+}
+
+.elegir-producto input[type="text"] {
+  text-align: center;
+  margin: 0 5px;
+  font-family: 'Helvetica';
+}
+.elegir-producto input[readonly=""] {
+  border: none !important;
+  box-shadow: none;
+}
+
+.elegir-producto .boton.mas, .elegir-producto .boton.menos {
+    font-size: 1.7rem;
+    line-height: 0;
+    color: #ED0707;
+    cursor: pointer;
+}
+.elegir-producto .boton.mas:hover, .elegir-producto .boton.menos:hover {
+    /*color: #00a57b;*/
+    color: #077000;
 }
 
 .elegir-producto .boton-naranja {
@@ -470,13 +520,19 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 .cantidad label {
   background: #EBF0FD;
   padding: 8px 10px;
-  color: #484848;
+  color: #504d5b;
   font-size: 0.9rem;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
-.cantidad input {
+.cantidad input[type='text'] {
   width: 80px;
-  margin: 0 20px 0 0;
+  margin: 0 10px 0 0;
+}
+
+.cont-botones {
+  display: flex;
+  width: 55px;
+  justify-content: space-between;
 }
 
 .pagos, .entrega {
@@ -495,6 +551,10 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
   width: auto;
   margin-right: 5px;
 }
+.content .pagos img.tarjetas {
+  height: 17px;
+}
+
 .content .entrega img {
   margin-right: 5px;
 }
@@ -524,40 +584,50 @@ table tr td:nth-child(2), table tr td:nth-child(3), table tr th:nth-child(2), ta
 }
 
 .total {
-  font-size: 1.7rem;
+  font-size: 48px;
   position: absolute;
   right: 10px;
-  color: #777;
+  color: #504d5b;
+  font-family: 'Helvetica';
+  top: -3px;
+  font-weight: normal;
 }
 
 .dont-line {
-  border-bottom: thin dashed #D3D3D3;
+  border-bottom: thin dashed #EBF0FD;
   height: 1px;
   width: 95%;
-  margin: 15px auto;
-  padding: 0px 2rem;
-  display: table;
+  margin: 1rem 0.9375rem;
+  /*padding: 0px 2rem;
+  display: table;*/
+}
+.solid-line {
+  border-bottom: thin solid #EBF0FD;
+  height: 1px;
+  width: 95%;
+  margin: 1rem 0.9375rem;
 }
 
 .cuerpo{
-margin-top:30px;
+  margin-top:30px;
 }
 .mod-plato{
-background: white;border: 1px solid #ED0707;
-font-size: 0.8rem;color: #ED0707;
-padding: 8px;
-border-radius: 15px;
-margin: 10px 0;
-margin-left: 50%;
-left: -67.5px;text-transform: uppercase;position: relative;}
+  background: white;border: 1px solid #ED0707;
+  font-size: 0.8rem;color: #ED0707;
+  padding: 8px;
+  border-radius: 15px;
+  margin: 10px 0;
+  margin-left: 50%;
+  left: -67.5px;text-transform: uppercase;position: relative;
+}
 
 .mod-plato:hover{
-background: #ED0707;
-color: white;
+  background: #ED0707;
+  color: white;
 }
 
 .ancho-icon{
-width: 12.5%;
+  width: 12.5%;
 }
 
 .sin-padding{
@@ -868,7 +938,7 @@ margin: 8vh 0 0 0;
 main{
 	position: relative;
 	padding: 3.125em 0 0 0;
-	background: #EBF0FD!important;
+	/*background: #EBF0FD!important;*/
 }
 
 
@@ -1747,9 +1817,9 @@ span.today-hour i {
     font-size: 0.9rem;
 }
 
-body.store-view {
+/*body.store-view {
     background: rgba(212, 212, 255, 0.3) none repeat scroll 0% 0%;
-}
+}*/
 
 .no-padding-left {
     padding-left: 0;
@@ -2085,7 +2155,7 @@ ul.ingredients-list li:before {
     }
 
 .flex {
-  display: table;
+  /*display: table;*/
   float: none;
 }
 .finalizar-pedido .enc.flex {
@@ -2194,10 +2264,10 @@ ul.ingredients-list li:before {
   margin: 10px 5px 0 0;
 }
 .total {
-  position: relative;
+  /*position: relative;
   right: auto;
   float: right;
-  top: 5px;
+  top: 5px;*/
 }
 
 .elegir-producto .boton-naranja {
