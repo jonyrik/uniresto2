@@ -182,9 +182,9 @@ $('#mapContainer').toggle( function () {
       <li class="tab-title ancho-icon"><a href="#panel41"><i class="fa fa-camera"></i>   </a></li>
       <li class="tab-title ancho-icon"><a href="/store/facilities/"><i class="fa fa-building"></i></a></li>
     </ul>
-        <div class="tabs-content-full">
+        <div class="tabs-content-full tus-pedidos">
             <div class="content active">
-                <div class="medium-9 large-9 columns">
+                <div class="medium-12 large-9 columns">
                     <h3 class="dotted-bottom"><img src="img/menu2.png" style="width:50px;" /> tus pedidos</h3>
 
           <div class="row">
@@ -210,8 +210,8 @@ $('#mapContainer').toggle( function () {
 
                            <div class="controles">
                     <a href="#" class="default_button">Día Hoy</a>
-                    <a href="#" class="default_button">Futuro</a>
-                    <a href="#" class="default_button">Archivados/Cancelado</a>
+                    <a href="#" class="default_button">Abrir Mesa</a>
+                    <!-- <a href="#" class="default_button">Archivados/Cancelado</a> -->
                 </div>
 
                    <div class="row">
@@ -219,21 +219,32 @@ $('#mapContainer').toggle( function () {
                       <ul class="accordion" data-accordion="">
                           <li class="accordion-navigation active">
 
-                              <a href="#panelContact1a" class="link columns small-12" aria-expanded="true">ORDEN N° <span class="circulo-gris large-5 columns">45</span> del día
+                              <a href="#panelContact1a" class="link columns small-12" aria-expanded="true">MESA N° <span class="circulo-gris large-5 columns">45</span> del día
                                 <div class="estado-controles">
                                 <span>Estado: </span>
-                                <input class="mod-pedido" type="button" value="Confirmar">
-                                <input class="mod-pedido" type="button" value="Rechazar">
+                                <span class="color-verde abierta">Abierta</span>
+                                <!-- <input class="mod-pedido" type="button" value="Confirmar">
+                                <input class="mod-pedido" type="button" value="Rechazar"> -->
                                 </div>
                               </a>
 
                             <div id="panelContact1a" class="contenedor-articulo content active">
+                              <div class="cont-header-tuspedidos flex space-between align-items small-12">
+                                <div class="carrito align-items space-between flex large-3 medium-3 small-12">
+                                  <p><img src="img/chek_icon.png" alt="" /></p>
+                                  <p><a href="#">Completado</a></p>
+                                  <p class="color-rojo"><a href="#">En Proceso</a></p>
+                                </div>
+                                <div class="aceptar-todo large-2 medium-2 small-12">
+                                  <a href="#">Aceptar Todo</a>
+                                </div>
+                              </div>
                               <div class="chatContent">
                                 <article class="articulo-pedido columns small-12">
                                   <div class="img-art-pedido ">
                                     <img src="img/55_7KJgCJM.jpg">
                                   </div>
-                                  <div class="form-articulo-pedido columns small-10">
+                                  <div class="form-articulo-pedido columns small-7">
                                     <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
                                     <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
                                     <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
@@ -242,6 +253,14 @@ $('#mapContainer').toggle( function () {
                                       <span class="ingrediente-articulo">Queso</span>
                                     </span></h6>
 
+                                  </div>
+                                  <div class="columns small-12 medium-3">
+                                    <select class="select-uniresto" name="">
+                                      <option value="" selected="selected">Informar</option>
+                                      <option value="PP">Informar</option>
+                                      <option value="PG">Informar</option>
+                                      <option value="PB">Informar</option>
+                                    </select>
                                   </div>
                                 </article>
                                 <p class="columns small-2"></p><p class="columns small-10"></p>
@@ -249,7 +268,7 @@ $('#mapContainer').toggle( function () {
                                   <div class="img-art-pedido ">
                                     <img src="img/55_7KJgCJM.jpg">
                                   </div>
-                                  <div class="form-articulo-pedido columns small-10">
+                                  <div class="form-articulo-pedido columns small-7">
                                     <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
                                     <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
                                     <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
@@ -258,6 +277,14 @@ $('#mapContainer').toggle( function () {
                                       <span class="ingrediente-articulo">Queso</span>
                                     </span></h6>
 
+                                  </div>
+                                  <div class="columns small-12 medium-3">
+                                    <select class="select-uniresto" name="">
+                                      <option value="" selected="selected">Informar</option>
+                                      <option value="PP">Informar</option>
+                                      <option value="PG">Informar</option>
+                                      <option value="PB">Informar</option>
+                                    </select>
                                   </div>
                                 </article>
 
@@ -280,14 +307,16 @@ $('#mapContainer').toggle( function () {
                                           <img src="img/fotoPerfil.jpg">
                                       </div>
                                     </div>-->
-                                    <div class="text-cliente">
+                                    <div class="text-cliente flex align-items space-between">
                                       <!--<span class="name">Andres Maldonado</span>
                                       <span class="ubicacion"> Barrio de Agronomía</span>-->
-                                      <span class="titulo"> Retira 18:30 </span>
+                                      <span class="titulo">Pass:</span>
+                                      <span class="titulo"> 75aRt</span>
+                                      <span><img src="img/chek_icon.png" alt="" /></span>
                                     </div>
-                                    <div class="columns">
+                                    <!-- <div class="columns">
                                         <a href="/store/orders/"><img src="img/comentar.png" style="width:35px;" /> <span> Notificaciones </span></a>
-                                    </div>
+                                    </div> -->
 
                                   </div>
                                   <div class="total columns small-12 medium-4 large-4">
@@ -311,109 +340,23 @@ $('#mapContainer').toggle( function () {
                               </div>
                             </div>
                           </li>
+
                           <li class="accordion-navigation ">
 
-                              <a href="#panelContact2a" class="link columns small-12" aria-expanded="false">ORDEN N° <span class="circulo-gris large-5 columns">44</span> del día
-                                <div class="estado-controles">
-                                <span>Estado: </span>
-                                <input class="mod-pedido" type="button" value="Confirmar">
-                                <input class="mod-pedido" type="button" value="Rechazar">
+                              <a href="#panelContact3a" class="link columns small-12 flex space-between align-items" aria-expanded="false">
+                                <div class="">
+                                  MESA
+                                </div>
+                                <div class="text-cliente flex align-items space-between">
+                                  <span class="titulo">Pass:</span>
+                                  <span class="titulo"> 75aRt</span>
+                                  <span><img src="img/chek_icon.png" alt="" /></span>
+                                </div>
+                                <div class="reservada">
+                                  Reservada para las 18:30
                                 </div>
                               </a>
 
-                            <div id="panelContact2a" class="contenedor-articulo content ">
-                              <div class="chatContent">
-                                <article class="articulo-pedido columns small-12">
-                                  <div class="img-art-pedido ">
-                                    <img src="img/55_7KJgCJM.jpg">
-                                  </div>
-                                  <div class="form-articulo-pedido columns small-10">
-                                    <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
-                                    <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
-                                    <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
-                                      <span class="ingrediente-articulo">Cebolla</span>
-                                      <span class="ingrediente-articulo">Jamón</span>
-                                      <span class="ingrediente-articulo">Queso</span>
-                                    </span></h6>
-
-                                  </div>
-                                </article>
-                                <p class="columns small-2"></p><p class="columns small-10"></p>
-                                <article class="articulo-pedido columns small-12">
-                                  <div class="img-art-pedido ">
-                                    <img src="img/55_7KJgCJM.jpg">
-                                  </div>
-                                  <div class="form-articulo-pedido columns small-10">
-                                    <h4><span class="title-articulo-pedido">Combo Mega</span></h4>
-                                    <h6><span class="detalle-articulo-pedido">Cantidad:  1</span></h6>
-                                    <h6><span class="detalle-articulo-pedido">Ingredientes seleccionados
-                                      <span class="ingrediente-articulo">Cebolla</span>
-                                      <span class="ingrediente-articulo">Jamón</span>
-                                      <span class="ingrediente-articulo">Queso</span>
-                                    </span></h6>
-
-                                  </div>
-                                </article>
-
-                                <div class="footer-resumen-articulo">
-                                  <div class="usuario-resum columns small-12 medium-4 large-4">
-                                    <!--<span> Datos del usuario y la compra</span>-->
-                                    <div class="columns small-1">
-                                      <div class="foto-cliente">
-                                          <img src="img/fotoPerfil.jpg">
-                                      </div>
-                                    </div>
-                                    <div class="text-cliente">
-                                      <span class="name">Andres Maldonado</span>
-                                      <span class="ubicacion"> Barrio de Agronomía</span>
-                                    </div>
-                                  </div>
-                                  <div class="datos-entrega columns small-12 medium-4 large-4">
-                                    <!--<div class="columns small-1">
-                                      <div class="foto-cliente">
-                                          <img src="img/fotoPerfil.jpg">
-                                      </div>
-                                    </div>-->
-                                    <div class="text-cliente">
-                                      <!--<span class="name">Andres Maldonado</span>
-                                      <span class="ubicacion"> Barrio de Agronomía</span>-->
-                                      <span class="titulo"> Retira 18:30 </span>
-                                    </div>
-                                    <div class="columns">
-                                        <a href="/store/orders/"><img src="img/comentar.png" style="width:35px;" /> <span> Notificaciones </span></a>
-                                    </div>
-
-                                  </div>
-                                  <div class="total columns small-12 medium-4 large-4">
-                                    <div class="columns prec">
-                                      <span class="total-titulo">TOTAL </span>  <span class="total-naranja"> $ 320</span>
-                                    </div>
-                                    <div class="columns prec">
-                                      <span class="sub-titulo">Paga Con:</span> <span class="item-total"> $ 200,00</span>
-                                    </div>
-                                    <div class="columns prec">
-                                      <span class="sub-titulo">Vuelto: </span> <span class="item-total"> $ 80,00</span>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="columns small-12">
-                                  <hr style="margin: 0 5px;">
-                                  <input class="aceptar-pedido columns small-5" type="button" value="Aceptar Pedido">
-                                  <input class="cancelar-pedido columns small-5" type="button" value="Cancelar Pedido">
-                                </div>
-
-                              </div>
-                            </div>
-                          </li>
-                          <li class="accordion-navigation ">
-
-                              <a href="#panelContact3a" class="link columns small-12" aria-expanded="false">ORDEN N° <span class="circulo-gris large-5 columns">43</span> del día
-                                <div class="estado-controles">
-                                <span>Estado: </span>
-                                <input class="mod-pedido" type="button" value="Confirmar">
-                                <input class="mod-pedido" type="button" value="Rechazar">
-                                </div>
-                              </a>
 
                             <div id="panelContact3a" class="contenedor-articulo content ">
                               <div class="chatContent">
@@ -431,6 +374,14 @@ $('#mapContainer').toggle( function () {
                                     </span></h6>
 
                                   </div>
+                                  <div class="columns small-12 medium-3">
+                                    <select class="select-uniresto" name="">
+                                      <option value="" selected="selected">Informar</option>
+                                      <option value="PP">Informar</option>
+                                      <option value="PG">Informar</option>
+                                      <option value="PB">Informar</option>
+                                    </select>
+                                  </div>
                                 </article>
                                 <p class="columns small-2"></p><p class="columns small-10"></p>
                                 <article class="articulo-pedido columns small-12">
@@ -447,6 +398,14 @@ $('#mapContainer').toggle( function () {
                                     </span></h6>
 
                                   </div>
+                                  <div class="columns small-12 medium-3">
+                                    <select class="select-uniresto" name="">
+                                      <option value="" selected="selected">Informar</option>
+                                      <option value="PP">Informar</option>
+                                      <option value="PG">Informar</option>
+                                      <option value="PB">Informar</option>
+                                    </select>
+                                  </div>
                                 </article>
 
                                 <div class="footer-resumen-articulo">
@@ -457,9 +416,10 @@ $('#mapContainer').toggle( function () {
                                           <img src="img/fotoPerfil.jpg">
                                       </div>
                                     </div>
-                                    <div class="text-cliente">
-                                      <span class="name">Andres Maldonado</span>
-                                      <span class="ubicacion"> Barrio de Agronomía</span>
+                                    <div class="text-cliente flex align-items space-between">
+                                      <span class="titulo">Pass:</span>
+                                      <span class="titulo"> 75aRt</span>
+                                      <span><img src="img/chek_icon.png" alt="" /></span>
                                     </div>
                                   </div>
                                   <div class="datos-entrega columns small-12 medium-4 large-4">

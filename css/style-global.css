@@ -42,6 +42,23 @@ input[type="checkbox"] {
     border: 0;
 }
 
+.color-verde {
+  color: #01d7a1;
+}
+.color-rojo {
+  color: #ED0707;
+}
+
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-items {
+  align-items: center;
+}
+
 .switch {
   margin-right: 12px;
 }
@@ -1565,16 +1582,14 @@ right: 0;
     }
 
     .accordion .accordion-navigation > a, .accordion .accordion-navigation.active > a {
-        background: transparent;
-        /* text-transform: uppercase; */
-        /*color: white;*/
+        /*background: transparent;
         font-size: 0.8rem;
         padding: 10px;
         font-weight: normal;
          border-bottom: 1px solid #ccc;
         position: relative;
         float: inherit;
-        font-weight: bold;
+        font-weight: bold;*/
     }
 
     .margin-bottom-negative-40{
@@ -1594,16 +1609,14 @@ right: 0;
     }
 
     .accordion .accordion-navigation > a, .accordion .accordion-navigation > a {
-        background: transparent;
-        /* text-transform: uppercase; */
+        /*background: transparent;
         color: #777;
         font-size: 12px;
         padding: 10px;
         font-weight: normal;
-        /* border-bottom: 1px solid #ccc; */
         position: relative;
         float: inherit;
-        font-weight: bold;
+        font-weight: bold;*/
     }
     .title-photo-rrhh {
         padding-top: 0px;
@@ -1633,15 +1646,29 @@ right: 0;
     float: none;
   }
 
+  .tabs.vertical.hide-for-small-only {
+    display: none !important;
+  }
+  .tabs.horizontal.show-for-small-only {
+    display: inherit !important;
+  }
+
   .medium-3 {
     width: 24.2%;
   }
 
+  .flex {
+    flex-wrap: wrap;
+  }
   .texto-acciones {
     display: none !important;
   }
   .acciones ul li:nth-child(2n+1), .acciones ul li:nth-child(2n) {
     padding: 5px 45px !important;
+  }
+
+  .boton-naranja, .default_button {
+    width: 100%;
   }
 
 }
@@ -1731,6 +1758,14 @@ right: 0;
     width: 50%;
     display: table;
     margin: 0 auto;
+  }
+
+  .small-12 {
+    width: 100%;
+  }
+
+  .tus-pedidos .panel.callout .carrito p:nth-child(1), .accordion .accordion-navigation > a.link div:nth-child(1) {
+    width: auto;
   }
 
 }
