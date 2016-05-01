@@ -941,7 +941,7 @@ table tbody tr td {
 }
 
 .tabs-home-title > a {
-    background-color: #01D7A1 !important;
+    background-color: #00A57B !important;
     color: white !important;
     font-size: 14px !important;
     font-family: 'Helvetica' !important;
@@ -956,7 +956,7 @@ table tbody tr td {
 
 .tabs-home-title.active > a {
 
-    background-color: #00A57B !important;
+    background-color: #01D7A1 !important;
 }
 
 /*================================================ MIN-WIDTH: 480px  =======================================================*/
@@ -1014,7 +1014,7 @@ table tbody tr td {
     }
 
     .tabs-home-title > a {
-        background-color: #01D7A1 !important;
+        background-color: #00a57b !important;
         color: white !important;
         font-size: 14px !important;
         font-family: 'Helvetica' !important;
@@ -1023,7 +1023,7 @@ table tbody tr td {
     }
 
     .tabs-home-title.active > a {
-        background-color: #00A57B !important;
+        background-color: #01D7A1 !important;
     }
 
 }
