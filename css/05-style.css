@@ -1511,6 +1511,75 @@ RESTOS
     margin: 0;
   }
 }
+
+/*================================================ MAX-WIDTH: 1024px  =======================================================*/
+
+
+@media (max-width: 1024px) {
+
+    #productos .custom-columns.oculto .filtros, #restos .custom-columns.oculto .filtros, #productos .custom-columns .oculto, #restos .custom-columns .oculto { display: block; }
+
+    #productos .custom-columns .filtros, #restos .custom-columns .filtros { display: none; }
+
+    #restos .product_item { width: 100%; }
+    .filtros-colap { width: 100%; }
+
+    #productos .custom-columns .filtros, #restos .custom-columns .filtros {
+        height: 42px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .custom-columns .cart {
+        padding-bottom: 10px;
+    }
+
+    #productos .custom-columns .filtros.open, #restos .custom-columns .filtros.open {
+        height: auto;
+        overflow: inherit;
+    }
+
+    #productos .custom-columns .filtros:after, #restos .custom-columns .filtros:after {
+        content: "";
+        display: block;
+        background-image: url(../img/arrowBotton.jpg);
+        width: 23px;
+        height: 13px;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+
+    #productos .custom-columns .filtros.open:after, #restos .custom-columns .filtros.open:after {
+        content: "";
+        display: block;
+        background-image: url(../img/arrowUp.jpg);
+        width: 23px;
+        height: 13px;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+
+    #productos .custom-columns .filtros h2.main__title, #restos .custom-columns .filtros h2.main__title {
+        margin: 10px 0 1px 15px;
+    }
+
+    #productos .product_item .social a {
+      width: auto;
+      display: block;
+      /*padding-left: 1%;*/
+    }
+    #productos .product_item .social a.com::after {
+      /*left: 55px;*/
+    }
+
+    #myModal_medios.reveal-modal {
+      width: 40%;
+    }
+
+}
+
 @media (max-width: 566px) {
 
   .filtros-colap label.modificar .flecha {
@@ -1669,9 +1738,19 @@ RESTOS
 
 }
 
+@media (max-width: 768px) {
+  #myModal_medios.reveal-modal {
+    width: 60%;
+  }
+}
+
 @media (max-width: 641px) {
 
   .buscando .ubicacion {
+    width: 100%;
+  }
+
+  #myModal_medios.reveal-modal {
     width: 100%;
   }
 
@@ -1949,73 +2028,6 @@ RESTOS
         margin: 18px 0 1px 6px;
     }
 }
-
-
-/*================================================ MAX-WIDTH: 1024px  =======================================================*/
-
-
-@media (max-width: 1024px) {
-
-    #productos .custom-columns.oculto .filtros, #restos .custom-columns.oculto .filtros, #productos .custom-columns .oculto, #restos .custom-columns .oculto { display: block; }
-
-    #productos .custom-columns .filtros, #restos .custom-columns .filtros { display: none; }
-
-    #restos .product_item { width: 100%; }
-    .filtros-colap { width: 100%; }
-
-    #productos .custom-columns .filtros, #restos .custom-columns .filtros {
-        height: 42px;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .custom-columns .cart {
-        padding-bottom: 10px;
-    }
-
-    #productos .custom-columns .filtros.open, #restos .custom-columns .filtros.open {
-        height: auto;
-        overflow: inherit;
-    }
-
-    #productos .custom-columns .filtros:after, #restos .custom-columns .filtros:after {
-        content: "";
-        display: block;
-        background-image: url(../img/arrowBotton.jpg);
-        width: 23px;
-        height: 13px;
-        position: absolute;
-        top: 15px;
-        right: 10px;
-    }
-
-    #productos .custom-columns .filtros.open:after, #restos .custom-columns .filtros.open:after {
-        content: "";
-        display: block;
-        background-image: url(../img/arrowUp.jpg);
-        width: 23px;
-        height: 13px;
-        position: absolute;
-        top: 15px;
-        right: 10px;
-    }
-
-    #productos .custom-columns .filtros h2.main__title, #restos .custom-columns .filtros h2.main__title {
-        margin: 10px 0 1px 15px;
-    }
-
-    #productos .product_item .social a {
-      width: auto;
-      display: block;
-      /*padding-left: 1%;*/
-    }
-    #productos .product_item .social a.com::after {
-      /*left: 55px;*/
-    }
-
-}
-
-
 
 
 /*================================================ MIN-WIDTH: 1024px  =======================================================*/
