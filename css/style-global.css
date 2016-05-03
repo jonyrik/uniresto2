@@ -37,6 +37,53 @@ input[type="checkbox"] {
     width: 24.4%;
 }
 
+/*#myModal {
+  display: block !important;
+}*/
+#myModal.reveal-modal {
+  height: 480px;
+  display: block;
+}
+.swiper-container {
+  width: 100%;
+      height: 100%;
+    padding: 0 50px;
+}
+#myModal .swiper-slide {
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
+  background: #ED0707;
+}
+.swiper-container .swiper-button-prev:hover, .swiper-container .swiper-button-next:hover {
+  background: #01d7a1;
+}
+.swiper-container .swiper-button-prev::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 11px;
+  left: 7px;
+}
+.swiper-container .swiper-button-next::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid white;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 11px;
+  right: 7px;
+}
+
 .filtros input[type="checkbox"]:checked + label:after, .cont-filtros input[type="checkbox"]:checked + label:after {
     background: #ED0707;
     border: 0;
@@ -1775,6 +1822,10 @@ right: 0;
     font-size: 12px;
 }
 
-
+@media only screen and (max-width: 40em) {
+  #myModal.reveal-modal {
+      min-height: auto;
+  }
+}
 
 /* FIN PANTALLA 07 */

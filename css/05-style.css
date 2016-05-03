@@ -876,15 +876,14 @@ PRODUCTOS
 
 #myModal  .product_item {
     border-radius: 2px;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     padding: .3rem .6rem;
-    float: left;
-    margin: 10px 1% 0 0;
+    /*float: left;
+    margin: 10px 1% 0 0;*/
     background-color: white;
     box-shadow: 0 1px 5px rgba(0,0,0,.1);
     width: 210px;
-    float: left;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 #myModal .product_item a.thumb {
