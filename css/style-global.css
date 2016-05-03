@@ -29,6 +29,10 @@ input[type="checkbox"] {
     visibility: hidden;
 }
 
+input[type="button"] {
+  -webkit-appearance: none;
+}
+
 .row {
   position: relative;
 }
