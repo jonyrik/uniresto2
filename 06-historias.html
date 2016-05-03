@@ -107,7 +107,8 @@
 
     <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-4"> <!-- historias -->
 
-      <div class="descrip">Estas son tus historias y experiencias</div>
+      <!-- <div class="descrip">Estas son tus historias y experiencias</div> -->
+
 
         <!-- Tab -->
     <ul class="tabs tabs-historias" data-tab role="tablist">
@@ -121,6 +122,90 @@
       </li>
     </ul>
 
+    <div class="cont-filtros">
+        <div class="filtros">
+            <div id="btn-filtros">Filtrar por</div>
+            <div id="btn-filtros2" style="display:none;">Filtrar por<div class="tri"></div></div>
+            <div class="cont-select">
+              <span class="tit">Lo escribe</span>
+              <div class="cont-search">
+                <input type="search" placeholder="Buscar"></input>
+                <input type="button" class="btn-buscar" value="Ir"></input>
+              </div>
+              <div class="cont-check">
+                <div class="">
+                  <input id="n1" name="n1" type="checkbox" /> <label for="n1">Diego Pugliese</label>
+                </div>
+                <div class="">
+                  <input id="n2" name="n2" type="checkbox" /> <label for="n2">Juan Ramirez</label>
+                </div>
+                <div class="">
+                  <input id="n3" name="n3" type="checkbox" /> <label for="n3">Manuel Rosco</label>
+                </div>
+                <div class="">
+                  <input id="n4" name="n4" type="checkbox" /> <label for="n4">Diego Torpes</label>
+                </div>
+                <div class="">
+                  <input id="n5" name="n5" type="checkbox" /> <label for="n5">Manuela Pedraza</label>
+                </div>
+              </div>
+            </div>
+            <div class="cont-select">
+              <span class="tit">Destinatario</span>
+              <div class="cont-search">
+                <input type="search" placeholder="Buscar"></input>
+                <input type="button" class="btn-buscar" value="Ir"></input>
+              </div>
+              <div class="cont-check">
+                <div class="">
+                  <input id="n6" name="n6" type="checkbox" /> <label for="n6">Diego Pugliese</label>
+                </div>
+                <div class="">
+                  <input id="n7" name="n7" type="checkbox" /> <label for="n7">Juan Ramirez</label>
+                </div>
+                <div class="">
+                  <input id="n8" name="n8" type="checkbox" /> <label for="n8">Manuel Rosco</label>
+                </div>
+                <div class="">
+                  <input id="n9" name="n9" type="checkbox" /> <label for="n9">Diego Torpes</label>
+                </div>
+                <div class="">
+                  <input id="n10" name="n10" type="checkbox" /> <label for="n10">Manuela Pedraza</label>
+                </div>
+              </div>
+            </div>
+            <div class="cont-select">
+              <span class="tit">Clasificación</span>
+              <div class="cont-search">
+                <input type="search" placeholder="Buscar"></input>
+                <input type="button" class="btn-buscar" value="Ir"></input>
+              </div>
+              <div class="cont-check">
+                <div class="">
+                  <input id="gastro" name="gastro" type="checkbox" /> <label for="gastro">Gastronomía</label>
+                </div>
+                <div class="">
+                  <input id="salud" name="salud" type="checkbox" /> <label for="salud">Salud</label>
+                </div>
+                <div class="">
+                  <input id="entre" name="entre" type="checkbox" /> <label for="entre">Entretenimiento</label>
+                </div>
+                <div class="">
+                  <input id="deporte" name="deporte" type="checkbox" /> <label for="deporte">Deporte</label>
+                </div>
+                <div class="">
+                  <input id="belleza" name="belleza" type="checkbox" /> <label for="belleza">Belleza</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="cont-select guardar">
+              <a class="default_button">Guardar</a>
+              <a class="default_button">Cancelar</a>
+            </div>
+        </div>
+    </div>
+
 <!-- Fin Tab -->
     <div class="tabs-content">
         <section role="tabpanel" aria-hidden="false" class="content active" id="panel4-1">
@@ -129,6 +214,18 @@
         <div class="row">
           <div class="columns small-12">
             <div class="img-h">
+              <div class="comentario flex align-items absolute">
+                <span><img src="img/comentar.png" alt="" /></span>
+                <span>(5 comentarios)</span>
+              </div>
+              <div class="estrellas flex align-items absolute">
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span>Asombroso</span>
+              </div>
               <img src="img/his1.jpg">
             </div>
             <div class="box bgWh ">
@@ -145,22 +242,44 @@
                   <div class="txt">
                     <h4>El día que viajé a Japón con mis amigos</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla...
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
                     </p>
                     <a href="single-historias.html" class="default_button">Ver más</a>
                   </div>
 
               </div>
             </div>    <!-- box -->
-            <div class="cont-comun">
-              <p class="comun"><span>2</span> comentarios</p>
-              <p class="comun"><span>10</span> me gusta</p>
+            <div class="cont-comun flex space-between align-items">
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun"> Destinatarios</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Denunciar</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Borrar</p>
+              </div>
             </div>
           </div>
         </div>  <!-- row -->
 
         <div class="columns small-12">
           <div class="img-h">
+            <div class="comentario flex align-items absolute">
+              <span><img src="img/comentar.png" alt="" /></span>
+              <span>(5 comentarios)</span>
+            </div>
+            <div class="estrellas flex align-items absolute">
+              <span><img src="img/star.png" alt="" /></span>
+              <span><img src="img/star.png" alt="" /></span>
+              <span><img src="img/star.png" alt="" /></span>
+              <span><img src="img/star.png" alt="" /></span>
+              <span><img src="img/star.png" alt="" /></span>
+              <span>Asombroso</span>
+            </div>
             <img src="img/his4.jpg">
           </div>
           <div class="box bgWh ">
@@ -177,16 +296,26 @@
                 <div class="txt">
                   <h4>Mi mejor compañero, mi mejor mascota.</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
                   </p>
                   <a href="#" class="default_button">Ver más</a>
                 </div>
 
             </div>
           </div>    <!-- box -->
-          <div class="cont-comun">
-            <p class="comun"><span>2</span> comentarios</p>
-            <p class="comun"><span>10</span> me gusta</p>
+          <div class="cont-comun flex space-between align-items">
+            <div class="">
+              <span><img src="img/eliminar.png" alt="" /></span>
+              <p class="comun"> Destinatarios</p>
+            </div>
+            <div class="">
+              <span><img src="img/eliminar.png" alt="" /></span>
+              <p class="comun">Denunciar</p>
+            </div>
+            <div class="">
+              <span><img src="img/eliminar.png" alt="" /></span>
+              <p class="comun">Borrar</p>
+            </div>
           </div>
         </div>
 
@@ -197,6 +326,18 @@
         <div class="row">
           <div class="columns small-12">
             <div class="img-h">
+              <div class="comentario flex align-items absolute">
+                <span><img src="img/comentar.png" alt="" /></span>
+                <span>(5 comentarios)</span>
+              </div>
+              <div class="estrellas flex align-items absolute">
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span>Asombroso</span>
+              </div>
               <img src="img/his2.jpg">
             </div>
             <div class="box bgWh ">
@@ -213,21 +354,43 @@
                   <div class="txt">
                     <h4>El mejor plato que probé en mi vida</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
                     </p>
                     <a href="#" class="default_button">Ver más</a>
                   </div>
 
               </div>
             </div>    <!-- box -->
-            <div class="cont-comun">
-              <p class="comun"><span>2</span> comentarios</p>
-              <p class="comun"><span>10</span> me gusta</p>
+            <div class="cont-comun flex space-between align-items">
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun"> Destinatarios</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Denunciar</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Borrar</p>
+              </div>
             </div>
           </div>
 
           <div class="columns small-12">
             <div class="img-h">
+              <div class="comentario flex align-items absolute">
+                <span><img src="img/comentar.png" alt="" /></span>
+                <span>(5 comentarios)</span>
+              </div>
+              <div class="estrellas flex align-items absolute">
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span>Asombroso</span>
+              </div>
               <img src="img/his3.jpg">
             </div>
             <div class="box bgWh ">
@@ -242,18 +405,28 @@
                       </div>
                   </div>
                   <div class="txt">
-                    <h4>Mi mejor amigo</h4>
+                    <h4>El día que viajé a Japón con mis amigos</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
                     </p>
                     <a href="#" class="default_button">Ver más</a>
                   </div>
 
               </div>
             </div>    <!-- box -->
-            <div class="cont-comun">
-              <p class="comun"><span>2</span> comentarios</p>
-              <p class="comun"><span>10</span> me gusta</p>
+            <div class="cont-comun flex space-between align-items">
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun"> Destinatarios</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Denunciar</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Borrar</p>
+              </div>
             </div>
           </div>
         </div>  <!-- row -->
@@ -267,6 +440,18 @@
         <div class="row">
           <div class="columns small-12">
             <div class="img-h">
+              <div class="comentario flex align-items absolute">
+                <span><img src="img/comentar.png" alt="" /></span>
+                <span>(5 comentarios)</span>
+              </div>
+              <div class="estrellas flex align-items absolute">
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span>Asombroso</span>
+              </div>
               <img src="img/his3.jpg">
             </div>
             <div class="box bgWh ">
@@ -281,23 +466,45 @@
                       </div>
                   </div>
                   <div class="txt">
-                    <h4>Mi mejor amigo</h4>
+                    <h4>El día que viajé a Japón con mis amigos</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
                     </p>
                     <a href="#" class="default_button">Ver más</a>
                   </div>
 
               </div>
             </div>    <!-- box -->
-            <div class="cont-comun">
-              <p class="comun"><span>2</span> comentarios</p>
-              <p class="comun"><span>10</span> me gusta</p>
+            <div class="cont-comun flex space-between align-items">
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun"> Destinatarios</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Denunciar</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Borrar</p>
+              </div>
             </div>
           </div>
 
           <div class="columns small-12">
             <div class="img-h">
+              <div class="comentario flex align-items absolute">
+                <span><img src="img/comentar.png" alt="" /></span>
+                <span>(5 comentarios)</span>
+              </div>
+              <div class="estrellas flex align-items absolute">
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span><img src="img/star.png" alt="" /></span>
+                <span>Asombroso</span>
+              </div>
               <img src="img/his1.jpg">
             </div>
             <div class="box bgWh ">
@@ -314,16 +521,26 @@
                   <div class="txt">
                     <h4>El día que viajé a Japón con mis amigos</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla...
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
                     </p>
                     <a href="#" class="default_button">Ver más</a>
                   </div>
 
               </div>
             </div>    <!-- box -->
-            <div class="cont-comun">
-              <p class="comun"><span>2</span> comentarios</p>
-              <p class="comun"><span>10</span> me gusta</p>
+            <div class="cont-comun flex space-between align-items">
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun"> Destinatarios</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Denunciar</p>
+              </div>
+              <div class="">
+                <span><img src="img/eliminar.png" alt="" /></span>
+                <p class="comun">Borrar</p>
+              </div>
             </div>
           </div>
 

@@ -55,6 +55,117 @@ img.perfilImg{
 
 /*Fin Portada*/
 
+.historias .box select, .historias .filtros select {
+    border: medium none;
+    /*background-color: #EBF0FD;*/
+    background-color: #f0fbf7;
+    height: 1.9rem;
+    padding: 0.3rem;
+    margin: 0;
+}
+.historias .cont-filtros {
+    width: 100%;
+    display: table;
+}
+.historias .filtros {
+    width: 100%;
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.historias .filtros #btn-filtros, .historias .filtros #btn-filtros2 {
+    content: "Filtrar por";
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    background: #a8b5d5;
+    color: white;
+    display: table;
+    padding: 0.35rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.historias .filtros .tri {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #a8b5d5;
+    left: 46%;
+    bottom: -5px;
+    transition: ease 0.25s;
+}
+
+.historias .filtros .cont-select {
+    background: white;
+    display: none;
+    width: 32%;
+    float: left;
+    padding: 0.8rem;
+    margin: -25px 5px 30px 0px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2) inset;
+}
+.historias .filtros .cont-select.guardar {
+  width: 97%;
+  margin: -30px 5px 30px 0;
+  padding: 0 0.8rem;
+}
+.historias .filtros .cont-select.guardar a {
+  float: left;
+  margin-right: 0.8rem;
+}
+
+.historias .cont-search {
+  position: relative;
+  margin-bottom: 10px;
+  display: table;
+  width: 100%;
+}
+.historias input[type="search"] {
+    border: none;
+    float: right;
+    width: 100%;
+    margin: 0px;
+    border-radius: 10px;
+    color: #a9b1bc;
+}
+
+.historias .cont-search input[type="text"] {
+  float: left;
+  width: 100%;
+  border: none;
+  margin: 0px;
+  border-radius: 10px;
+  color: #a9b1bc;
+}
+.historias .btn-buscar {
+    background: #ED0707;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 0rem;
+    border-radius: 0px 10px 10px 0px;
+    height: 2.25rem;
+    top: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 10px;
+    transition: ease 0.25s;
+}
+.historias .btn-buscar:hover {
+    background: #F4A60C;
+    background-position: center;
+}
+
+.historias .filtros .tit {
+    padding-bottom: 10px;
+    display: block;
+    border-bottom: thin solid #ccc;
+    margin-bottom: 15px;
+}
+
 .tablero-izq{
     position: fixed;
     top: 0 ;
@@ -507,7 +618,7 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 
 
 .historias .box {
-    padding: 1.2em;
+    padding: 1.2em 1.2em 0;
     margin: 0em 0px 0;
 }
 .single.historias .box, .fotos-local .box {
@@ -521,6 +632,31 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 /*.historias .large-4 .row:last-child .box {
     margin: 1em 0;
 }*/
+.historias .img-h {
+  position: relative;
+}
+.historias .comentario {
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  color: #504d5b;
+}
+.historias .comentario span img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.historias .estrellas {
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  color: #504d5b;
+}
+.historias .estrellas span img {
+  width: 15px;
+  margin-right: 2px;
+}
+
 .historias .box .picProfWp{
     width: 50%;
     padding: 0;
@@ -548,14 +684,14 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 
 .historias .box h4 {
     font-size: 1.1rem;
-    color: #4d4d4d;
+    color: #504d5b;
     line-height: 1.2;
     margin: 0 0 30px 0;
     font-weight: bold;
 }
 .historias .box h5 {
     font-size: 0.9rem;
-    color: #959cae;
+    color: #c0c7d1;
     line-height: 1.2;
     margin: 0;
 }
@@ -563,14 +699,19 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 .historias .columns .cont-comun {
   background: #F4F7FE;
   padding: 0.8em 1.2em;
+  text-align: center;
+}
+.historias .columns .cont-comun img {
+  width: auto;
+}
+.historias .columns .cont-comun > div {
+  cursor: pointer;
 }
 .historias .columns p.comun {
     font-size: 0.8rem;
-    color: #959cae;
+    color: #504d5b;
+    font-size: 10px;
     line-height: 1.2;
-    display: inline-block;
-    margin-right: 10px;
-    /*margin: 34px 0 10px;*/
 }
 .historias .columns p.comun span {color: #ED0707;}
 

@@ -106,6 +106,10 @@ input[type="checkbox"] {
   align-items: center;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .switch {
   margin-right: 12px;
 }
