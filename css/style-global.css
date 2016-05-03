@@ -110,6 +110,14 @@ input[type="checkbox"] {
   position: absolute;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.rojo {
+  color: #ED0707;
+}
+
 .switch {
   margin-right: 12px;
 }
