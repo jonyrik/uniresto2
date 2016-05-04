@@ -630,6 +630,8 @@ display: block;      color: black;      font-weight: bold;      font-family: 'Ra
 
 .historias .tabs-content {
   width: 100%;
+  float: right;
+  margin: -35px auto 0;
 }
 
 .historias .box .content { position: relative; }

@@ -59,7 +59,7 @@ $(btn_acciones2).click(function () {
 
     $(btn_filtros).click(function () {
    	$(cont_select).css('display', 'table');
-        $(btn_filtros2).css('display', 'table');
+        $(btn_filtros2).css('display', 'block');
         $(this).css('display', 'none');
    });
 
