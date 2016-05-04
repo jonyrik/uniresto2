@@ -104,11 +104,156 @@ a {
   border: 2px solid #D5DDF2;
   border-bottom: 0;
   margin-bottom: 0;
+  margin-top: 0;
   padding: 0.5em 1em;
+}
+
+.default_button {
+    display: table;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid #ED0707;
+    color: #ED0707;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin: 22px 0;
+    transition: 0.25s;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: -11px;
+    right: 20px;
+}
+.default_button:hover {
+    color: white;
+    background: #ED0707;
+}
+
+.cuadrado {
+  width: 28px;
+  height: 14px;
+  display: block;
+}
+.cuadrado.rojo, .estado.rojo {
+  background: #ED0707;
+}
+.cuadrado.amarillo, .estado.amarillo {
+  background: #FFE24F;
+}
+.cuadrado.verde {
+  background: #01d7a1;
+}
+
+.check input[type="checkbox"] {
+  margin: 0 15px 10px 0;
+  visibility: hidden;
+  position: absolute;
+}
+.check input[type="checkbox"] + label {
+
+  font-size: 20px;
+  /*font-family: Helvetica, sans-serif;*/
+  font-weight: 100;
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  vertical-align: baseline;
+  color: #00a57b;
+  position: relative;
+cursor: pointer;
+line-height: 1;
+}
+.check input[type="checkbox"] + label:before {
+    content: "\f057";
+    display: block;
+    /*width: 20px;
+    height: 20px;*/
+    border: 0;
+    /*border-radius: 20px;*/
+    /*border: 1px solid #ccc;*/
+    /*color: #00a57b;*/
+    color: #ED0707;
+    visibility: visible;
+    position: absolute;
+    top: -15px;
+    left: -10px;
+}
+.check input[type="checkbox"]:checked + label:before {
+    content: "\f058";
+    color: #00a57b;
+    border: 0;
+}
+
+.mesas .panel .row.flex.grupo-mesas {
+  width: 98%;
+  margin: 20px auto;
+}
+
+.mesa {
+  border: solid thin #e8edf6;
+  background: white;
+  /*padding: 1%;*/
+  color: #504d5b;
+  width: 92px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.mesa:nth-child(6), .mesa:nth-child(12) {
+  margin-right: 0;
+}
+.mesa .numero.gris {
+  color: white;
+  background: #c0c7d1;
+  padding: 0 7px;
+  margin: 3px;
+}
+.mesa .numero.rojo {
+  background: #ED0707;
+  color: white;
+  padding: 0 7px;
+  margin: 3px;
+}
+.mesa .numero.blanco {
+  padding: 3px 17px;
+}
+.mesa .estado {
+  font-size: 12px;
+  padding: 0 5px;
+  display: table;
+  margin: 3px;
+  letter-spacing: -0.5px;
+}
+/*.mesa .estado.rojo {
+  font-size: 9px;
+  letter-spacing: 0;
+}*/
+.mesa .estado.verde {
+  background: #01d7a1;
+  color: white;
+}
+.estado.rojo {
+  color: white;
+}
+.check {
+  margin-left: 6px;
+}
+
+.default_button.verde {
+  position: relative;
+  background: #01d7a1;
+  color: white;
+  border: none;
+  margin: 20px auto 0;
+  top: auto;
+}
+.default_button.verde:hover {
+  background: #00a57b;
 }
 
 .config-gen-local .cont-panel {
   margin-right: 20px;
+  position: relative;
 }
 .config-gen-local .cont-panel:nth-child(2), .config-gen-local .cont-panel:nth-child(4) {
   margin-right: 0;
@@ -924,6 +1069,25 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
     width: 100%;
   }
 
+  .mesas .tabs-content-full {
+    margin: 20px auto 0 !important;
+  }
+  .mesas .default_button {
+    width: auto;
+  }
+  .mesas.config-gen-local .panel .tit {
+    width: 48%;
+  }
+  .mesas .flex .tit + .flex.align-items, .mesas .flex .tit + .flex.align-items > .flex.align-items {
+    flex-wrap: nowrap;
+  }
+  .cuadrado {
+    width: 14px;
+  }
+  .mesa {
+    width: 94px;
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -936,12 +1100,34 @@ background: #F1C055;      height: auto;      padding: 5px 15px;}
     width: 100%;
   }
 
+  .mesas .panel .row.flex.grupo-mesas {
+    width: 100%;
+  }
+  .mesa:nth-child(6), .mesa:nth-child(12) {
+    margin-right: 10px;
+  }
+  .mesa:nth-child(5), .mesa:nth-child(10), .mesa:nth-child(15) {
+    margin-right: 0px;
+  }
+
+
 }
 
 @media (max-width: 400px) {
 
   thead {
     display: none;
+  }
+
+  .mesas.config-gen-local .panel .tit {
+    width: 100%;
+  }
+  .mesa {
+    width: 100%;
+  }
+
+  .mesa:nth-child(5), .mesa:nth-child(10), .mesa:nth-child(15) {
+    margin-right: 10px;
   }
 
 }
@@ -1322,6 +1508,9 @@ color: #576A7D;
 .wrapper{
 }
 
+.mesas .tabs-content-full {
+  margin: 0px auto 0;
+}
 
 /*FORMULARIO - REGISTRO */
 
